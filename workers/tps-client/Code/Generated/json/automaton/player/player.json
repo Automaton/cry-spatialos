@@ -1,0 +1,110 @@
+{
+ "sourceReference": {
+  "line": 1,
+  "column": 1
+ },
+ "completePath": "C:\\Users\\shivam\\work\\demo\\cry-spatial-dist\\schema\\automaton\\player\\player.schema",
+ "canonicalName": "automaton/player/player.schema",
+ "package": "automaton.player",
+ "enumDefinitions": [],
+ "typeDefinitions": [
+  {
+   "sourceReference": {
+    "line": 3,
+    "column": 1
+   },
+   "name": "Heartbeat",
+   "qualifiedName": "automaton.player.Heartbeat",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": []
+  },
+  {
+   "sourceReference": {
+    "line": 5,
+    "column": 1
+   },
+   "name": "KilledPlayer",
+   "qualifiedName": "automaton.player.KilledPlayer",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 6,
+      "column": 3
+     },
+     "name": "killed",
+     "number": 1,
+     "singularType": {
+      "sourceReference": {
+       "line": 6,
+       "column": 3
+      },
+      "builtInType": "EntityId"
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 9,
+    "column": 1
+   },
+   "name": "PlayerData",
+   "qualifiedName": "automaton.player.PlayerData",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": []
+  }
+ ],
+ "componentDefinitions": [
+  {
+   "sourceReference": {
+    "line": 9,
+    "column": 1
+   },
+   "name": "Player",
+   "qualifiedName": "automaton.player.Player",
+   "id": 30002,
+   "dataDefinition": {
+    "sourceReference": {
+     "line": 9,
+     "column": 1
+    },
+    "userType": "automaton.player.PlayerData"
+   },
+   "eventDefinitions": [
+    {
+     "sourceReference": {
+      "line": 12,
+      "column": 3
+     },
+     "name": "heartbeat",
+     "type": {
+      "sourceReference": {
+       "line": 12,
+       "column": 9
+      },
+      "userType": "automaton.player.Heartbeat"
+     }
+    },
+    {
+     "sourceReference": {
+      "line": 13,
+      "column": 3
+     },
+     "name": "killed_player",
+     "type": {
+      "sourceReference": {
+       "line": 13,
+       "column": 9
+      },
+      "userType": "automaton.player.KilledPlayer"
+     }
+    }
+   ],
+   "commandDefinitions": []
+  }
+ ]
+}

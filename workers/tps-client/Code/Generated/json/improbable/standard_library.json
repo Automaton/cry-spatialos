@@ -1,0 +1,317 @@
+{
+ "sourceReference": {
+  "line": 1,
+  "column": 1
+ },
+ "completePath": "C:\\Users\\shivam\\work\\demo\\cry-spatial-dist\\build\\dependencies\\schema\\standard_library\\improbable\\standard_library.schema",
+ "canonicalName": "improbable/standard_library.schema",
+ "package": "improbable",
+ "enumDefinitions": [],
+ "typeDefinitions": [
+  {
+   "sourceReference": {
+    "line": 6,
+    "column": 1
+   },
+   "name": "WorkerAttributeSet",
+   "qualifiedName": "improbable.WorkerAttributeSet",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 9,
+      "column": 3
+     },
+     "name": "attribute",
+     "number": 1,
+     "listType": {
+      "valueType": {
+       "sourceReference": {
+        "line": 9,
+        "column": 8
+       },
+       "builtInType": "string"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 24,
+    "column": 1
+   },
+   "name": "WorkerRequirementSet",
+   "qualifiedName": "improbable.WorkerRequirementSet",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 28,
+      "column": 3
+     },
+     "name": "attribute_set",
+     "number": 1,
+     "listType": {
+      "valueType": {
+       "sourceReference": {
+        "line": 28,
+        "column": 8
+       },
+       "userType": "improbable.WorkerAttributeSet"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 62,
+    "column": 1
+   },
+   "name": "Coordinates",
+   "qualifiedName": "improbable.Coordinates",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 63,
+      "column": 3
+     },
+     "name": "x",
+     "number": 1,
+     "singularType": {
+      "sourceReference": {
+       "line": 63,
+       "column": 3
+      },
+      "builtInType": "double"
+     }
+    },
+    {
+     "sourceReference": {
+      "line": 64,
+      "column": 3
+     },
+     "name": "y",
+     "number": 2,
+     "singularType": {
+      "sourceReference": {
+       "line": 64,
+       "column": 3
+      },
+      "builtInType": "double"
+     }
+    },
+    {
+     "sourceReference": {
+      "line": 65,
+      "column": 3
+     },
+     "name": "z",
+     "number": 3,
+     "singularType": {
+      "sourceReference": {
+       "line": 65,
+       "column": 3
+      },
+      "builtInType": "double"
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 40,
+    "column": 3
+   },
+   "name": "EntityAclData",
+   "qualifiedName": "improbable.EntityAclData",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 40,
+      "column": 3
+     },
+     "name": "read_acl",
+     "number": 1,
+     "singularType": {
+      "sourceReference": {
+       "line": 40,
+       "column": 3
+      },
+      "userType": "improbable.WorkerRequirementSet"
+     }
+    },
+    {
+     "sourceReference": {
+      "line": 46,
+      "column": 3
+     },
+     "name": "component_write_acl",
+     "number": 2,
+     "mapType": {
+      "keyType": {
+       "sourceReference": {
+        "line": 46,
+        "column": 7
+       },
+       "builtInType": "uint32"
+      },
+      "valueType": {
+       "sourceReference": {
+        "line": 46,
+        "column": 15
+       },
+       "userType": "improbable.WorkerRequirementSet"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 57,
+    "column": 3
+   },
+   "name": "MetadataData",
+   "qualifiedName": "improbable.MetadataData",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 57,
+      "column": 3
+     },
+     "name": "entity_type",
+     "number": 1,
+     "singularType": {
+      "sourceReference": {
+       "line": 57,
+       "column": 3
+      },
+      "builtInType": "string"
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 76,
+    "column": 3
+   },
+   "name": "PositionData",
+   "qualifiedName": "improbable.PositionData",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": [
+    {
+     "sourceReference": {
+      "line": 76,
+      "column": 3
+     },
+     "name": "coords",
+     "number": 1,
+     "singularType": {
+      "sourceReference": {
+       "line": 76,
+       "column": 3
+      },
+      "userType": "improbable.Coordinates"
+     }
+    }
+   ]
+  },
+  {
+   "sourceReference": {
+    "line": 82,
+    "column": 1
+   },
+   "name": "PersistenceData",
+   "qualifiedName": "improbable.PersistenceData",
+   "enumDefinitions": [],
+   "typeDefinitions": [],
+   "fieldDefinitions": []
+  }
+ ],
+ "componentDefinitions": [
+  {
+   "sourceReference": {
+    "line": 33,
+    "column": 1
+   },
+   "name": "EntityAcl",
+   "qualifiedName": "improbable.EntityAcl",
+   "id": 50,
+   "dataDefinition": {
+    "sourceReference": {
+     "line": 40,
+     "column": 3
+    },
+    "userType": "improbable.EntityAclData"
+   },
+   "eventDefinitions": [],
+   "commandDefinitions": []
+  },
+  {
+   "sourceReference": {
+    "line": 51,
+    "column": 1
+   },
+   "name": "Metadata",
+   "qualifiedName": "improbable.Metadata",
+   "id": 53,
+   "dataDefinition": {
+    "sourceReference": {
+     "line": 57,
+     "column": 3
+    },
+    "userType": "improbable.MetadataData"
+   },
+   "eventDefinitions": [],
+   "commandDefinitions": []
+  },
+  {
+   "sourceReference": {
+    "line": 74,
+    "column": 1
+   },
+   "name": "Position",
+   "qualifiedName": "improbable.Position",
+   "id": 54,
+   "dataDefinition": {
+    "sourceReference": {
+     "line": 76,
+     "column": 3
+    },
+    "userType": "improbable.PositionData"
+   },
+   "eventDefinitions": [],
+   "commandDefinitions": []
+  },
+  {
+   "sourceReference": {
+    "line": 82,
+    "column": 1
+   },
+   "name": "Persistence",
+   "qualifiedName": "improbable.Persistence",
+   "id": 55,
+   "dataDefinition": {
+    "sourceReference": {
+     "line": 82,
+     "column": 1
+    },
+    "userType": "improbable.PersistenceData"
+   },
+   "eventDefinitions": [],
+   "commandDefinitions": []
+  }
+ ]
+}
