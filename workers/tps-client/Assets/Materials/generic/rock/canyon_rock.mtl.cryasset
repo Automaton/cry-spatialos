@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="b722db81-7959-a437-cb80-82fb401021f0">
+ <Files>
+  <File path="canyon_rock.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>objects/natural/rocks/canyon_rocks/canyon_rock_diff.dds</Path>
+  <Path>objects/natural/rocks/canyon_rocks/canyon_rock_ddna.dds</Path>
+  <Path>objects/natural/rocks/canyon_rocks/canyon_rock_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

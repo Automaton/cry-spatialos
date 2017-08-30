@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="81000021" StringGenMask="%ALLOW_SILHOUETTE_POM%BLENDLAYER%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/wood/wood_beams_a_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/wood/wood_beams_a_ddna.tif"/>
+  <Texture Map="Custom" File="textures/generic/wood/wood_painted_red_a_diff.tif"/>
+  <Texture Map="[1] Custom" File="textures/generic/wood/wood_beams_a_paint_ddna.tif"/>
+  <Texture Map="Opacity" File="textures/generic/wood/wood_beams_a_mask.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="8" BlendLayer2Tiling="1" SSSIndex="0" BlendMaskTiling="1" BlendFactor="3" BlendLayer2Specular="0.039999999" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="aff08bf7-3823-3a6e-c813-22f71865ce10">
+ <Files>
+  <File path="wood_planks.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/wood/wood_planks.dds</Path>
+  <Path>textures/decals/wood/wood_planks_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

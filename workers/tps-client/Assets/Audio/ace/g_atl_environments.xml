@@ -1,0 +1,39 @@
+<ATLConfig atl_name="g_atl_environments" atl_version="1">
+ <AudioEnvironments>
+  <ATLEnvironment atl_name="cave">
+   <WwiseAuxBus wwise_name="cave"/>
+   <WwiseRtpc wwise_name="environment_sound"/>
+   <FmodBus fmod_name="Cave"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="cliff_delays">
+   <WwiseAuxBus wwise_name="cliff_delays"/>
+   <FmodBus fmod_name="Valley"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="forest">
+   <WwiseAuxBus wwise_name="forest"/>
+   <FmodBus fmod_name="Valley"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="hangar">
+   <WwiseAuxBus wwise_name="hangar"/>
+   <WwiseRtpc wwise_name="environment_sound"/>
+   <FmodBus fmod_name="Cave"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="open_ground">
+   <WwiseAuxBus wwise_name="open_ground"/>
+   <FmodBus fmod_name="Valley"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="room_small">
+   <WwiseAuxBus wwise_name="room_small"/>
+   <WwiseRtpc wwise_name="environment_sound"/>
+   <FmodBus fmod_name="Cave"/>
+  </ATLEnvironment>
+  <ATLEnvironment atl_name="tower">
+   <WwiseAuxBus wwise_name="tower"/>
+   <WwiseRtpc wwise_name="environment_sound"/>
+   <FmodBus fmod_name="Cave"/>
+  </ATLEnvironment>
+ </AudioEnvironments>
+ <EditorData>
+  <Folders />
+ </EditorData>
+</ATLConfig>

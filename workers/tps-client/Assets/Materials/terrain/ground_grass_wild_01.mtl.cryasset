@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="dce835a2-599e-6375-e00c-8da1468729a8">
+ <Files>
+  <File path="ground_grass_wild_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pjwky2_diff.dds</Path>
+  <Path>textures/terrain/pjwky2_ddna.dds</Path>
+  <Path>textures/terrain/pjwky2_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

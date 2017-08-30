@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="259d12ed-ae3d-edfc-3bbf-f74386c01a52">
+ <Files>
+  <File path="ground_soil_mud_06.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pjErQ2_diff.dds</Path>
+  <Path>textures/terrain/pjErQ2_ddna.dds</Path>
+  <Path>textures/terrain/pjErQ2_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

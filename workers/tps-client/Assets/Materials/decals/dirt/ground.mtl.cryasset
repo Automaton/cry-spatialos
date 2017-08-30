@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="7a6b559a-f52e-0104-db7e-99bbdb709f80">
+ <Files>
+  <File path="ground.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/ground.dds</Path>
+ </Dependencies>
+</AssetMetadata>

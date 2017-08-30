@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="947ff9d6-c56a-3f5c-e2aa-cfc60ecd5066">
+ <Files>
+  <File path="road_muddy_off_21.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/mud/road_muddy_off_21_decal.dds</Path>
+  <Path>textures/decals/mud/road_muddy_off_21_decal_ddna.dds</Path>
+  <Path>textures/decals/mud/road_muddy_off_21_decal_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="04105d7a-d7d8-b424-4ba8-c2b0bdba5651">
+ <Files>
+  <File path="plywood_dark.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/plywood_dark_diff.dds</Path>
+  <Path>textures/generic/wood/plywood_dark_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

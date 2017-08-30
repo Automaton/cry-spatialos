@@ -1,0 +1,8 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2106000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%OFFSET_BUMP_MAPPING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_snow" MatTemplate="" Diffuse="1,1,1" Specular="0.014443845,0.014443845,0.014443845" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/roads/road_concrete_snowy_diff.tif" Filter="5"/>
+  <Texture Map="Bumpmap" File="textures/roads/road_concrete_snowy_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/roads/road_concrete_snowy_displ.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" SelfShadowStrength="1" ObmDisplacement="0.015" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

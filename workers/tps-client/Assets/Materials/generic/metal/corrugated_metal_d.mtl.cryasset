@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="6b238d71-232d-37c1-7f9e-6b9c27c8340d">
+ <Files>
+  <File path="corrugated_metal_d.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/corrugated_metal_d_diff.dds</Path>
+  <Path>textures/generic/metal/corrugated_metal_c_ddna.dds</Path>
+  <Path>textures/generic/metal/corrugated_metal_c_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

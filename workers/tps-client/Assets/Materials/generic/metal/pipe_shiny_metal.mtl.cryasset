@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="3af5b9bb-27ab-4c5a-0f09-f5b72e69a08d">
+ <Files>
+  <File path="pipe_shiny_metal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/pipe_shiny_metal_diff.dds</Path>
+  <Path>textures/generic/metal/pipe_shiny_metal_ddna.dds</Path>
+  <Path>textures/generic/metal/pipe_shiny_metal_spec.dds</Path>
+  <Path>textures/generic/metal/pipe_shiny_metal_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="81000081" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/wood/wood_sheets_moosy_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/wood/wood_sheets_moosy_ddna.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/wood/wood_fine_b90_detail.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="6" TileV="6"/>
+  </Texture>
+ </Textures>
+ <PublicParams DetailDiffuseScale="0.5" SSSIndex="0" DetailBumpScale="0.5" DetailGlossScale="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

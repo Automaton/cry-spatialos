@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="21" StringGenMask="%ALLOW_SILHOUETTE_POM%ALLOW_TESSELATION" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="0,0,0" Emissive="0,0,0" Shininess="20" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/references/bricks.dds"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

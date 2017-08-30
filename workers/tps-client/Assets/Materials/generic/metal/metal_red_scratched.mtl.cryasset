@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="91171840-6f3b-9b2e-7e0e-e50815342a54">
+ <Files>
+  <File path="metal_red_scratched.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_red_scratched_diff.dds</Path>
+  <Path>textures/generic/metal/metal_red_scratched_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_red_scratched_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

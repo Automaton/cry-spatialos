@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="cb77ea98-7fb6-3c05-3070-63c584396846">
+ <Files>
+  <File path="leaves_roots_dry.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/leaves_roots_dry_diff.dds</Path>
+  <Path>textures/terrain/detail/leaves_roots_dry_ddna.dds</Path>
+  <Path>textures/terrain/detail/leaves_roots_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

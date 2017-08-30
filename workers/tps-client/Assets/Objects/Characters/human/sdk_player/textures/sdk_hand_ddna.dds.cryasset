@@ -1,0 +1,25 @@
+<AssetMetadata version="0" type="Texture" guid="f7a50394-8b18-0da2-3e59-62d91229b661">
+ <Files>
+  <File path="sdk_hand_ddna.dds"/>
+  <File path="sdk_hand_ddna.dds.a"/>
+  <File path="sdk_hand_ddna.dds.1"/>
+  <File path="sdk_hand_ddna.dds.1a"/>
+  <File path="sdk_hand_ddna.dds.2"/>
+  <File path="sdk_hand_ddna.dds.2a"/>
+  <File path="sdk_hand_ddna.dds.3"/>
+  <File path="sdk_hand_ddna.dds.3a"/>
+  <File path="sdk_hand_ddna.dds.4"/>
+  <File path="sdk_hand_ddna.dds.4a"/>
+  <File path="sdk_hand_ddna.dds.5"/>
+  <File path="sdk_hand_ddna.dds.5a"/>
+  <File path="sdk_hand_ddna.dds.6"/>
+  <File path="sdk_hand_ddna.dds.6a"/>
+  <File path="sdk_hand_ddna.dds.7"/>
+  <File path="sdk_hand_ddna.dds.7a"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

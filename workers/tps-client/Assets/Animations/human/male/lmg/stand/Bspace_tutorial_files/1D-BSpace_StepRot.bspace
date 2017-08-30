@@ -1,0 +1,18 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TurnAngle" min="-1.6" max="+1.6" cells="9" locked="1" deltaextraction="1"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_stepRot_rifle_rgt_3p_01" />
+    <Example AName="stand_tac_step_rifle_idle_3p_01" />
+    <Example AName="stand_tac_stepRot_rifle_lft_3p_01" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+</ParaGroup>

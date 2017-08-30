@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Watervolume" GenMask="8000004B" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="0,0,0" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/forest/l_ab2_waterfall_probe_3_cm.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="1" SoftIntersectionFactor="2" Tilling="1" FoamAmount="0.25" DetailNormalsScale="1.275" EnvCubeReflMul="1" VertexWaveScale="0.5" DetailTilling="1" EnvCubeScale="0.215" RealtimeReflMul="1.2" FoamSoftIntersectionFactor="0.2" FoamTilling="1" RainTilling="0.5" WaterFlowSpeed="-1"/>
+</Material>

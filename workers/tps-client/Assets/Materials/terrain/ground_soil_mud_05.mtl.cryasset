@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="7557b6ad-f1f6-1615-210c-b34f7d7f2ff8">
+ <Files>
+  <File path="ground_soil_mud_05.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/olslp_diff.dds</Path>
+  <Path>textures/terrain/olslp_ddna.dds</Path>
+  <Path>textures/terrain/olslp_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="2cd5d50e-41ea-65e3-4a8d-aa5fef61ae55">
+ <Files>
+  <File path="exterior_metal_panel.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/exterior_metal_panel_diff.dds</Path>
+  <Path>textures/generic/metal/exterior_metal_panel_ddna.dds</Path>
+  <Path>textures/generic/metal/exterior_metal_panel_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

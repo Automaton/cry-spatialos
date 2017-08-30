@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e0ea385d-82f8-162d-92b4-ac283244bf71">
+ <Files>
+  <File path="rock_4.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/rock_4_diff.dds</Path>
+  <Path>textures/terrain/detail/rock_4_ddna.dds</Path>
+  <Path>textures/terrain/detail/rock_4_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

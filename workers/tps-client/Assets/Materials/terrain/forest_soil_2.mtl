@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="204000000" StringGenMask="%NORMAL_MAP%TEMP_TERRAIN" SurfaceType="mat_grass" MatTemplate="" Diffuse="0.73791045,0.73791045,0.73791045" Specular="0.012983033,0.012983033,0.012983033" Emissive="0,0,0" Opacity="1" Shininess="100" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/forest_soil_2_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.40000001" TileV="0.40000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/forest_soil_2_ddna.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="0.5" BlendFactor="1" IndirectColor="0.23099814,0.23099814,0.23099814"/>
+</Material>

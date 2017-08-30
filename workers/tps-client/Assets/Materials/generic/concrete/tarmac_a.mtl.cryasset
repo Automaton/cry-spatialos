@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="011d908b-2be1-8110-eef2-7bc5a0220c1a">
+ <Files>
+  <File path="tarmac_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/wall_cracked_diff.dds</Path>
+  <Path>textures/generic/concrete/wall_cracked_ddna.dds</Path>
+  <Path>textures/detail_bumpmaps/concrete/painted_1_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

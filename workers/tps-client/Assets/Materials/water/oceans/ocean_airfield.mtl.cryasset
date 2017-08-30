@@ -1,0 +1,9 @@
+<AssetMetadata version="0" type="Material" guid="7b1b18f7-c378-18f6-5e40-a750d8e0873f">
+ <Files>
+  <File path="ocean_airfield.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">0</Detail>
+ </Details>
+</AssetMetadata>

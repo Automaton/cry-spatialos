@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="d02e275e-72aa-65e9-a5dc-960741eba6dd">
+ <Files>
+  <File path="large_brick_animated.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/brick/brick_rounded_diff.dds</Path>
+  <Path>textures/generic/brick/brick_rounded_ddna.dds</Path>
+  <Path>textures/generic/brick/brick_rounded_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

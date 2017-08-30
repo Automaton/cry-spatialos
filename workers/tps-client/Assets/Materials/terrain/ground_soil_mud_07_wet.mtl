@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="21A400000" StringGenMask="%NORMAL_MAP%OFFSET_BUMP_MAPPING%PARALLAX_OCCLUSION_MAPPING%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_wet_mud" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/peioH2_wet_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/peioH2_wet_ddna.tif"/>
+  <Texture Map="Specular" File="textures/terrain/peioH2_wet_spec.tif"/>
+  <Texture Map="Heightmap" File="textures/terrain/peioH2_wet_displ.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="0.69999999" DetailTextureStrength="0.5" PomDisplacement="0.020099999" SelfShadowStrength="3" ObmDisplacement="0.0109" HeightBias="0" BlendFactor="0.41999999"/>
+</Material>

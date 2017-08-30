@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="bdc9d560-a8b1-1cd2-7b12-7a33168b8bdd">
+ <Files>
+  <File path="metal_pure_chromium.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_gold_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

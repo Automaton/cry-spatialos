@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="21fe2643-6f7f-8f76-2707-20a6102a719f">
+ <Files>
+  <File path="rifle_tp_silencer.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">144</Detail>
+  <Detail name="vertexCount">152</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

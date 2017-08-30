@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Texture" guid="d9b65e73-fbca-00a4-e665-386d23448619">
+ <Files>
+  <File path="generic_eyeball_overlay_diff.dds"/>
+  <File path="generic_eyeball_overlay_diff.dds.1"/>
+  <File path="generic_eyeball_overlay_diff.dds.2"/>
+  <File path="generic_eyeball_overlay_diff.dds.3"/>
+  <File path="generic_eyeball_overlay_diff.dds.4"/>
+  <File path="generic_eyeball_overlay_diff.dds.5"/>
+  <File path="generic_eyeball_overlay_diff.dds.6"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">1024</Detail>
+  <Detail name="mipCount">9</Detail>
+ </Details>
+</AssetMetadata>

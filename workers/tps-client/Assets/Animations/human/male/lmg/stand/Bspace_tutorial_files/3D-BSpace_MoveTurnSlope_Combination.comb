@@ -1,0 +1,14 @@
+<CombinedBlendSpace>
+
+  <Dimensions>
+    <Param name="MoveSpeed"   />
+    <Param name="TurnSpeed"   ParaScale="2.0"  />
+    <Param name="TravelSlope" ParaScale="2.0"/>
+  </Dimensions>
+
+  <BlendSpaces>
+    <BlendSpace AName="animations/human/male/lmg/stand/Bspace_tutorial_files/2D-BSpace_MoveSlopeExt.bspace" />
+    <BlendSpace AName="animations/human/male/lmg/stand/Bspace_tutorial_files/2D-BSpace_MoveTurnExt.bspace" />
+  </BlendSpaces>
+
+</CombinedBlendSpace>

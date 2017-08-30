@@ -1,0 +1,10 @@
+package automaton.player;
+
+import "automaton/quaternion.schema";
+
+component Movement {
+  id = 30001;
+  bool moving = 1;
+  automaton.Quaternion orientation = 2;
+  bool running = 3;
+}

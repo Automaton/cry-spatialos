@@ -1,0 +1,8 @@
+package automaton.player;
+import "automaton/quaternion.schema";
+
+component Bullet {
+  id = 30003;
+  EntityId creator = 1;
+  automaton.Quaternion rotation = 2;
+}

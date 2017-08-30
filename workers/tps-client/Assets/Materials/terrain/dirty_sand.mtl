@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="204000000" StringGenMask="%NORMAL_MAP%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.040915199,0.040915199,0.040915199" Emissive="0,0,0" Opacity="1" Shininess="160" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/dirty_sand_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.2" TileV="0.2"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/dirty_sand_ddna.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="0.5" BlendFactor="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

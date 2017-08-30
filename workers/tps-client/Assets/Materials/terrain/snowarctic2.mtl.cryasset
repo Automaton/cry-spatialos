@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="2b5c6c7a-e962-d697-aa31-ad0feb548c5b">
+ <Files>
+  <File path="snowarctic2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>engineassets/textures/white.dds</Path>
+  <Path>textures/terrain/SnowPath_ddna.dds</Path>
+  <Path>textures/terrain/SnowTexture_spec.dds</Path>
+  <Path>textures/terrain/SnowPath_height.dds</Path>
+ </Dependencies>
+</AssetMetadata>

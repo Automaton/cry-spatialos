@@ -1,0 +1,17 @@
+<AssetMetadata version="0" type="Texture" guid="ca4d981c-9e2c-fa39-b451-41b79d7adff6">
+ <Files>
+  <File path="sdk_hand_spec.dds"/>
+  <File path="sdk_hand_spec.dds.1"/>
+  <File path="sdk_hand_spec.dds.2"/>
+  <File path="sdk_hand_spec.dds.3"/>
+  <File path="sdk_hand_spec.dds.4"/>
+  <File path="sdk_hand_spec.dds.5"/>
+  <File path="sdk_hand_spec.dds.6"/>
+  <File path="sdk_hand_spec.dds.7"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

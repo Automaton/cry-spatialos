@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.96862799,0.133333,0.152941" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="100" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/glow/flare_a.tif"/>
+ </Textures>
+ <PublicParams SoftParticlesScale="1" GlobalIlluminationAmount="1" FresnelScale="1" FresnelBias="1"/>
+</Material>

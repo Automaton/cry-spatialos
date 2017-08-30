@@ -1,0 +1,4 @@
+<Material MtlFlags="526336" Shader="Glass" GenMask="410" StringGenMask="%BILINEAR_FP16%DEPTH_FOG" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="0,0,0" Specular="1,1,1" Emissive="0,0,0" Shininess="200" Opacity="1" CloakAmount="0" LayerAct="1">
+ <Textures />
+ <PublicParams FogColor="1,0,0" BumpMapTile="1" TintColor="0.051269464,1,0.051269464" FresnelScale="1" FogCutoffEnd="20" FresnelBias="1" FogDensity="0.15000001" TintCloudiness="0.33000001" BackLightScale="0.5" BumpScale="1"/>
+</Material>

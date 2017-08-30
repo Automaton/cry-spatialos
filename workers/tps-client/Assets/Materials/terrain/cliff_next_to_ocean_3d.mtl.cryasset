@@ -1,0 +1,20 @@
+<AssetMetadata version="0" type="Material" guid="4734764f-4007-0e5f-4c55-aa803ebef7b0">
+ <Files>
+  <File path="cliff_next_to_ocean_3d.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">3</Detail>
+  <Detail name="textureCount">9</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_diff.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_ddna.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_displ.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_diff.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_ddna.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_displ.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_diff.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_ddna.dds</Path>
+  <Path>textures/terrain/detail/cliff_next_to_ocean_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

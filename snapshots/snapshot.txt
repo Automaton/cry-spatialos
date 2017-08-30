@@ -1,0 +1,90 @@
+entity {
+  entity_id: 1
+  prefab: "Spawner"
+  entity_state {
+    [schema.improbable.EntityAcl.component_extension] {
+      field1_read {
+        field1_attribute_set {
+          field1_attribute {
+            field1_name: "CryengineClient"
+          }
+        }
+        field1_attribute_set {
+          field1_attribute {
+            field1_name: "CryengineWorker"
+          }
+        }
+      }
+      field2_component_acl {
+        field1_write {
+          key: 20001
+          value {
+            field1_attribute_set {
+              field1_attribute {
+                field1_name: "CryengineWorker"
+              }
+            }
+          }
+        }
+        field1_write {
+          key: 21010
+          value {
+            field1_attribute_set {
+              field1_attribute {
+                field1_name: "CryengineWorker"
+              }
+            }
+          }
+        }
+      }
+    }
+    [schema.improbable.common.Transform.component_extension] {
+      field1_position {
+        x: 0
+        y: 10
+        z: 0
+      }
+    }
+    [schema.improbable.spawner.Spawner.component_extension] {
+    }
+  }
+}
+entity {
+  entity_id: 2
+  prefab: "Cube"
+  entity_state {
+    [schema.improbable.EntityAcl.component_extension] {
+      field1_read {
+        field1_attribute_set {
+          field1_attribute {
+            field1_name: "CryengineClient"
+          }
+        }
+        field1_attribute_set {
+          field1_attribute {
+            field1_name: "CryengineWorker"
+          }
+        }
+      }
+      field2_component_acl {
+        field1_write {
+          key: 20001
+          value {
+            field1_attribute_set {
+              field1_attribute {
+                field1_name: "CryengineWorker"
+              }
+            }
+          }
+        }
+      }
+    }
+    [schema.improbable.common.Transform.component_extension] {
+      field1_position {
+        x: 65
+        y: 56
+        z: 32
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d94020cc-f2f8-12ea-486d-f2a6f57a734d">
+ <Files>
+  <File path="exterior_metal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/exterior_metal_diff.dds</Path>
+  <Path>textures/generic/metal/exterior_metal_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

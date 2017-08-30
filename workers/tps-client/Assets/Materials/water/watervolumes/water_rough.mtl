@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Watervolume" GenMask="8000004B" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="0,0,0" Specular="0.49693301,0.49693301,0.49693301" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/generic_cubemap_day_cm.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="1.5" SoftIntersectionFactor="2" Tilling="2" FoamAmount="0.2" DetailNormalsScale="1.275" EnvCubeReflMul="0.5" VertexWaveScale="0.25" DetailTilling="1" EnvCubeScale="2" RealtimeReflMul="0.5" FoamSoftIntersectionFactor="0.25" FoamTilling="4" RainTilling="0.5" WaterFlowSpeed="0.33000001"/>
+</Material>

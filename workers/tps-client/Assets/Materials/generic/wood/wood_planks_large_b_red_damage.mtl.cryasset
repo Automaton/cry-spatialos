@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="12e40e7e-5d66-087a-5100-a818ee9e47b1">
+ <Files>
+  <File path="wood_planks_large_b_red_damage.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_planks_lrg_b_red_dmg_diff.dds</Path>
+  <Path>textures/generic/wood/wood_planks_lrg_b_red_dmg_ddna.dds</Path>
+  <Path>textures/generic/wood/wood_planks_lrg_b_red_dmg_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="02ec25af-6c96-f927-4132-d92dcbdf70dd">
+ <Files>
+  <File path="manhole_round.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/metal/manhole_round.dds</Path>
+  <Path>textures/decals/metal/manhole_round_ddna.dds</Path>
+  <Path>textures/decals/metal/manhole_round_displ.dds</Path>
+  <Path>textures/detail_bumpmaps/metal/metal_scratches_a_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

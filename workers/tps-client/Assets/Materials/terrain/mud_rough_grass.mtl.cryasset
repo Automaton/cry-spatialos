@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e533fb02-6c10-0382-c1a5-366bc1166242">
+ <Files>
+  <File path="mud_rough_grass.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/mud_rough_grass_diff.dds</Path>
+  <Path>textures/terrain/detail/mud_rough_grass_ddna.dds</Path>
+  <Path>textures/terrain/detail/mud_rough_grass_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

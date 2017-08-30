@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="f82289c0-3615-c8ea-cce8-10c66d4394e6">
+ <Files>
+  <File path="plaster_white_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/plaster_white_a_diff.dds</Path>
+  <Path>textures/generic/concrete/plaster_white_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

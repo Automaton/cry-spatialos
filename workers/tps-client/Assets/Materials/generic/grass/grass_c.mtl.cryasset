@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="55da12ed-44e3-367e-cc40-28bdd5d600f4">
+ <Files>
+  <File path="grass_c.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/grass/grass_c_diff.dds</Path>
+  <Path>textures/generic/grass/grass_c_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

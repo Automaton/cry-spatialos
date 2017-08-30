@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="81c83d14-e8c3-98c9-2753-80e597f3ab61">
+ <Files>
+  <File path="hull_blend_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/hull_blend_a_diff.dds</Path>
+  <Path>textures/generic/metal/hull_blend_a_ddna.dds</Path>
+  <Path>textures/generic/metal/hull_blend_a_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

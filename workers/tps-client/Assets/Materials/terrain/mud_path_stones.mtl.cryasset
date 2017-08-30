@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="458e091f-aaa7-aecc-a47f-6989c00a0aa2">
+ <Files>
+  <File path="mud_path_stones.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/mud_path_stones_diff.dds</Path>
+  <Path>textures/terrain/detail/mud_path_stones_ddna.dds</Path>
+  <Path>textures/detail_bumpmaps/rock/detail_cliff_rock_detail.dds</Path>
+  <Path>textures/terrain/detail/mud_path_stones_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

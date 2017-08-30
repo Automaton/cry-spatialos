@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="9fbb337c-b5c0-2f1f-e34d-0440b7aac00a">
+ <Files>
+  <File path="glass_crack_small.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/glass/glass_crack_small.dds</Path>
+  <Path>textures/decals/glass/glass_crack_small_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

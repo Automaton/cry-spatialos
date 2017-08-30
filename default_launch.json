@@ -1,0 +1,41 @@
+{
+  "template": "small",
+  "world": {
+      "dimensions": 
+      {
+        "x_meters": 5000,
+        "z_meters": 5000
+      },
+      "chunk_edge_length_meters": 100,
+      "streaming_query_interval": 4,
+      "snapshots": 
+      {
+        "snapshot_write_period_seconds": 0
+      }
+  },
+  "workers": [
+    {
+      "worker_type": "GameWorker",
+      "flags" : [],
+      "load_balancing":
+      {
+        "singleton_worker":  
+        {                 
+        }                 
+      },
+      "permissions": [
+        {
+          "all": {}
+        }
+      ]
+    },
+    {
+      "worker_type": "TPSClient",
+      "permissions": [
+        {
+          "all": {}
+        }
+      ]
+    }
+  ]
+}

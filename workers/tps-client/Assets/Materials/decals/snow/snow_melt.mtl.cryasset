@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="02639108-d3ed-2013-8e40-af054c660d7b">
+ <Files>
+  <File path="snow_melt.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/snow/snow_melt.dds</Path>
+  <Path>textures/decals/snow/snow_melt_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

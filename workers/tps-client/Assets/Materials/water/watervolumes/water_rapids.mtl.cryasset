@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="4ec80031-fad9-1af0-5908-1891071eb7d3">
+ <Files>
+  <File path="water_rapids.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/cubemaps/forest/l_ab2_waterfall_probe_3_cm.dds</Path>
+ </Dependencies>
+</AssetMetadata>

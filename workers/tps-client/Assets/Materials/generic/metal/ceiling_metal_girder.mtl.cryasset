@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="a11c91fd-fdd1-bde9-a65e-372b57f91ad7">
+ <Files>
+  <File path="ceiling_metal_girder.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/ceiling_metal_girder_diff.dds</Path>
+  <Path>textures/generic/metal/ceiling_metal_girder_ddna.dds</Path>
+  <Path>textures/generic/metal/ceiling_metal_girder_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

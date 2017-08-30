@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="6023bf5d-1b60-4800-3d2d-bf17735b302d">
+ <Files>
+  <File path="mud_dry_cracked.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/mud/mud_i_diff.dds</Path>
+  <Path>textures/generic/mud/mud_i_ddna.dds</Path>
+  <Path>textures/generic/mud/mud_i_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

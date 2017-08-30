@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="77af4fe0-b5d6-01f4-9b71-3a0f2da4bf77">
+ <Files>
+  <File path="river_ground_decal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Textures/decals/rock/river_ground_decal_diff.dds</Path>
+  <Path>Textures/decals/rock/river_ground_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

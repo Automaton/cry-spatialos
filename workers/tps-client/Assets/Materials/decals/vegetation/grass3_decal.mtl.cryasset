@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="993fff9d-53e9-2f9a-e69f-2dc314f2546e">
+ <Files>
+  <File path="grass3_decal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/vegetation/grass3_decal_diff.dds</Path>
+  <Path>textures/decals/vegetation/grass3_decal_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

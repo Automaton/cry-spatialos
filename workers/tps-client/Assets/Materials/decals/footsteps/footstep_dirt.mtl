@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000881" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.57315886,0.52344316,0.42590532" Specular="0.0097212186,0.0097212186,0.0097212186" Emissive="0,0,0" Shininess="10" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/footsteps/footprint_sand_left.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/footsteps/footprint_sand_left_ddn.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,25 @@
+<AssetMetadata version="0" type="Texture" guid="dce24cf1-9708-3a3a-765f-2e7562897856">
+ <Files>
+  <File path="pands_shoes_ddna.dds"/>
+  <File path="pands_shoes_ddna.dds.a"/>
+  <File path="pands_shoes_ddna.dds.1"/>
+  <File path="pands_shoes_ddna.dds.1a"/>
+  <File path="pands_shoes_ddna.dds.2"/>
+  <File path="pands_shoes_ddna.dds.2a"/>
+  <File path="pands_shoes_ddna.dds.3"/>
+  <File path="pands_shoes_ddna.dds.3a"/>
+  <File path="pands_shoes_ddna.dds.4"/>
+  <File path="pands_shoes_ddna.dds.4a"/>
+  <File path="pands_shoes_ddna.dds.5"/>
+  <File path="pands_shoes_ddna.dds.5a"/>
+  <File path="pands_shoes_ddna.dds.6"/>
+  <File path="pands_shoes_ddna.dds.6a"/>
+  <File path="pands_shoes_ddna.dds.7"/>
+  <File path="pands_shoes_ddna.dds.7a"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

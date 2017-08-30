@@ -1,0 +1,17 @@
+<ControllerDef>
+ <Tags filename="Animations/Mannequin/ADB/PlayerTags.xml"/>
+ <Fragments filename="Animations/Mannequin/ADB/PlayerFragmentIds.xml"/>
+ <FragmentDefs>
+  <Idle scopes="ThirdPerson" flags="Persistent+AutoReinstall"/>
+  <aimPose scopes="AimPose" flags="Persistent"/>
+ </FragmentDefs>
+ <ScopeContextDefs>
+  <FirstPersonCharacter />
+  <ThirdPersonCharacter />
+ </ScopeContextDefs>
+ <ScopeDefs>
+  <FirstPerson layer="0" numLayers="3" context="FirstPersonCharacter"/>
+  <ThirdPerson layer="0" numLayers="3" context="ThirdPersonCharacter"/>
+  <AimPose     layer="4" numLayers="2" context="ThirdPersonCharacter"/>
+ </ScopeDefs>
+</ControllerDef>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="22e1609d-f01f-4d1f-f987-98d6d8e5670d">
+ <Files>
+  <File path="test_mat_glass.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/glass_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="1bb93afe-f837-4d9a-e4af-04db99e6823d">
+ <Files>
+  <File path="matref_grey191.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>materials/references/191.dds</Path>
+ </Dependencies>
+</AssetMetadata>

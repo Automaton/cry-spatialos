@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Material" guid="008ba333-d7f9-1dc7-b448-d8163bed05e5">
+ <Files>
+  <File path="concrete_ceiling_moss.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">5</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/concrete_ceiling_dirty_diff.dds</Path>
+  <Path>textures/generic/concrete/concrete_ceiling_dirty_ddna.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_diff.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_ddna.dds</Path>
+  <Path>textures/generic/concrete/concrete_ceiling_mask.dds</Path>
+ </Dependencies>
+</AssetMetadata>

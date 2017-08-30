@@ -1,0 +1,96 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TravelDist"  min="+0.00" max="+0.90" cells="9" locked="0" deltaextraction="1" />
+    <Param name="TravelAngle" min="-3.13" max="+3.13" cells="9" JointName="Bip01" skey="0.4" ekey="0.6" locked="0"/> 
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_step_rifle_idle_3p_01" UseDirectlyForDeltaMotion1="1" SetPara1="-3.14" />
+    <Example AName="stand_tac_step_rifle_idle_3p_01" UseDirectlyForDeltaMotion1="1" SetPara1="-1.57" />	
+    <Example AName="stand_tac_step_rifle_idle_3p_01" UseDirectlyForDeltaMotion1="1" SetPara1=" 0.00" />
+    <Example AName="stand_tac_step_rifle_idle_3p_01" UseDirectlyForDeltaMotion1="1" SetPara1="+1.57" />
+    <Example AName="stand_tac_step_rifle_idle_3p_01" UseDirectlyForDeltaMotion1="1" SetPara1="+3.14" />
+
+    <Example AName="stand_tac_step_rifle_bwd_slow_rf_3p_01" SetPara1="-3.14" />
+    <Example AName="stand_tac_step_rifle_rgt_slow_rf_3p_01" />
+    <Example AName="stand_tac_step_rifle_fwd_slow_rf_3p_01" />
+    <Example AName="stand_tac_step_rifle_fwd_slow_lf_3p_01" />
+    <Example AName="stand_tac_step_rifle_lft_slow_lf_3p_01" />
+    <Example AName="stand_tac_step_rifle_bwd_slow_lf_3p_01" SetPara1="+3.14"  />
+  </ExampleList>
+
+  <ExamplePseudo>
+    <Pseudo p0="4" p1="10" w0="-1.5" w1="2.5" />
+    <Pseudo p0="3" p1="9"  w0="-1.5" w1="2.5" />
+    <Pseudo p0="2" p1="8"  w0="-1.6" w1="2.6" />
+    <Pseudo p0="2" p1="7"  w0="-1.5" w1="2.5" />
+    <Pseudo p0="1" p1="6"  w0="-1.5" w1="2.5" />
+    <Pseudo p0="0" p1="5"  w0="-1.5" w1="2.5" />
+  </ExamplePseudo>
+
+  <Blendable>
+    <Face p0="11" p1="10" p2=" 9"  p3="12" />
+    <Face p0="12" p1=" 9" p2=" 8"  p3="13" />
+    <Face p0="14" p1=" 7" p2=" 6"  p3="15" />
+    <Face p0="15" p1=" 6" p2=" 5"  p3="16" />
+
+    <Face p0="10" p1=" 4" p2="3"  p3=" 9" />
+    <Face p0=" 9" p1=" 3" p2="2"  p3=" 8" />
+    <Face p0=" 7" p1=" 2" p2="1"  p3=" 6" />
+    <Face p0=" 6" p1=" 1" p2="0"  p3=" 5" />
+  </Blendable>
+
+
+  <JointList>
+ 	<Joint name="Bip01" />
+ 	<Joint name="Bip01 Pelvis" />
+	<Joint name="Bip01 Spine" />
+	<Joint name="Bip01 Spine1" />
+	<Joint name="Bip01 Spine2" />
+	<Joint name="Bip01 Spine3" />
+	<Joint name="Bip01 Neck" />
+	<Joint name="Bip01 Head" />
+
+ 	<Joint name="Bip01 L Thigh" />
+ 	<Joint name="Bip01 L Calf" />
+ 	<Joint name="Bip01 L Foot" />
+ 	<Joint name="Bip01 L Toe0" />
+ 
+ 	<Joint name="Bip01 R Thigh" />
+ 	<Joint name="Bip01 R Calf" />
+ 	<Joint name="Bip01 R Foot" />
+ 	<Joint name="Bip01 R Toe0" />
+
+	<Joint name="Bip01 L Clavicle" />
+	<Joint name="Bip01 L UpperArm" />
+	<Joint name="Bip01 L Forearm"  />
+	<Joint name="Bip01 L ForeTwist" />
+	<Joint name="Bip01 L ForeTwist1" />
+	<Joint name="Bip01 L ForeTwist2" />
+	<Joint name="Bip01 L Hand"     />
+
+	<Joint name="Bip01 R Clavicle" />
+	<Joint name="Bip01 R UpperArm" />
+	<Joint name="Bip01 R Forearm" />
+	<Joint name="Bip01 R ForeTwist" />
+	<Joint name="Bip01 R ForeTwist1" />
+	<Joint name="Bip01 R ForeTwist2" />
+	<Joint name="Bip01 R Hand" />
+	<Joint name="weapon_bone" />
+	<Joint name="Bip01 LHand2Weapon_IKTarget" />
+	<Joint name="Bip01 LHand2Weapon_IKBlend" />
+
+	<Joint name="L_Gluceus" />
+	<Joint name="L_Lat_1" />
+	<Joint name="L_Lat_2" />
+	<Joint name="L_Lat_3" />
+	<Joint name="L_Lat_4" />
+	<Joint name="R_Gluceus" />
+	<Joint name="R_Lat_1" />
+	<Joint name="R_Lat_2" />
+	<Joint name="R_Lat_3" />
+	<Joint name="R_Lat_4" />
+  </JointList>
+
+</ParaGroup>

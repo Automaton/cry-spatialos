@@ -1,0 +1,22 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TravelSlope" min="-0.5"  max="+0.5"  scale="1.4" cells="5"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_walkDown_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_walkUp_rifle_fwd_slow_3p_01" />
+  </ExampleList>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed" />
+  </AdditionalExtraction>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+</ParaGroup>

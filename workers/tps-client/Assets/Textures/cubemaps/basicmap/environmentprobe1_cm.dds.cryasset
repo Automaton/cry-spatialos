@@ -1,0 +1,12 @@
+<cryasset>
+ <AssetMetadata version="0" type="Texture" guid="99af0ec6-3925-5b29-2367-994a5608f0f7" source="environmentprobe1_cm.tif">
+  <Files>
+   <File path="environmentprobe1_cm.dds"/>
+  </Files>
+  <Details>
+   <Detail name="width">1536</Detail>
+   <Detail name="height">256</Detail>
+   <Detail name="mipCount">7</Detail>
+  </Details>
+ </AssetMetadata>
+</cryasset>

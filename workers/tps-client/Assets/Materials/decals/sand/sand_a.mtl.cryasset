@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="ecd4dbaa-167f-d6c1-f454-2b570c576bd4">
+ <Files>
+  <File path="sand_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/sand_a_diff.dds</Path>
+  <Path>textures/terrain/detail/sand_a_ddna.dds</Path>
+  <Path>textures/terrain/detail/sand_a_displ.dds</Path>
+  <Path>textures/generic/blend_masks/decal_mask_a.dds</Path>
+ </Dependencies>
+</AssetMetadata>

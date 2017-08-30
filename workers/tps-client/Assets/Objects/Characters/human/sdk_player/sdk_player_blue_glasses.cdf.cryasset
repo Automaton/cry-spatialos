@@ -1,0 +1,18 @@
+<AssetMetadata version="0" type="Character" guid="f4a6fb8e-97b1-b3f5-0da2-eb33674523d0">
+ <Files>
+  <File path="sdk_player_blue_glasses.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>objects/characters/human/generic/skeleton_player_generic.chr</Path>
+  <Path>objects/characters/human/generic/skeleton_male_generic</Path>
+  <Path>objects/characters/human/attachments/glasses/glasses_helvetica.cgf</Path>
+  <Path>objects/characters/human/sdk_player/shoes.skin</Path>
+  <Path>objects/characters/human/sdk_player/jeans.skin</Path>
+  <Path>objects/characters/human/sdk_player/arm_hands.skin</Path>
+  <Path>objects/characters/human/sdk_player/head_a.skin</Path>
+  <Path>Objects/characters/human/sdk_player/head_a</Path>
+  <Path>objects/characters/human/sdk_player/jacket.skin</Path>
+  <Path>Objects/characters/human/sdk_player/sdk_player_blue</Path>
+ </Dependencies>
+</AssetMetadata>

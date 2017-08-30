@@ -1,0 +1,50 @@
+<ATLConfig atl_name="g_atl_default_controls" atl_version="1">
+ <AudioTriggers>
+  <ATLTrigger atl_name="do_nothing">
+   <SDLMixerEvent sdl_name="do_nothing.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" loop_count="1"/>
+   <FmodEvent fmod_name="do_nothing"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="get_focus">
+   <SDLMixerEvent sdl_name="do_nothing.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" loop_count="1"/>
+   <WwiseEvent wwise_name="Set_g_event_unmute_all"/>
+   <FmodEvent fmod_name="do_nothing"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="lose_focus">
+   <SDLMixerEvent sdl_name="do_nothing.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" loop_count="1"/>
+   <WwiseEvent wwise_name="Set_g_event_mute_all"/>
+   <FmodEvent fmod_name="do_nothing"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="mute_all">
+   <SDLMixerEvent sdl_name="do_nothing.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" loop_count="1"/>
+   <WwiseEvent wwise_name="Set_g_event_mute_all"/>
+   <FmodEvent fmod_name="do_nothing"/>
+  </ATLTrigger>
+  <ATLTrigger atl_name="unmute_all">
+   <SDLMixerEvent sdl_name="do_nothing.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" loop_count="1"/>
+   <WwiseEvent wwise_name="Set_g_event_unmute_all"/>
+   <FmodEvent fmod_name="do_nothing"/>
+  </ATLTrigger>
+ </AudioTriggers>
+ <AudioSwitches>
+  <ATLSwitch atl_name="ObstrOcclCalcType">
+   <ATLSwitchState atl_name="Ignore">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="ignore"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="MultiRay">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="multi_ray"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+   <ATLSwitchState atl_name="SingleRay">
+    <ATLSwitchRequest atl_name="ObstructionOcclusionCalculationType">
+     <ATLValue atl_name="single_ray"/>
+    </ATLSwitchRequest>
+   </ATLSwitchState>
+  </ATLSwitch>
+ </AudioSwitches>
+ <EditorData>
+  <Folders />
+ </EditorData>
+</ATLConfig>

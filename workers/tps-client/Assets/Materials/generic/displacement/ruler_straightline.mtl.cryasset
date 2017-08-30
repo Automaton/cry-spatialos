@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="81035718-732f-80b5-b0f0-092ce0300238">
+ <Files>
+  <File path="ruler_straightline.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/ruler_straightline_ddn.dds</Path>
+  <Path>textures/generic/displacement/ruler_straightline_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

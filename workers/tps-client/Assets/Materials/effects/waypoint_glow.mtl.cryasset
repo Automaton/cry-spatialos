@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="4a44a26a-dd9e-7cea-f3c8-e030507804ed">
+ <Files>
+  <File path="waypoint_glow.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/glow/glow.dds</Path>
+ </Dependencies>
+</AssetMetadata>

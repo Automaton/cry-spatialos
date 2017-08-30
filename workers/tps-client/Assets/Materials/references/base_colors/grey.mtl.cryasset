@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="56c76e8e-121f-49e8-55a9-0b2f3e04999d">
+ <Files>
+  <File path="grey.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/base_colors/grey_128_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

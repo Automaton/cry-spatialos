@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="6b1f07f6-4c94-1731-c660-315967ec3b1f">
+ <Files>
+  <File path="matref_grey_min.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/white.dds</Path>
+ </Dependencies>
+</AssetMetadata>

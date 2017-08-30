@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="f76f0f02-ab9b-8246-fb6e-a6b2671c72a6">
+ <Files>
+  <File path="asphalt_b.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/asphalt_b_diff.dds</Path>
+  <Path>textures/roads/asphalt_b_ddna.dds</Path>
+  <Path>textures/detail_bumpmaps/concrete/detail_concrete_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

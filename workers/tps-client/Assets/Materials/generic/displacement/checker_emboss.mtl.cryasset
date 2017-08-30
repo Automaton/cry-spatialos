@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="47ef593e-bfe9-a391-d84c-65dc01f1b1f2">
+ <Files>
+  <File path="checker_emboss.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/checker_emboss_ddn.dds</Path>
+  <Path>textures/generic/displacement/checker_emboss_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

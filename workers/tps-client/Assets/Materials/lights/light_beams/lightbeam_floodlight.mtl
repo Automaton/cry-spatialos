@@ -1,0 +1,4 @@
+<Material Diffuse="1,1,1" Emissive="0,0,0" GenMask="1" MtlFlags="2048" Opacity="1" Shader="Lightbeam.LightBeam" Shininess="10" Specular="0,0,0" SurfaceType="" >
+ <Textures />
+ <PublicParams NoiseScaleX="0.050000001" NoiseScaleY="0.050000001" NoiseScaleZ="0.1" NoiseSpeedX="0.1" NoiseSpeedY="0.15000001" NoiseSpeedZ="0.050000001" />
+</Material>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="bc1f25f4-cb98-e987-b6b0-10c5ab769bc5">
+ <Files>
+  <File path="ground_muddy_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pjutM_diff.dds</Path>
+  <Path>textures/terrain/pjutM_ddna.dds</Path>
+  <Path>textures/terrain/pjutM_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

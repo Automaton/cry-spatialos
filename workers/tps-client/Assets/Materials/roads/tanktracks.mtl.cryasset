@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="89c0620f-09c3-ce27-009a-a16d15880e74">
+ <Files>
+  <File path="tanktracks.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/tanktracks_diff.dds</Path>
+  <Path>textures/roads/tanktracks_ddna.dds</Path>
+  <Path>textures/roads/tanktracks_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

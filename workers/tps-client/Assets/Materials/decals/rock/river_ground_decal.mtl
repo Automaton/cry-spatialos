@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="880" StringGenMask="%BUMP_MAP%DECAL" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.52099562,0.52099562,0.52099562" Specular="0.0097212177,0.0097212177,0.0097212177" Emissive="0,0,0" Shininess="213" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="Textures/decals/rock/river_ground_decal_diff.tif"/>
+  <Texture Map="Bumpmap" File="Textures/decals/rock/river_ground_ddna.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000881" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0.042311415,0.042311415,0.042311415" Emissive="0,0,0" Shininess="255" Opacity="0.99000001" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/metal/metal_tin.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/metal/metal_tin_ddna.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

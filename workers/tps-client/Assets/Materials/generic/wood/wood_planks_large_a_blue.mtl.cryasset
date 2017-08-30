@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="24c9a761-808b-822e-aedb-79f4eaecae47">
+ <Files>
+  <File path="wood_planks_large_a_blue.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_planks_lrg_a_blue_diff.dds</Path>
+  <Path>textures/generic/wood/wood_planks_lrg_a_blue_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

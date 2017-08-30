@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="78f7e6b8-e5e5-b9b9-758f-dfd1a418e3a6">
+ <Files>
+  <File path="trim_brushedmetal_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/trim_brushedmetal_01.dds</Path>
+  <Path>textures/generic/metal/trim_brushedmetal_01_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,46 @@
+{
+    "console_variables": [
+        {
+            "name": "ca_useIMG_CAF",
+            "value": "0"
+        },
+        {
+            "name": "sys_target_platforms",
+            "value": "pc,ps4,xboxone,linux"
+        }
+    ],
+    "content": {
+        "assets": [
+            "Assets"
+        ],
+        "code": [
+            "Code/Game"
+        ]
+    },
+    "info": {
+        "name": "Third Person Shooter Game Template"
+    },
+    "require": {
+        "engine": "engine-5.4",
+        "plugins": [
+            {
+                "path": "CryDefaultEntities",
+                "type": "EPluginType::Native"
+            },
+            {
+                "path": "CrySensorSystem",
+                "type": "EPluginType::Native"
+            },
+            {
+                "path": "CryPerceptionSystem",
+                "type": "EPluginType::Native"
+            },
+            {
+                "path": "bin/win_x64/Game.dll",
+                "type": "EPluginType::Native"
+            }
+        ]
+    },
+    "type": "",
+    "version": 1
+}

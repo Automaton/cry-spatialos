@@ -1,0 +1,7 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="400" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.27889431,0.27889431,0.27889431" Specular="0,0,0" Emissive="0,0,0" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/smoke/smoke_test_diff_excl30.tif"/>
+  <Texture Map="Bumpmap" File="textures/sprites/smoke/smoke_test_ddn.tif"/>
+ </Textures>
+ <PublicParams SoftParticlesScale="1" GlobalIlluminationAmount="1"/>
+</Material>

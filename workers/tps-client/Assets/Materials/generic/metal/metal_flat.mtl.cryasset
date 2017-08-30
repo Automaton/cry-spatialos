@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="ed6a82a5-358b-337b-4499-567c6f5c6df7">
+ <Files>
+  <File path="metal_flat.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_flat_diff.dds</Path>
+  <Path>textures/generic/metal/metal_flat_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_flat_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

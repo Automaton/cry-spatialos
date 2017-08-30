@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="fb111156-21fc-24a8-7461-787b3ffef895">
+ <Files>
+  <File path="ground_dig.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/ground_dig_decal.dds</Path>
+  <Path>textures/decals/dirt/ground_dig_decal_ddna.dds</Path>
+  <Path>textures/decals/dirt/ground_dig_decal_displ.dds</Path>
+  <Path>textures/detail_bumpmaps/mud/mud_rough_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

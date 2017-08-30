@@ -1,0 +1,6 @@
+<Material MtlFlags="655360" Shader="Illum" GenMask="80000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.39607847,0.039215688,0.039215688" Specular="0.047775757,0.047775757,0.047775757" Emissive="0,0,0" Shininess="180" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/paint/jetblast.tif" Filter="6"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

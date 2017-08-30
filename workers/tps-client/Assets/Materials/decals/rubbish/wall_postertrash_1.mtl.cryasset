@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="6e5a7dbb-6f03-4700-e150-85eaaad46ca8">
+ <Files>
+  <File path="wall_postertrash_1.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/rubbish/wall_postertrash_1.dds</Path>
+ </Dependencies>
+</AssetMetadata>

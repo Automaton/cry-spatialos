@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="21A400000" StringGenMask="%NORMAL_MAP%OFFSET_BUMP_MAPPING%PARALLAX_OCCLUSION_MAPPING%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_snow" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="133" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="engineassets/textures/white.dds">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.40000001" TileV="0.40000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/SnowPath_ddna.tif"/>
+  <Texture Map="Specular" File="textures/terrain/SnowTexture_spec.tif"/>
+  <Texture Map="Heightmap" File="textures/terrain/SnowPath_height.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="3" DetailTextureStrength="0.5" PomDisplacement="0.050000001" SelfShadowStrength="5" ObmDisplacement="0.025" HeightBias="1" BlendFactor="4"/>
+</Material>

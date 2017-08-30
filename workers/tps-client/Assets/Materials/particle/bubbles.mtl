@@ -1,0 +1,8 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="10" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="1,1,1" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/water/bubbles_a.tif"/>
+  <Texture Map="Specular" File="textures/defaults/perlinnoise2d.dds"/>
+  <Texture Map="Custom" File="textures/sprites/water/refraction_b_ddn.tif"/>
+ </Textures>
+ <PublicParams PerturbationScale="3.5" PerturbationStrength="0.0099999998" AnimSpeed="0.63" SoftParticlesScale="1" GlobalIlluminationAmount="1" FresnelScale="1" FresnelBias="1"/>
+</Material>

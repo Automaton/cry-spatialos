@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="68c982f4-d5b8-b30c-9d38-78381a34e194">
+ <Files>
+  <File path="cable_trash.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/rubbish/cable_trash.dds</Path>
+  <Path>textures/decals/rubbish/cable_trash_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

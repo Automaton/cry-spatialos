@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="59a3d5d9-d6ce-8f9a-6874-8d939204640a">
+ <Files>
+  <File path="brick_wall_red_rotten.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/brick/brick_wall_red_rotten_diff.dds</Path>
+  <Path>textures/generic/brick/brick_wall_red_rotten_ddna.dds</Path>
+  <Path>textures/generic/brick/brick_wall_red_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="6e0308e1-e5c2-c122-162d-59957df99c27">
+ <Files>
+  <File path="baseclouds.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/clouds/cumulus_01.dds</Path>
+ </Dependencies>
+</AssetMetadata>

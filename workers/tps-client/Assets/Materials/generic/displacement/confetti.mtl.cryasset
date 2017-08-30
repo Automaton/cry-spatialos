@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="bf01ec4a-d199-b2e8-b48d-e1b07a367dfe">
+ <Files>
+  <File path="confetti.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/confetti_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

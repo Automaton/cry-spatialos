@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.21586053,0.21586053,0.21586053" Specular="0.026241222,0.026241222,0.026241222" Emissive="0,0,0" Shininess="120" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/paint/noparking.tif" Filter="5"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

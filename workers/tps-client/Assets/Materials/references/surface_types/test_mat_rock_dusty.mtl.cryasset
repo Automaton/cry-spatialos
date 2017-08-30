@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="e71b2602-c5db-1b94-36c0-bc4d06fb43f4">
+ <Files>
+  <File path="test_mat_rock_dusty.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/rock_dusty_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

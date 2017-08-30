@@ -1,0 +1,306 @@
+baseTemplate(name, spatialOsComponentName, spatialOsHeaderName, schematycSignals, constructorFields, schematycReg, methods, fields, additionalIncludes, initialiseBody, componentGuid, upperName, reflectFields, updateFields, writeComponentFields) ::= <<
+#pragma once
+
+#include \<improbable/worker.h>
+#include \<CrySchematyc/CoreAPI.h>
+#include \<<spatialOsHeaderName>\>
+
+#include "SpatialOs/CallbackList.h"
+#include "SpatialOs/SpatialOsComponent.h"
+#include "SpatialOs/SpatialOs.h"
+#include "Generated/Types.h"
+<additionalIncludes>
+
+<schematycSignals>
+class <name>: public ISpatialOsComponent\<<spatialOsComponentName>\>
+{
+  public:
+      <name>() <constructorFields> {}
+      virtual ~<name>() {}
+
+      void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
+      {
+        RegisterDefaultCallbacks();
+        <initialiseBody>
+      }
+
+      static void ReflectType(Schematyc::CTypeDesc\<<name>\>& desc) {
+        desc.SetGUID("<componentGuid>"_cry_guid);
+        desc.SetLabel("<upperName>");
+        desc.SetEditorCategory("SpatialOS");
+        <reflectFields>
+      }
+
+      void ApplyComponentUpdate(const Component::Update& update) override
+      {
+        <updateFields>
+        if (!IsComponentReady())
+        {
+            m_isComponentReady = true;
+            m_componentReadyCallbacks.Update();
+        }
+      }
+
+      void WriteComponent(worker::Entity& entity, worker::Map\<std::uint32_t, improbable::WorkerRequirementSet>& writeAcl) override
+      {
+        entity.Add\<Component>(Component::Data(<writeComponentFields>));
+        writeAcl.emplace(Component::ComponentId, m_spatialOs->GetSnapshotRequirementSet());
+      }
+
+      <methods>
+
+  private:
+      <fields>
+};
+
+<schematycReg>
+>>
+
+callbackFunctionTemplate(callbackName, types, fieldName) ::= <<
+size_t Add<callbackName>Callback(std::function\<void(<types>)> cb) { return <fieldName>.Add(cb); }
+bool Remove<callbackName>Callback(size_t key) { return <fieldName>.Remove(key); }
+
+>>
+
+callbackFieldTemplate(callbackName, types) ::= <<
+CCallbackList\<size_t, <types>\> <callbackName>;
+>>
+
+fieldTemplate(name, type) ::= <<
+<type> <name>;
+>>
+
+getterTemplate(name, fieldName, type) ::= <<
+<type> Get<name>() const { return <fieldName>; }
+
+>>
+
+setterTemplate(name, type, fieldName) ::= <<
+void Update<name>(<type> value)
+{
+    Component::Update update;
+    update.set_<fieldName>(value);
+    m_connection->SendComponentUpdate\<Component>(GetSpatialOsEntityId(), update);
+}
+
+>>
+
+signalStructTemplate(name, field, type) ::= <<
+struct S<name>UpdatedSignal {
+    S<name>UpdatedSignal() = default;
+    S<name>UpdatedSignal(<type> <field>) : m_<field>(<field>) {}
+    <type> m_<field>;
+};
+
+>>
+
+
+signalReflectType(name, field, type, guid, id, defaultVal) ::= <<
+static inline void ReflectType(Schematyc::CTypeDesc\<S<name>UpdatedSignal>& desc)
+{
+    desc.SetGUID("<guid>"_cry_guid);
+    desc.SetLabel("On<name>Changed");
+    desc.AddMember(&S<name>UpdatedSignal::m_<field>, <id>, "<name>", "<name>", "", <defaultVal>);
+}
+
+>>
+
+
+eventSignalStruct(name, field, type) ::= <<
+struct S<name>EventSignal {
+    S<name>EventSignal() = default;
+    S<name>EventSignal(<type> <field>) : m_<field>(<field>) {}
+    <type> m_<field>;
+};
+
+>>
+
+
+eventSignalReflect(name, field, type, guid, id, defaultVal) ::= <<
+static inline void ReflectType(Schematyc::CTypeDesc\<S<name>EventSignal>& desc)
+{
+    desc.SetGUID("<guid>"_cry_guid);
+    desc.SetLabel("On<name>Event");
+    desc.AddMember(&S<name>EventSignal::m_<field>, <id>, "<name>", "<name>", "", <defaultVal>);
+}
+
+>>
+
+
+signalCommandResponseStructTemplate(name, field, type) ::= <<
+struct S<name>ResponseSignal {
+    S<name>ResponseSignal() = default;
+    S<name>ResponseSignal(<type> <field>, uint32_t requestId) : m_<field>(<field>), m_requestId(requestId) {}
+    <type> m_<field>;
+    uint32_t m_requestId;
+};
+
+>>
+
+signalCommandResponseReflectType(name, field, type, guid, id, defaultVal) ::= <<
+static inline void ReflectType(Schematyc::CTypeDesc\<S<name>ResponseSignal>& desc)
+{
+    desc.SetGUID("<guid>"_cry_guid);
+    desc.SetLabel("On<name>Response");
+    desc.AddMember(&S<name>ResponseSignal::m_<field>, <id>, "Response", "Response", "", <defaultVal>);
+    desc.AddMember(&S<name>ResponseSignal::m_requestId, 'rid', "RequestId", "RequestId", "", 0);
+}
+
+>>
+
+signalCommandRequestStructTemplate(name, field, type) ::= <<
+struct S<name>RequestSignal {
+    S<name>RequestSignal() = default;
+    S<name>RequestSignal(<type> <field>, uint32_t requestId) : m_<field>(<field>), m_requestId(requestId) {}
+    <type> m_<field>;
+    uint32_t m_requestId;
+};
+
+>>
+
+signalCommandRequestReflectType(name, field, type, guid, id, defaultVal) ::= <<
+static inline void ReflectType(Schematyc::CTypeDesc\<S<name>RequestSignal>& desc)
+{
+    desc.SetGUID("<guid>"_cry_guid);
+    desc.SetLabel("On<name>Request");
+    desc.AddMember(&S<name>RequestSignal::m_<field>, <id>, "Request", "Request", "", <defaultVal>);
+    desc.AddMember(&S<name>RequestSignal::m_requestId, 'rid', "RequestId", "RequestId", "", 0);
+}
+
+>>
+
+sendCommandRequestTemplate(name, type, componentClass) ::= <<
+uint32_t Send<name>Request(const <type>& request) const
+{
+    return m_connection->SendCommandRequest\<<componentClass>\>(GetSpatialOsEntityId(), request, 3000).Id;
+}
+
+>>
+
+sendCommandResponseTemplate(name, type, componentClass) ::= <<
+void Send<name>Response(const <type>& resp, uint32_t requestId) const
+{
+    m_connection->SendCommandResponse\<<componentClass>\>(worker::RequestId\<worker::IncomingCommandRequest\<<componentClass>\>>(requestId), resp);
+}
+
+>>
+
+receiveCommandResponse(name, fieldName, type, signalName) ::= <<
+void On<name>Response(<type> response, uint32_t requestId)
+{
+    <fieldName>.Update(response, requestId);
+    if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
+    {
+    	pObject->ProcessSignal(S<signalName>ResponseSignal(response, requestId));
+    }
+}
+
+>>
+
+receiveCommandRequest(name, fieldName, type, signalName) ::= <<
+void On<name>Request(<type> request, uint32_t requestId)
+{
+    <fieldName>.Update(request, requestId);
+
+    if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
+    {
+     	pObject->ProcessSignal(S<signalName>RequestSignal(request, requestId));
+    }
+}
+
+>>
+
+reflectField(clazzName, name, defaultVal, num, upperName) ::= <<
+desc.AddMember(&<clazzName>::<name>, <num>, "<upperName>", "<upperName>", "", <defaultVal>);
+>>
+
+updateField(spatialFieldName, fieldName, signalName) ::= <<
+if (!update.<spatialFieldName>().empty())
+{
+    <fieldName> = *update.<spatialFieldName>();
+    <fieldName>_callbacks.Update(<fieldName>);
+	if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
+	{
+		pObject->ProcessSignal(S<signalName>UpdatedSignal(<fieldName>));
+	}
+}
+>>
+
+updateEvent(spatialEventName, fieldName, signalName) ::= <<
+if (!update.<spatialEventName>().empty())
+{
+    auto& list = update.<spatialEventName>();
+    for (auto& <spatialEventName> : list)
+    {
+        <fieldName>.Update(<spatialEventName>);
+        if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
+        {
+        	pObject->ProcessSignal(S<signalName>EventSignal(<spatialEventName>));
+        }
+    }
+}
+>>
+
+
+addCommandCallback(requestType, responseType, requestName, responseName) ::= <<
+m_callbacks->Add(m_view->OnCommandResponse\<<responseType>\>([this] (worker::CommandResponseOp\<<responseType>\> op)
+{
+    if (GetSpatialOsEntityId() == op.EntityId && op.StatusCode == worker::StatusCode::kSuccess) <responseName>(*op.Response, op.RequestId.Id);
+}));
+m_callbacks->Add(m_view->OnCommandRequest\<<requestType>\>([this] (worker::CommandRequestOp\<<requestType>\> op)
+{
+    if (GetSpatialOsEntityId() == op.EntityId) <requestName>(op.Request, op.RequestId.Id);
+}));
+>>
+
+schematycRegistration(className, schematycFuncReg, schematycSignalReg) ::= <<
+namespace {
+    static void Register<className>(Schematyc::IEnvRegistrar& registrar)
+    {
+    	Schematyc::CEnvRegistrationScope scope = registrar.Scope(IEntity::GetEntityScopeGUID());
+        Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(<className>));
+        <schematycFuncReg>
+        <schematycSignalReg>
+    }
+    CRY_STATIC_AUTO_REGISTER_FUNCTION(&Register<className>);
+}
+>>
+
+schematycFunc(className, funcName, guid, input) ::= <<
+{
+    auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&<className>::<funcName>, "<guid>"_cry_guid, "<funcName>");
+    pFunction->BindInput(1, 1, "<input>");
+    componentScope.Register(pFunction);
+}
+>>
+
+schematycFuncOut(className, funcName, guid, input, output) ::= <<
+{
+    auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&<className>::<funcName>, "<guid>"_cry_guid, "<funcName>");
+    pFunction->BindInput(1, 1, "<input>");
+    pFunction->BindOutput(0, 0, "<output>");
+    componentScope.Register(pFunction);
+}
+>>
+
+schematycFuncIn(className, funcName, guid, input, input2) ::= <<
+{
+    auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&<className>::<funcName>, "<guid>"_cry_guid, "<funcName>");
+    pFunction->BindInput(1, 1, "<input>");
+    pFunction->BindInput(2, 2, "<input2>");
+    componentScope.Register(pFunction);
+}
+>>
+
+schematycSignal(signalName) ::= <<
+componentScope.Register(SCHEMATYC_MAKE_ENV_SIGNAL(<signalName>));
+>>
+
+reflectTypeCommand(type, guid, name, fields) ::= <<
+static inline void ReflectType(Schematyc::CTypeDesc\<<type>\>& desc)
+{
+	desc.SetGUID("<guid>"_cry_guid);
+	desc.SetLabel("<name>");
+    <fields>
+}
+>>

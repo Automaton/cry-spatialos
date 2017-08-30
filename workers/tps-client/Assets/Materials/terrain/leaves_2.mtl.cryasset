@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="172bff2b-2c4a-0822-0aa6-e73dc523da15">
+ <Files>
+  <File path="leaves_2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/leaves_2_diff.dds</Path>
+  <Path>textures/terrain/detail/leaves_2_ddna.dds</Path>
+  <Path>textures/terrain/detail/leaves_2_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

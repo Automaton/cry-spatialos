@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="8ac525da-e63a-6982-24fa-37ab7ae4c0af">
+ <Files>
+  <File path="mud_puddle_1.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/mud/mud_puddle_1.dds</Path>
+  <Path>textures/decals/mud/mud_puddle_1_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

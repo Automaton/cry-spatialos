@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="26f536e3-aa47-a843-589c-67eab73cc223">
+ <Files>
+  <File path="concrete.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/references/concrete.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="bf5b4e5d-d575-b685-2649-7248fdcd64c3">
+ <Files>
+  <File path="floor_tile_dirty.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/floor_tile_dirty_diff.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_ddna.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

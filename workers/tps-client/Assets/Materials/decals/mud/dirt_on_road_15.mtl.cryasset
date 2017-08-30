@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="6d84c9f2-7a6d-7607-e369-031f3ae67c6b">
+ <Files>
+  <File path="dirt_on_road_15.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/mud/dirt_on_road_15.dds</Path>
+  <Path>textures/decals/mud/dirt_on_road_15_ddna.dds</Path>
+  <Path>textures/decals/mud/dirt_on_road_15_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

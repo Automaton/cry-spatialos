@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="b09bbc28-f5c8-d15e-2cd1-d500814c7dec">
+ <Files>
+  <File path="airfield_rubber.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/airfield_rubber_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

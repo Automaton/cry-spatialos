@@ -1,0 +1,8 @@
+<Material MtlFlags="2623492" Shader="Particles" GenMask="100" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0.40197781,0.40197781,0.40197781" Emissive="0,0,0" Shininess="255" Opacity="0.1" LayerAct="0">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/water/water_splash.tif"/>
+  <Texture Map="Bumpmap" File="textures/sprites/water/water_splash_ddn.tif"/>
+  <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+ </Textures>
+ <PublicParams SoftParticlesScale="1" GlobalIlluminationAmount="0.0099999998" FresnelScale="1" FresnelBias="1"/>
+</Material>

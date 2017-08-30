@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="e52e08fe-046c-e2e2-e726-2923d4c47fd2">
+ <Files>
+  <File path="g_atl_default_controls.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">ATLConfig</Detail>
+ </Details>
+</AssetMetadata>

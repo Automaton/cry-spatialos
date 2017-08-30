@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e174bef6-9590-967e-e909-e59173e88956">
+ <Files>
+  <File path="metal_beams_rusty.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_beams_rusty_diff.dds</Path>
+  <Path>textures/generic/metal/metal_beams_rusty_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_beams_rusty_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

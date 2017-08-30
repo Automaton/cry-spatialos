@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="81000021" StringGenMask="%ALLOW_SILHOUETTE_POM%BLENDLAYER%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.026241222,0.026241222,0.026241222" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/concrete/concrete_wall_b_dirty_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/concrete/concrete_wall_b_dirty_ddna.tif"/>
+  <Texture Map="Custom" File="textures/generic/moss/moss_green_a_diff.tif"/>
+  <Texture Map="[1] Custom" File="textures/generic/moss/moss_green_a_ddna.tif"/>
+  <Texture Map="Opacity" File="textures/generic/concrete/concrete_wall_b_mask.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="1" BlendLayer2Tiling="1" SSSIndex="0" BlendMaskTiling="1" BlendFactor="5" BlendLayer2Specular="0.029999999" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d5afcaae-f7cd-763e-5a92-9e97b98a9cb3">
+ <Files>
+  <File path="wood_rough_coastal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_rough_coastal_diff.dds</Path>
+  <Path>textures/generic/wood/wood_rough_coastal_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

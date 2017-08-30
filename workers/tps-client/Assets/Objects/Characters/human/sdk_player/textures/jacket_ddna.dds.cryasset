@@ -1,0 +1,25 @@
+<AssetMetadata version="0" type="Texture" guid="25126446-b632-f52b-db96-7ada2a4def5a">
+ <Files>
+  <File path="jacket_ddna.dds"/>
+  <File path="jacket_ddna.dds.a"/>
+  <File path="jacket_ddna.dds.1"/>
+  <File path="jacket_ddna.dds.1a"/>
+  <File path="jacket_ddna.dds.2"/>
+  <File path="jacket_ddna.dds.2a"/>
+  <File path="jacket_ddna.dds.3"/>
+  <File path="jacket_ddna.dds.3a"/>
+  <File path="jacket_ddna.dds.4"/>
+  <File path="jacket_ddna.dds.4a"/>
+  <File path="jacket_ddna.dds.5"/>
+  <File path="jacket_ddna.dds.5a"/>
+  <File path="jacket_ddna.dds.6"/>
+  <File path="jacket_ddna.dds.6a"/>
+  <File path="jacket_ddna.dds.7"/>
+  <File path="jacket_ddna.dds.7a"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

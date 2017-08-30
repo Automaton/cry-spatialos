@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="7d465365-bb68-3f31-dbb0-0afaf11dbc9b">
+ <Files>
+  <File path="ground_stones_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pkgkC2_diff.dds</Path>
+  <Path>textures/terrain/pkgkC2_ddna.dds</Path>
+  <Path>textures/terrain/pkgkC2_spec.dds</Path>
+  <Path>textures/terrain/pkgkC2_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

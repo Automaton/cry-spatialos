@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="eed3ee43-c321-a7c8-91d9-f33253b90694">
+ <Files>
+  <File path="sand_small_stones.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/sand_small_stones_diff.dds</Path>
+  <Path>textures/terrain/detail/sand_small_stones_ddna.dds</Path>
+  <Path>textures/terrain/detail/sand_small_stones_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

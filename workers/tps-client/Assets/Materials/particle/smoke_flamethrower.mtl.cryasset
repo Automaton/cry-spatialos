@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="814e54b3-d1e7-5d37-53a4-a7db340a3260">
+ <Files>
+  <File path="smoke_flamethrower.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/smoke/smoke_test_diff_excl30.dds</Path>
+  <Path>textures/sprites/smoke/smoke_test_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

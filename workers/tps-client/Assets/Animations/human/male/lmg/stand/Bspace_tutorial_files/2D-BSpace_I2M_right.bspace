@@ -1,0 +1,42 @@
+<ParaGroup>
+
+  <VEGPARAMS Idle2Move="1" />
+
+  <Dimensions>
+    <Param name="MoveSpeed" min="+0.50" max="+6.00" cells="9" JointName="Bip01 Root" skey="0.9" ekey="1.0"/>
+    <Param name="TurnAngle" min="-3.15" max="+0.00" cells="9" JointName="Bip01 Root" skey="0.0" ekey="1.0" locked="1" deltaextraction="1"/>
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="TravelAngle" />
+  </AdditionalExtraction>
+
+
+  <ExampleList>
+    <Example AName="stand_tac_walkStart_rifle_rev_slow_rf_3p_01" PlaybackScale="0.15" />
+    <Example AName="stand_tac_walkStart_rifle_rgt_slow_rf_3p_01" PlaybackScale="0.15" />
+    <Example AName="stand_tac_walkStart_rifle_fwd_slow_rf_3p_01" PlaybackScale="0.15" />
+
+    <Example AName="stand_tac_walkStart_rifle_rev_slow_rf_3p_01" PlaybackScale="1.00" />
+    <Example AName="stand_tac_walkStart_rifle_rgt_slow_rf_3p_01" PlaybackScale="1.00" />
+    <Example AName="stand_tac_walkStart_rifle_fwd_slow_rf_3p_01" PlaybackScale="1.00" />
+
+    <Example AName="stand_tac_runStart_rifle_rev_fast_rf_3p_01"  PlaybackScale="1.00" />
+    <Example AName="stand_tac_runStart_rifle_rgt_fast_rf_3p_01"  PlaybackScale="1.00" />
+    <Example AName="stand_tac_runStart_rifle_fwd_fast_rf_3p_01"  PlaybackScale="1.00" />
+
+    <Example AName="stand_tac_runStart_rifle_rev_fast_rf_3p_01"  PlaybackScale="1.60" />
+    <Example AName="stand_tac_runStart_rifle_rgt_fast_rf_3p_01"  PlaybackScale="1.30" />
+    <Example AName="stand_tac_runStart_rifle_fwd_fast_rf_3p_01"  PlaybackScale="1.20" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="1" p1="4"  p2="5"  p3="2" />
+    <Face p0="0" p1="3"  p2="4"  p3="1" />
+    <Face p0="4" p1="7"  p2="8"  p3="5" />
+    <Face p0="3" p1="6"  p2="7"  p3="4" />
+    <Face p0="7" p1="10" p2="11"  p3="8" />
+    <Face p0="6" p1="9"  p2="10"  p3="7" />
+  </Blendable>
+
+</ParaGroup>

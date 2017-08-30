@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d90131e7-6559-f7a5-da87-64ddc3e35276">
+ <Files>
+  <File path="wall_wood_3.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wall_wood_03_diff.dds</Path>
+  <Path>textures/generic/wood/wall_wood_03_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,9 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="200" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0.99110222,0.14995982,0.090841718" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="5" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/fire/fireball4.tif">
+   <TexMod TileU="10" TileV="10" RotateW="90"/>
+  </Texture>
+  <Texture Map="Detail" File="textures/sprites/fire/fireball4.tif"/>
+ </Textures>
+ <PublicParams SoftParticlesScale="1" GlobalIlluminationAmount="1" DepthFixupThreshold="0.050000001"/>
+</Material>

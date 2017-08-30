@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="0df2979e-d064-832c-14eb-42ca3c7d6130">
+ <Files>
+  <File path="ground_soil_mud_07_wet.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/peioH2_wet_diff.dds</Path>
+  <Path>textures/terrain/peioH2_wet_ddna.dds</Path>
+  <Path>textures/terrain/peioH2_wet_spec.dds</Path>
+  <Path>textures/terrain/peioH2_wet_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

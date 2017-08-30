@@ -1,0 +1,11 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="88000881" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="0.0069954107,0.0069954107,0.0069954107" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/metal/manhole_round.tif" IsTileU="0" IsTileV="0"/>
+  <Texture Map="Bumpmap" File="textures/decals/metal/manhole_round_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/decals/metal/manhole_round_displ.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/metal/metal_scratches_a_detail.tif">
+   <TexMod TileU="3" TileV="3"/>
+  </Texture>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.0049999999" DecalFalloff="1" SelfShadowStrength="3" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

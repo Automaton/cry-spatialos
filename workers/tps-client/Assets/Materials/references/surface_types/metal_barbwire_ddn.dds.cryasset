@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Texture" guid="77d0b313-c493-6438-68fd-8f402e8a4b70">
+ <Files>
+  <File path="metal_barbwire_ddn.dds"/>
+  <File path="metal_barbwire_ddn.dds.1"/>
+  <File path="metal_barbwire_ddn.dds.2"/>
+  <File path="metal_barbwire_ddn.dds.3"/>
+  <File path="metal_barbwire_ddn.dds.4"/>
+  <File path="metal_barbwire_ddn.dds.5"/>
+ </Files>
+ <Details>
+  <Detail name="width">512</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">8</Detail>
+ </Details>
+</AssetMetadata>

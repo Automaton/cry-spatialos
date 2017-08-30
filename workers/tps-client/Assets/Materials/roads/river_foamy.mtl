@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="2184000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_water" MatTemplate="" Diffuse="0.44520122,0.50288647,0.55201149" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="100" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/water/river_foamy.tif">
+   <TexMod TexMod_RotateType="3" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TexMod_URotateRate="0.098876953" TexMod_URotatePhase="0.99975586" TexMod_URotateAmplitude="0.34606934" TexMod_URotateCenter="0.30000001" TileU="2" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="1" TexMod_UOscillatorPhase="1" TexMod_UOscillatorAmplitude="-0.12" TexMod_VOscillatorRate="0.2" TexMod_VOscillatorAmplitude="0.1"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/generic/water/river_foamy_ddn.tif"/>
+  <Texture Map="Specular" File="textures/generic/water/river_foamy_spec.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

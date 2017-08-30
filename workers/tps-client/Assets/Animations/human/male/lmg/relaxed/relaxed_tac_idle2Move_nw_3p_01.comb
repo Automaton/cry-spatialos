@@ -1,0 +1,59 @@
+<CombinedBlendSpace>
+ <VEGPARAMS Idle2Move="1"/>
+ <Dimensions>
+  <Param Name="MoveSpeed" ParaScale="1"/>
+  <Param Name="TurnAngle" ParaScale="1" ChooseBlendSpace="1" Locked="1"/>
+ </Dimensions>
+ <AdditionalExtraction>
+  <Param Name="TravelAngle"/>
+ </AdditionalExtraction>
+ <BlendSpaces>
+  <BlendSpace AName="animations/human/male/lmg/relaxed/2d-bspace_i2m_relax_nw_left.bspace"/>
+  <BlendSpace AName="animations/human/male/lmg/relaxed/2d-bspace_i2m_relax_nw_right.bspace"/>
+ </BlendSpaces>
+ <JointList>
+  <Joint Name="Bip01"/>
+  <Joint Name="Bip01 Head"/>
+  <Joint Name="Bip01 L Calf"/>
+  <Joint Name="Bip01 L Clavicle"/>
+  <Joint Name="Bip01 L Foot"/>
+  <Joint Name="Bip01 L ForeTwist"/>
+  <Joint Name="Bip01 L ForeTwist1"/>
+  <Joint Name="Bip01 L ForeTwist2"/>
+  <Joint Name="Bip01 L Forearm"/>
+  <Joint Name="Bip01 L Hand"/>
+  <Joint Name="Bip01 L Thigh"/>
+  <Joint Name="Bip01 L Toe0"/>
+  <Joint Name="Bip01 L UpperArm"/>
+  <Joint Name="Bip01 LHand2Weapon_IKBlend"/>
+  <Joint Name="Bip01 LHand2Weapon_IKTarget"/>
+  <Joint Name="Bip01 Neck"/>
+  <Joint Name="Bip01 Pelvis"/>
+  <Joint Name="Bip01 R Calf"/>
+  <Joint Name="Bip01 R Clavicle"/>
+  <Joint Name="Bip01 R Foot"/>
+  <Joint Name="Bip01 R ForeTwist"/>
+  <Joint Name="Bip01 R ForeTwist1"/>
+  <Joint Name="Bip01 R ForeTwist2"/>
+  <Joint Name="Bip01 R Forearm"/>
+  <Joint Name="Bip01 R Hand"/>
+  <Joint Name="Bip01 R Thigh"/>
+  <Joint Name="Bip01 R Toe0"/>
+  <Joint Name="Bip01 R UpperArm"/>
+  <Joint Name="Bip01 Spine"/>
+  <Joint Name="Bip01 Spine1"/>
+  <Joint Name="Bip01 Spine2"/>
+  <Joint Name="Bip01 Spine3"/>
+  <Joint Name="L_Gluceus"/>
+  <Joint Name="L_Lat_1"/>
+  <Joint Name="L_Lat_2"/>
+  <Joint Name="L_Lat_3"/>
+  <Joint Name="L_Lat_4"/>
+  <Joint Name="R_Gluceus"/>
+  <Joint Name="R_Lat_1"/>
+  <Joint Name="R_Lat_2"/>
+  <Joint Name="R_Lat_3"/>
+  <Joint Name="R_Lat_4"/>
+  <Joint Name="weapon_bone"/>
+ </JointList>
+</CombinedBlendSpace>

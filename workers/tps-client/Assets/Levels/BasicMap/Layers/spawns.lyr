@@ -1,0 +1,57 @@
+<ObjectLayer>
+ <Layer Name="Spawns" FullName="Spawns" GUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="5570321c-3f83-274e-2341-e90d90d00115" Name="Entity-3" Pos="26.649307,66.256271,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="a07c444a-6481-bd58-5df5-61ff2601f70d" Name="" UserAdded="true">
+      <Transform x="1" y="1" z="1">
+       <translation>
+        <element element="0"/>
+        <element element="0"/>
+        <element element="0"/>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale />
+      </Transform>
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="584d5af7-ac42-5cc2-ef54-1800196e4cf4" Name="Entity-1" Pos="28.77882,16.700708,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="b39dd076-f6f0-db04-c692-0fe013081bf1" Name="" UserAdded="true">
+      <Transform x="1" y="1" z="1">
+       <translation>
+        <element element="0"/>
+        <element element="0"/>
+        <element element="0"/>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale />
+      </Transform>
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="c0ebbcd3-0a18-c177-3a64-17d154352da6" Name="Entity-2" Pos="13.017809,19.92807,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="b1160487-0557-ab10-f18c-f4f639824d2c" Name="" UserAdded="true">
+      <Transform x="1" y="1" z="1">
+       <translation>
+        <element element="0"/>
+        <element element="0"/>
+        <element element="0"/>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale />
+      </Transform>
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

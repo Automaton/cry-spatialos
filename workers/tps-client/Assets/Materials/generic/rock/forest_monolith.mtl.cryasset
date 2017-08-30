@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="a3c1ebc8-7042-2a51-f578-212f5dd800f0">
+ <Files>
+  <File path="forest_monolith.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/rock/forest_monolith_a_diff.dds</Path>
+  <Path>textures/generic/rock/forest_monolith_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

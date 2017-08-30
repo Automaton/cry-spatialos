@@ -1,0 +1,30 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TravelAngle" min="-3.14" max="+3.14" cells="17" />
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed"   />
+  </AdditionalExtraction>
+
+  <ExampleList>
+    <Example SetPara0="-3.147" AName="crouch_tac_walk_rifle_bwd_slow_3p_01" />
+    <Example                   AName="crouch_tac_walkCross_rifle_bRgt_slow_3p_01" />
+    <Example                   AName="crouch_tac_walkStr_rifle_rgt_slow_3p_01" />
+    <Example                   AName="crouch_tac_walk_rifle_fwd_slow_3p_01" />
+    <Example                   AName="crouch_tac_walkCross_rifle_fLft_slow_3p_01" />
+    <Example                   AName="crouch_tac_walkStr_rifle_lft_slow_3p_01" />
+    <Example SetPara0="+3.147" AName="crouch_tac_walk_rifle_bwd_slow_3p_01" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+    <Face p0="2"  p1="3" />
+    <Face p0="3"  p1="4" />
+    <Face p0="4"  p1="5" />
+    <Face p0="5"  p1="6" />
+  </Blendable>
+
+</ParaGroup>

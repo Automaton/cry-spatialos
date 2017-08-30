@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="8779816f-f50f-8a25-bcfb-b441acd16e73">
+ <Files>
+  <File path="storage_hall_corrugated_metal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/storagehall_corrugated_metal_diff.dds</Path>
+  <Path>textures/generic/metal/storagehall_corrugated_metal_ddna.dds</Path>
+  <Path>textures/generic/metal/storagehall_corrugated_metal_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

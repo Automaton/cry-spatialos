@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="9fead168-f545-efbc-2965-15e60b0279a3">
+ <Files>
+  <File path="test_mat_snow.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/snow_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

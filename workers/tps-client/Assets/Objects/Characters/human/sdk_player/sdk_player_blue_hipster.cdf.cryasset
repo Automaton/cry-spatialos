@@ -1,0 +1,20 @@
+<AssetMetadata version="0" type="Character" guid="0fdd8dc5-1a47-6baa-dc9f-6bac6c45abdb">
+ <Files>
+  <File path="sdk_player_blue_hipster.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>objects/characters/human/generic/skeleton_player_generic.chr</Path>
+  <Path>objects/characters/human/generic/skeleton_male_generic</Path>
+  <Path>objects/characters/human/attachments/glasses/glasses_helvetica.cgf</Path>
+  <Path>objects/characters/human/attachments/beanie/beanie.cgf</Path>
+  <Path>objects/characters/human/attachments/necklace/necklace.cgf</Path>
+  <Path>objects/characters/human/sdk_player/shoes.skin</Path>
+  <Path>objects/characters/human/sdk_player/jeans.skin</Path>
+  <Path>objects/characters/human/sdk_player/arm_hands.skin</Path>
+  <Path>objects/characters/human/sdk_player/head_a.skin</Path>
+  <Path>Objects/characters/human/sdk_player/head_a</Path>
+  <Path>objects/characters/human/sdk_player/jacket.skin</Path>
+  <Path>Objects/characters/human/sdk_player/sdk_player_blue</Path>
+ </Dependencies>
+</AssetMetadata>

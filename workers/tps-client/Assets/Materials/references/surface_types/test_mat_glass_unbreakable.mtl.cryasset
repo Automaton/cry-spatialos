@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="c4ebf8ab-f0b6-8d04-ca97-b3a59b4daff1">
+ <Files>
+  <File path="test_mat_glass_unbreakable.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/glass_unbreakable_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

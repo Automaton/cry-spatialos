@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="88000881" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0.046665091,0.046665091,0.046665091" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/ice/dirt_on_road_2_frost.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/ice/dirt_on_road_2_frost_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/decals/ice/dirt_on_road_2_frost_displ.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.039999999" DecalFalloff="1" SelfShadowStrength="5" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

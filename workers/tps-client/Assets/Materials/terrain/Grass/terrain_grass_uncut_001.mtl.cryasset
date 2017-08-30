@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="f13b5a77-b5f1-763b-63e8-cac290ad8d06">
+ <Files>
+  <File path="terrain_grass_uncut_001.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_diff.dds</Path>
+  <Path>Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_ddna.dds</Path>
+  <Path>Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_spec.dds</Path>
+  <Path>Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

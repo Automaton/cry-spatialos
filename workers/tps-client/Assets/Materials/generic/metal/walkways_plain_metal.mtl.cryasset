@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="54012a13-376f-2d89-e9b8-4ba8073d5978">
+ <Files>
+  <File path="walkways_plain_metal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/walkways_plain_metal_diff.dds</Path>
+  <Path>textures/generic/metal/walkways_plain_metal_ddna.dds</Path>
+  <Path>textures/generic/metal/walkways_plain_metal_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

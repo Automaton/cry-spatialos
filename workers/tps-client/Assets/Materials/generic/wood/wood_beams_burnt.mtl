@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="89000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/wood/wood_beams_burnt_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/wood/wood_beams_burnt_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/wood/wood_beams_a_displ.tif"/>
+ </Textures>
+ <PublicParams PomDisplacement="0.0099999998" SSSIndex="0" SelfShadowStrength="3" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

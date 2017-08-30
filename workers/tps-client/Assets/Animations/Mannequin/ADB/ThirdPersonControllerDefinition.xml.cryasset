@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="3bfad30c-c95a-76dc-65a9-2cadc62455f3">
+ <Files>
+  <File path="ThirdPersonControllerDefinition.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">ControllerDef</Detail>
+ </Details>
+</AssetMetadata>

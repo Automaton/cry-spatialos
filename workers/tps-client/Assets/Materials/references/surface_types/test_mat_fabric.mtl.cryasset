@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="bf06ab52-96e5-bbf8-5ba3-303068cc054c">
+ <Files>
+  <File path="test_mat_fabric.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/fabric_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,18 @@
+<AssetMetadata version="0" type="Material" guid="6893b44d-89ee-e737-1e1a-08030b9e23c2">
+ <Files>
+  <File path="floor_tile_dirty_blend.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">7</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/floor_tile_dirty_diff.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_ddna.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_displ.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_displ.dds</Path>
+  <Path>textures/generic/concrete/concrete_a3_diff.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_ddna.dds</Path>
+  <Path>textures/generic/concrete/floor_tile_dirty_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

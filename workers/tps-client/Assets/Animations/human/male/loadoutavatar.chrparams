@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<Params>
+	<AnimationList>
+		<Animation name="#filepath" path="animations\human\male"/>
+		<Comment value="-------EVENT DATABASE-------"/>
+		<Animation name="$TracksDatabase" path="animations\human\male\weapons\generic.dba"/>
+		<Comment value="-- WEAPONS"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_dsg1.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_feline.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_gauss.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_generic.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_grendel.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_jackal.chrparams"/>
+		<Animation name="$include" path="animations\human\male\cal\weapons\3p\3p_kvolt.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_ltag.chrparams"/>
+		<Animation name="$include" path="animations\human\male\cal\weapons\3p\3p_marshall.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_mike.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_mk60.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_scar.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\cal\weapons\3p\3p_scarab.chrparams"/>
+		<Animation name="$Include" path="animations\human\male\weapons\typhoon\typhoon_3p.chrparams"/>
+	</AnimationList>
+</Params>

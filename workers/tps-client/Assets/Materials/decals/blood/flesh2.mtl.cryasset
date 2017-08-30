@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d88e4843-07f0-db44-14b0-b99a5e776b99">
+ <Files>
+  <File path="flesh2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/blood/flesh2.dds</Path>
+  <Path>textures/decals/blood/flesh2_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

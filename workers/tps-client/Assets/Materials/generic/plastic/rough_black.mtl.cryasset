@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="ef0dd3bb-f5c4-281a-fb55-fbe2889d4063">
+ <Files>
+  <File path="rough_black.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/base_colors/black_diff.dds</Path>
+  <Path>textures/detail_bumpmaps/metal/metal_noisy_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

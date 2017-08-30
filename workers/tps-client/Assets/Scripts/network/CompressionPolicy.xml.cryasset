@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="0b675b39-dc41-2b5e-af15-fd2468eaa5b0">
+ <Files>
+  <File path="CompressionPolicy.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">CompressionPolicy</Detail>
+ </Details>
+</AssetMetadata>

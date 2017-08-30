@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Character" guid="6e998d55-220d-892e-f4d2-e10b68def2f1">
+ <Files>
+  <File path="firstperson.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>objects/characters/samplecharacter/skelProxy.chr</Path>
+  <Path>objects/characters/samplecharacter/motusbodymat</Path>
+  <Path>objects/characters/samplecharacter/motusBodyHeadless.skin</Path>
+  <Path>objects/characters/samplecharacter/motusBodyMAT.mtl</Path>
+  <Path>Objects/Weapons/SampleWeapon/defaultweapon.cgf</Path>
+  <Path>Objects/Weapons/SampleWeapon/defaultweapon.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

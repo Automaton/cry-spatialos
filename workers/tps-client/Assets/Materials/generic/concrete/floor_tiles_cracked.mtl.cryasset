@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="10218205-6d24-70a1-bd33-acf96a8b4eb9">
+ <Files>
+  <File path="floor_tiles_cracked.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/floor_tiles_cracked_diff.dds</Path>
+  <Path>textures/generic/concrete/floor_tiles_cracked_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

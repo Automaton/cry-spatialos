@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="SkinnedMesh" guid="97102258-6a91-ef9f-61df-29d52da79ba6">
+ <Files>
+  <File path="head_anim.skin"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">14</Detail>
+  <Detail name="triangleCount">18164</Detail>
+  <Detail name="vertexCount">10198</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+  <Detail name="bonesCount">135</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Objects/characters/human/face/mat_head_a.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

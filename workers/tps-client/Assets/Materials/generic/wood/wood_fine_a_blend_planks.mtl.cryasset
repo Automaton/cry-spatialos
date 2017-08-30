@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="6cf0ed7b-3409-31ab-266a-20a13184e73f">
+ <Files>
+  <File path="wood_fine_a_blend_planks.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_fine_a_blend_diff.dds</Path>
+  <Path>textures/generic/wood/wood_planks_dirty_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

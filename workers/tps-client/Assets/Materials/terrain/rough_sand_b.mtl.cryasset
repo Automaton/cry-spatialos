@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="a040fe85-0691-e29b-6277-2d9b36cce245">
+ <Files>
+  <File path="rough_sand_b.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/rough_sand_b_diff.dds</Path>
+  <Path>textures/terrain/detail/rough_sand_b_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

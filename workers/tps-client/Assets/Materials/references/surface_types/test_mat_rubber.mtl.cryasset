@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="230bc5d4-7afb-c83f-be9f-ee16d498c456">
+ <Files>
+  <File path="test_mat_rubber.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/rubber_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

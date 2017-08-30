@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="b7647f4c-363f-e25a-b44d-f6a4420cb39e">
+ <Files>
+  <File path="laser.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/glow/laser_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

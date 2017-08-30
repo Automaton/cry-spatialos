@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="8c5772dd-c664-1d73-a70e-db3a200df65f">
+ <Files>
+  <File path="crosswalk.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/crosswalk_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

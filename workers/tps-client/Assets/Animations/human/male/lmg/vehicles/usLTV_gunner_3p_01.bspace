@@ -1,0 +1,25 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TurnSpeed" min="-1.0" max="+1.0" cells="9"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example SetPara0="-1" AName="usLTV_gunnerAimUp_3p_01" />
+    <Example SetPara0=" 0" AName="usLTV_gunnerAimCenter_3p_01" />
+    <Example SetPara0=" 1" AName="usLTV_gunnerAimDown_3p_01" />
+  </ExampleList>
+
+  <ExamplePseudo>
+    <Pseudo p0="1" p1="0" w0="-1.5" w1="2.5" />
+    <Pseudo p0="1" p1="2" w0="-1.5" w1="2.5" />
+  </ExamplePseudo>
+
+  <Blendable>
+    <Face p0="3"  p1="0" />
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+    <Face p0="2"  p1="4" />
+  </Blendable>
+
+</ParaGroup>

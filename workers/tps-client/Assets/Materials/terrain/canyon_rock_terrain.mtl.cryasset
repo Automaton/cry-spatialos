@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="c851bcce-ddf5-b945-2027-d4b7bd262a18">
+ <Files>
+  <File path="canyon_rock_terrain.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/canyon_rock_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/canyon_rock_terrain_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

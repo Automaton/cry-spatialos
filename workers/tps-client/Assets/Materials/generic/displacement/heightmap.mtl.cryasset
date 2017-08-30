@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="0241fbe5-4df2-2368-0149-a9a349bd3e88">
+ <Files>
+  <File path="heightmap.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/heightmap_ddn.dds</Path>
+  <Path>textures/generic/displacement/heightmap_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

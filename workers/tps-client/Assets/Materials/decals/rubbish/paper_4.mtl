@@ -1,0 +1,6 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="40000000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.49950528,0.49950528,0.49950528" Specular="0,0,0" Emissive="0,0,0" Shininess="30" Opacity="0.94999999" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/rubbish/paper_4.tif"/>
+ </Textures>
+ <PublicParams GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

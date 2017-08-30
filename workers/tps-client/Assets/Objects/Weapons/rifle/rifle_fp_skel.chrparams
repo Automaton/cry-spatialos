@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Params>
+	<AnimationList>
+		<Animation name="#filepath" path="Animations\weapons\rifle\"/>
+		<Animation name="$TracksDatabase" path="Animations\weapons\rifle\rifle.dba"/>
+		<Animation name="*" path="*.caf"/>
+	</AnimationList>
+</Params>

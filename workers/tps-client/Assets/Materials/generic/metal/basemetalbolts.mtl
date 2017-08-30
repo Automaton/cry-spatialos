@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="89000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="0.029556841,0.029556841,0.029556841" Emissive="0,0,0" Opacity="1" Shininess="255" AlphaTest="0.5" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/metal/basemetalbolts_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/metal/basemetalbolts_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/metal/basemetalbolts_displ.tif"/>
+ </Textures>
+ <PublicParams PomDisplacement="0.025" SSSIndex="0" SelfShadowStrength="3" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

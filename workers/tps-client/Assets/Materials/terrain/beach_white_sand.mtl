@@ -1,0 +1,13 @@
+<Material MtlFlags="524329" Shader="Terrain.Layer" GenMask="20B000000" StringGenMask="%NORMAL_MAP%OFFSET_BUMP_MAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.034339812,0.034339812,0.034339812" Emissive="0,0,0" Opacity="1" Shininess="180" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/beach_white_sand_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/beach_white_sand_ddna.tif" Filter="5">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Heightmap" File="textures/terrain/detail/beach_white_sand_displ.tif"/>
+ </Textures>
+ <DetailDecal Opacity="128" SSAOAmount="0" topTileU="1" topTileV="1" topOffsV="0" topOffsU="0" topRotation="0" topDeformation="0" topSortOffset="0" bottomTileU="0.5" bottomTileV="0.5" bottomOffsV="0.5" bottomOffsU="0.5" bottomRotation="0" bottomDeformation="0" bottomSortOffset="0"/>
+ <PublicParams BlendFalloff="0.5" DetailTextureStrength="0.25" PomDisplacement="0.039999999" SelfShadowStrength="1.5" ObmDisplacement="0.025" HeightBias="0.5" BlendFactor="1.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="d4d8cfce-a0e5-1653-185c-d7ca7800acc2">
+ <Files>
+  <File path="mud_wet.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/mud/mud_h_diff.dds</Path>
+  <Path>textures/generic/mud/mud_h_ddna.dds</Path>
+  <Path>textures/generic/mud/mud_h_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

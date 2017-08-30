@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="2081000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/concrete/kowloon_road_clean_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.15000001" TileV="0.15000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/generic/concrete/kowloon_road_dirty_ddna.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.15000001" TileV="0.15000001"/>
+  </Texture>
+ </Textures>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="210C000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0.0091340598,0.0091340598,0.0091340598" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/roads/logpath_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/roads/logpath_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/roads/logpath_displ.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.02" DecalFalloff="1" SelfShadowStrength="5" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

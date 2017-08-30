@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e6f9eb2c-28d7-5320-9d2e-9a22dea92349">
+ <Files>
+  <File path="metal_wrought_iron.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_wrought_iron_diff.dds</Path>
+  <Path>textures/generic/metal/metal_wrought_iron_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_wrought_iron_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

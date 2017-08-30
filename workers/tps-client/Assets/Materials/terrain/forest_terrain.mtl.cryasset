@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="5038bd46-e6ad-3379-98e4-fec593c41d63">
+ <Files>
+  <File path="forest_terrain.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/forest_soil_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/forest_soil_terrain_ddna.dds</Path>
+  <Path>textures/terrain/detail/forest_soil_terrain_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

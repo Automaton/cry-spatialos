@@ -1,0 +1,27 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="BlendWeight"  min="0.0" max="1.0" cells="29" scale="3.4" />
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed"   />
+    <Param name="TravelAngle" />
+    <Param name="TurnSpeed"   />
+    <Param name="TravelSlope" />
+  </AdditionalExtraction>
+
+  <ExampleList>
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01" SetPara0="0.0"/>
+    <Example AName="stand_tac_run_rifle_fwd_slow_3p_01"  SetPara0="0.3333"/>
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"  SetPara0="0.6666"/>
+    <Example AName="stand_tac_sprint_rifle_fwd_3p_01"    SetPara0="1.0"/>
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+    <Face p0="2"  p1="3" />
+  </Blendable>
+
+</ParaGroup>

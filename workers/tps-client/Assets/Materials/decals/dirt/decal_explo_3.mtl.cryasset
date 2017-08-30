@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="531a72ce-cde7-ba7a-c741-47efa05101fd">
+ <Files>
+  <File path="decal_explo_3.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/explosion_metal.dds</Path>
+  <Path>textures/detail_bumpmaps/concrete/concr_003_detail.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="0f440b7d-675c-3f3c-756b-9b8563f9d88f">
+ <Files>
+  <File path="test_mat_wood.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/wood_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

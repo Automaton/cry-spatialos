@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="313981f8-b99d-5894-e51a-4d674e606f26">
+ <Files>
+  <File path="diamonds.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/diamonds_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

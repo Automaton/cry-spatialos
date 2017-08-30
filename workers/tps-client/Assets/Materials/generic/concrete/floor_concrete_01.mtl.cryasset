@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="7c9c0251-f37c-1205-9d8f-c1db1a60124f">
+ <Files>
+  <File path="floor_concrete_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/sidewalk_stones_diff.dds</Path>
+  <Path>textures/generic/concrete/sidewalk_stones_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

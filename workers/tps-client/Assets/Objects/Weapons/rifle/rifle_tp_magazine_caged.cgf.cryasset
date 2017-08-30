@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Mesh" guid="c3a0a4c6-5b5e-0d23-d4c8-067d4a231c9f">
+ <Files>
+  <File path="rifle_tp_magazine_caged.cgf"/>
+  <File path="rifle_tp_magazine_caged_lod1.cgf"/>
+  <File path="rifle_tp_magazine_caged_lod2.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">994</Detail>
+  <Detail name="vertexCount">1151</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

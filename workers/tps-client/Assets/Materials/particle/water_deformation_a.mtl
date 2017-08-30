@@ -1,0 +1,8 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="20" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/water/foam_tiled2.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/water/foam_tiled2_ddn.tif"/>
+  <Texture Map="Custom" File="textures/sprites/water/refraction_b_ddn.tif"/>
+ </Textures>
+ <PublicParams DeformAmount="0.2" DeformAnimSpeed="0.2" SoftParticlesScale="1" GlobalIlluminationAmount="1" FresnelScale="1" FresnelBias="0.5" DeformTile="0.60000002"/>
+</Material>

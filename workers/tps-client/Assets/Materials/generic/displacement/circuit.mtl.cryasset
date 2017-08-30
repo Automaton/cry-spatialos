@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="143d61cc-e825-97d1-a029-7e181e6a72c2">
+ <Files>
+  <File path="circuit.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/circuit_ddn.dds</Path>
+  <Path>textures/generic/displacement/circuit_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

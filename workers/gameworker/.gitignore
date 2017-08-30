@@ -1,0 +1,9 @@
+spatialos.csharp.build.json
+BuildTargets.targets
+CsharpWorker.sln
+CSharpWorker.targets
+GeneratedCode.csproj
+spatialos_worker_packages.json
+Generated
+improbable/dependencies
+.spatialos

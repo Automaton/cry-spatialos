@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="eb4e0110-8fc4-0823-d7bc-2b675890f664">
+ <Files>
+  <File path="bricks.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/bricks_ddn.dds</Path>
+  <Path>textures/generic/displacement/bricks_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

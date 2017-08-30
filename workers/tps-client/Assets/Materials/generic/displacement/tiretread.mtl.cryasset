@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="f5a40a10-7882-b43a-9457-f1022af3f8a4">
+ <Files>
+  <File path="tiretread.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/tiretread2_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

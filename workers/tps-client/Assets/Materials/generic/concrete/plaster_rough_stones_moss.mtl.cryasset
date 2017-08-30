@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Material" guid="78ad7518-7f84-2a1f-c4f8-a0c2ed1c1650">
+ <Files>
+  <File path="plaster_rough_stones_moss.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">5</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/plaster_rough_stones_diff.dds</Path>
+  <Path>textures/generic/concrete/plaster_rough_stones_ddna.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_diff.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_ddna.dds</Path>
+  <Path>textures/generic/concrete/plaster_rough_stones_mask.dds</Path>
+ </Dependencies>
+</AssetMetadata>

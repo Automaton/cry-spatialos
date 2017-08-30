@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="11aa4d2a-5c62-09ae-36fc-29d678f76de0">
+ <Files>
+  <File path="glass_shattered.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/glass/glass_shattered_ddn.dds</Path>
+  <Path>textures/generic/glass/glass_dirty_tint.dds</Path>
+ </Dependencies>
+</AssetMetadata>

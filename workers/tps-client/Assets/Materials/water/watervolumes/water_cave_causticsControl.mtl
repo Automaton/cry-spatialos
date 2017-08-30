@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Watervolume" GenMask="80000041" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="0,0,0" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/forest/l_ab4_cavemain_probe_1_cm.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="0.189" SoftIntersectionFactor="0.15000001" Tilling="7.1599998" FoamAmount="0.011" DetailNormalsScale="4" EnvCubeReflMul="0" VertexWaveScale="0.017000001" DetailTilling="0" EnvCubeScale="0" RealtimeReflMul="0" FoamSoftIntersectionFactor="0.375" FoamTilling="0.95999998" RainTilling="0"/>
+</Material>

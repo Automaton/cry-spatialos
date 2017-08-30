@@ -1,0 +1,7 @@
+package automaton;
+import "automaton/quaternion.schema";
+
+component Tree {
+    id = 30020;
+    bool dead = 1;    
+}

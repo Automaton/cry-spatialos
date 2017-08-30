@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="9b4eab8e-40f4-d279-7adc-1d892f9c93ba">
+ <Files>
+  <File path="cloth_fine_dirty.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/fabric/cloth_fine_dirty_diff.dds</Path>
+  <Path>textures/generic/fabric/cloth_fine_dirty_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

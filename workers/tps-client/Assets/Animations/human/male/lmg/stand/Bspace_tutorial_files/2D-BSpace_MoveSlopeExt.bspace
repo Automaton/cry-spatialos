@@ -1,0 +1,50 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="MoveSpeed" min="+0.2" max="+9.5" cells="17"/>
+    <Param name="TravelSlope" min="-1.0"  max="+1.0"  scale="4.4" cells="37"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01" />
+    <Example AName="stand_tac_sprint_rifle_fwd_3p_01" />
+
+    <Example AName="stand_tac_walkUp_rifle_fwd_slow_3p_01"   />
+    <Example AName="stand_tac_runUp_rifle_fwd_slow_3p_01"    />
+    <Example AName="stand_tac_runUp_rifle_fwd_fast_3p_01"    />
+
+    <Example AName="stand_tac_walkDown_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_runDown_rifle_fwd_slow_3p_01"  />
+    <Example AName="stand_tac_runDown_rifle_fwd_fast_3p_01"  />
+  </ExampleList>
+ 
+  <ExamplePseudo>
+    <Pseudo p0="1" p1="0" w0="-1.0" w1="2.0" />
+    <Pseudo p0="2" p1="3" w0="-2.2" w1="3.2" />
+
+    <Pseudo p0="0" p1="4" w0="-2.0" w1="3.0" />
+    <Pseudo p0="1" p1="5" w0="-0.8" w1="1.8" />
+    <Pseudo p0="2" p1="6" w0="-0.8" w1="1.8" />
+
+    <Pseudo p0="0" p1="7" w0="-1.6" w1="2.6" />
+    <Pseudo p0="1" p1="8" w0="-1.6" w1="2.6" />
+    <Pseudo p0="2" p1="9" w0="-1.8" w1="2.8" />
+  </ExamplePseudo>
+
+  <Blendable>
+    <Face p0="0"  p1="12"  p2="10" />
+    <Face p0="0"  p1="10"  p2="15" />
+
+    <Face p0="0"  p1=" 1"  p2="13" p3="12"/>
+    <Face p0="0"  p1="15"  p2="16" p3="1"/>
+
+    <Face p0="1"  p1=" 2"  p2="14" p3="13"/>
+    <Face p0="1"  p1="16"  p2="17" p3="2"/>
+
+    <Face p0="2"  p1="11"  p2="14" />
+    <Face p0="2"  p1="17"  p2="11" />
+  </Blendable>
+
+</ParaGroup>

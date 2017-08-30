@@ -1,0 +1,15 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="20E000100" StringGenMask="%DETAIL_MAPPING%NORMAL_MAP%OFFSET_BUMP_MAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.012983033,0.012983033,0.012983033" Emissive="0,0,0" Opacity="1" Shininess="200" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/mud_path_stones_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.2" TileV="0.2"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/mud_path_stones_ddna.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.25" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/rock/detail_cliff_rock_detail.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="16" TileV="16"/>
+  </Texture>
+  <Texture Map="Heightmap" File="textures/terrain/detail/mud_path_stones_displ.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="4" DetailTextureStrength="0.64999998" PomDisplacement="0.02" DetailDiffuseScale="0.5" DetailBumpScale="0.25" SelfShadowStrength="5" ObmDisplacement="0.02" HeightBias="0.5" BlendFactor="8" DetailGlossScale="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

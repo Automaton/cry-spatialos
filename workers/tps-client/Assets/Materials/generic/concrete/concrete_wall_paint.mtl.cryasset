@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="3894c843-b1cc-1472-a774-2ac3cc091b97">
+ <Files>
+  <File path="concrete_wall_paint.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/concrete_paint_diff.dds</Path>
+  <Path>textures/generic/concrete/concrete_paint_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

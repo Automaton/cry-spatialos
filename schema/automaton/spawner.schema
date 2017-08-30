@@ -1,0 +1,17 @@
+package automaton;
+import "improbable/standard_library.schema";
+
+type SpawnPlayerRequest {
+    improbable.Coordinates position = 1;
+}
+
+type SpawnPlayerResponse {
+	bool success = 1;
+	string error_message = 2;
+	EntityId created_entity_id = 3;
+}
+
+component Spawner {
+    id = 30004;
+	command SpawnPlayerResponse spawn_player(SpawnPlayerRequest);
+}

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="6eb84645-70da-7e6e-6d8d-9368ba56e9f3">
+ <Files>
+  <File path="window_glass.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/glass/window_glass_diff.dds</Path>
+  <Path>textures/generic/glass/window_glass_ddn.dds</Path>
+  <Path>textures/generic/glass/glass_dirty_tint.dds</Path>
+ </Dependencies>
+</AssetMetadata>

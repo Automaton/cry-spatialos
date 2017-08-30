@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="c55bc0e8-33fe-d7ca-80b9-8ea70ea62fff">
+ <Files>
+  <File path="sand_puddles.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/sand_puddles_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/sand_puddles_terrain_ddna.dds</Path>
+  <Path>textures/terrain/detail/sand_puddles_terrain_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

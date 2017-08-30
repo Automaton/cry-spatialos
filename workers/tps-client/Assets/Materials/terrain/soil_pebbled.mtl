@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="204000000" StringGenMask="%NORMAL_MAP%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.026241222,0.026241222,0.026241222" Emissive="0,0,0" Opacity="1" Shininess="100" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/soil_pebbled_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/soil_pebbled_ddna.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.2" TileV="0.2"/>
+  </Texture>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="0.64999998" BlendFactor="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="35eacd89-eab8-b050-1005-afcbae8a00b0">
+ <Files>
+  <File path="runway_concrete.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/runway_diff.dds</Path>
+  <Path>textures/generic/concrete/runway_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

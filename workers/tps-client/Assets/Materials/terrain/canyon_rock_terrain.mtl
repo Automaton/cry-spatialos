@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="200000080" StringGenMask="%BUMP_MAP%TEMP_TERRAIN" SurfaceType="mat_rock" MatTemplate="" Diffuse="1,1,1" Specular="0.016807377,0.016807377,0.016807377" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/canyon_rock_terrain_diff.tif">
+   <TexMod TileU="0.2" TileV="0.2"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/canyon_rock_terrain_ddna.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="0.84299999" BlendFactor="0.88999999" IndirectColor="0.22713655,0.22713655,0.22713655"/>
+</Material>

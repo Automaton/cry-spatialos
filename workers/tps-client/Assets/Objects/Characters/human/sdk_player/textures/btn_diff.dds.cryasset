@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Texture" guid="49ca5b9f-c747-a841-4df9-e4e8f492013b">
+ <Files>
+  <File path="btn_diff.dds"/>
+  <File path="btn_diff.dds.1"/>
+  <File path="btn_diff.dds.2"/>
+  <File path="btn_diff.dds.3"/>
+  <File path="btn_diff.dds.4"/>
+  <File path="btn_diff.dds.5"/>
+ </Files>
+ <Details>
+  <Detail name="width">512</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">8</Detail>
+ </Details>
+</AssetMetadata>

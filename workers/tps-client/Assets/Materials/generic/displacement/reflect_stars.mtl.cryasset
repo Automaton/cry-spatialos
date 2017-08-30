@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="089ba738-2057-e59d-30b8-0a2c3eab6480">
+ <Files>
+  <File path="reflect_stars.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/reflect_stars_ddn.dds</Path>
+  <Path>textures/generic/displacement/reflect_stars_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

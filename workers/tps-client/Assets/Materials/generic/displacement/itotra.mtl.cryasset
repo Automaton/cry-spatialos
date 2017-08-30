@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="a339f562-6ff6-ba74-1a70-38761b73368e">
+ <Files>
+  <File path="itotra.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/itotra_ddn.dds</Path>
+  <Path>textures/generic/displacement/itotra_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

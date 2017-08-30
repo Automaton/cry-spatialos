@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Texture" guid="54a75d8e-734a-60ef-7cab-a50bbb8fb0a0">
+ <Files>
+  <File path="generic_eyeball_overlay_spec.dds"/>
+  <File path="generic_eyeball_overlay_spec.dds.1"/>
+  <File path="generic_eyeball_overlay_spec.dds.2"/>
+  <File path="generic_eyeball_overlay_spec.dds.3"/>
+  <File path="generic_eyeball_overlay_spec.dds.4"/>
+  <File path="generic_eyeball_overlay_spec.dds.5"/>
+  <File path="generic_eyeball_overlay_spec.dds.6"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">1024</Detail>
+  <Detail name="mipCount">9</Detail>
+ </Details>
+</AssetMetadata>

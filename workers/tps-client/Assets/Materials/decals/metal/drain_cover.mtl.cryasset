@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="bbf2ff8d-b64b-041d-5162-0f03a2aba254">
+ <Files>
+  <File path="drain_cover.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/metal/drain_diff.dds</Path>
+  <Path>textures/decals/metal/drain_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

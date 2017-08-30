@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="53738843-3462-15b6-e850-77f9d9ae50d0">
+ <Files>
+  <File path="ground_soil_mud_04.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pjEqV_diff.dds</Path>
+  <Path>textures/terrain/pjEqV_ddna.dds</Path>
+  <Path>textures/terrain/pjEqV_spec.dds</Path>
+  <Path>textures/terrain/pjEqV_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,18 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="MoveSpeed" min="3.0" max="+8.0" cells="19" />
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"  PlaybackScale="0.5" />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"  />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"  PlaybackScale="1.8" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+</ParaGroup>

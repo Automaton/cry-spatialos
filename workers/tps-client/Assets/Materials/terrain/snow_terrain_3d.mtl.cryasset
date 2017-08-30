@@ -1,0 +1,20 @@
+<AssetMetadata version="0" type="Material" guid="5bc9eb9c-6998-c7b1-f2a1-4bc4fa9d2eca">
+ <Files>
+  <File path="snow_terrain_3d.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">3</Detail>
+  <Detail name="textureCount">9</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/snow_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_ddna.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_displ.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_ddna.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_displ.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_diff.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_ddna.dds</Path>
+  <Path>textures/terrain/detail/snow_terrain_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

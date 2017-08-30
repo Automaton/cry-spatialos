@@ -1,0 +1,35 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="MoveSpeed"   min="+1.0" max="+4.5" cells="19" />
+    <Param name="TravelAngle" min="-3.14" max="+3.14" cells="17" />
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_walk_rifle_bwd_slow_3p_01"    SetPara1="-3.141" /> 
+    <Example AName="stand_tac_walkCross_rifle_bRgt_slow_3p_01" />
+    <Example AName="stand_tac_walkStr_rifle_rgt_slow_3p_01"    />
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01"       />
+    <Example AName="stand_tac_walkCross_rifle_fLft_slow_3p_01" />
+    <Example AName="stand_tac_walkStr_rifle_lft_slow_3p_01"    />
+    <Example AName="stand_tac_walk_rifle_bwd_slow_3p_01"    SetPara1="+3.141" />
+
+    <Example AName="stand_tac_run_rifle_bwd_fast_3p_01"     SetPara1="-3.141" />
+    <Example AName="stand_tac_runCross_rifle_bRgt_fast_3p_01" />
+    <Example AName="stand_tac_runStr_rifle_rgt_fast_3p_01"    />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"       />
+    <Example AName="stand_tac_runCross_rifle_fLft_fast_3p_01" />
+    <Example AName="stand_tac_runStr_rifle_lft_fast_3p_01"    />
+    <Example AName="stand_tac_run_rifle_bwd_fast_3p_01"     SetPara1="+3.141" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0=" 0"  p1=" 7"  p2=" 8" p3=" 1" />
+    <Face p0=" 1"  p1=" 8"  p2=" 9" p3=" 2" />
+    <Face p0=" 2"  p1=" 9"  p2="10" p3=" 3" />
+    <Face p0=" 3"  p1="10"  p2="11" p3=" 4" />
+    <Face p0=" 4"  p1="11"  p2="12" p3=" 5" />
+    <Face p0=" 5"  p1="12"  p2="13" p3=" 6" />
+  </Blendable>
+
+</ParaGroup>

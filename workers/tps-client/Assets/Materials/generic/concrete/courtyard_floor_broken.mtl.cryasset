@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="91ee6c19-791b-8065-de56-3b00162ac6a7">
+ <Files>
+  <File path="courtyard_floor_broken.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/courtyard_floor_broken_diff.dds</Path>
+  <Path>textures/generic/concrete/courtyard_floor_broken_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

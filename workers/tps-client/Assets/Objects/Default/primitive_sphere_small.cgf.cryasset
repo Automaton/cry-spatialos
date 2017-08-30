@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="91a59dc3-be81-11a6-e947-2864a7ea507e">
+ <Files>
+  <File path="primitive_sphere_small.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">960</Detail>
+  <Detail name="vertexCount">559</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Objects/default/editorprimitive.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

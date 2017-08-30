@@ -1,0 +1,33 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="MoveSpeed" min="+0.2" max="+9.5" cells="19"/>
+    <Param name="TurnSpeed" min="-3.5" max="+3.5" cells="19"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_slow_3p_01"  />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01"  />
+    <Example AName="stand_tac_sprint_rifle_fwd_3p_01"    />
+
+    <Example AName="stand_tac_walkTurn_rifle_lft_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_lft_slow_3p_01"  />
+    <Example AName="stand_tac_runTurn_rifle_lft_fast_3p_01"  />
+    
+    <Example AName="stand_tac_walkTurn_rifle_rgt_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_rgt_slow_3p_01"  />
+    <Example AName="stand_tac_runTurn_rifle_rgt_fast_3p_01"  />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1"  p2="5" p3="4" />
+    <Face p0="0"  p1="7"  p2="8" p3="1" />
+    <Face p0="1"  p1="2"  p2="6" p3="5" />
+    <Face p0="1"  p1="8"  p2="9" p3="2"  />
+
+    <Face p0="2"  p1="9"  p2="3" />
+    <Face p0="2"  p1="3"  p2="6" />
+  </Blendable>
+
+</ParaGroup>

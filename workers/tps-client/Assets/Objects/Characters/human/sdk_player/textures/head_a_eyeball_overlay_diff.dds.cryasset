@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Texture" guid="fce08458-2f9d-0d38-ad42-4f79ac32cd63">
+ <Files>
+  <File path="head_a_eyeball_overlay_diff.dds"/>
+  <File path="head_a_eyeball_overlay_diff.dds.1"/>
+  <File path="head_a_eyeball_overlay_diff.dds.2"/>
+  <File path="head_a_eyeball_overlay_diff.dds.3"/>
+  <File path="head_a_eyeball_overlay_diff.dds.4"/>
+ </Files>
+ <Details>
+  <Detail name="width">512</Detail>
+  <Detail name="height">256</Detail>
+  <Detail name="mipCount">7</Detail>
+ </Details>
+</AssetMetadata>

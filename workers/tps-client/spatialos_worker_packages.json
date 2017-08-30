@@ -1,0 +1,31 @@
+{
+  "targets": [
+    {
+      "path": "Code/ThirdParty/Improbable/linux_x64",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name":  "cpp-static-x86_64-gcc_libstdcpp-linux"
+        }
+      ]
+    },
+    {
+      "path": "Code/ThirdParty/Improbable/windows_x64_debug",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name": "cpp-static-x86_64-msvc_mdd-win32"
+        }
+      ]
+    },
+    {
+      "path": "Code/ThirdParty/Improbable/windows_x64_release",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name": "cpp-static-x86_64-msvc_md-win32"
+        }
+      ]
+    }
+  ]
+}

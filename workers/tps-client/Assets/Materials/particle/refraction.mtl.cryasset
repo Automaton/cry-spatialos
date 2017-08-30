@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="530a14db-6357-6cd2-a92a-dafdb60952ce">
+ <Files>
+  <File path="refraction.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/glow/glow_b.dds</Path>
+  <Path>textures/sprites/water/refraction_a_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,79 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="MoveSpeed" min="+0.2" max="+9.5" cells="7"/>
+    <Param name="TurnSpeed" min="-3.8" max="+3.8" cells="7"/>
+    <Param name="TravelSlope" min="-0.5"  max="+0.5"  scale="4.4" cells="5"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example AName="stand_tac_walk_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_fast_3p_01" />
+    <Example AName="stand_tac_sprint_rifle_fwd_3p_01" />
+
+    <Example AName="stand_tac_walkTurn_rifle_lft_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_lft_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_lft_fast_3p_01" />
+    
+    <Example AName="stand_tac_walkTurn_rifle_rgt_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_rgt_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_rgt_fast_3p_01" />
+ 
+
+    <Example AName="stand_tac_walkUp_rifle_fwd_slow_3p_01"   />
+    <Example AName="stand_tac_runUp_rifle_fwd_slow_3p_01"    />
+    <Example AName="stand_tac_runUp_rifle_fwd_fast_3p_01"    />
+
+    <Example AName="stand_tac_walkDown_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_runDown_rifle_fwd_slow_3p_01"  />
+    <Example AName="stand_tac_runDown_rifle_fwd_fast_3p_01"  />
+  </ExampleList>
+ 
+  <ExamplePseudo>
+    <Pseudo p0="1" p1="0" w0="-1.0" w1="2.0" />
+    <Pseudo p0="0" p1="4" w0="-2.2" w1="3.2" />
+    <Pseudo p0="0" p1="7" w0="-2.0" w1="3.0" />
+    <Pseudo p0="1" p1="5" w0="-0.5" w1="1.5" />
+    <Pseudo p0="1" p1="8" w0="-0.8" w1="1.8" />
+    <Pseudo p0="2" p1="6" w0="-0.5" w1="1.5" />
+    <Pseudo p0="2" p1="9" w0="-0.5" w1="1.5" />
+    <Pseudo p0="2" p1="3" w0="-2.0" w1="3.0" />
+
+    <Pseudo p0="0" p1="10" w0="-2.0" w1="3.0" />
+    <Pseudo p0="1" p1="11" w0="-0.8" w1="1.8" />
+    <Pseudo p0="2" p1="12" w0="-0.8" w1="1.8" />
+
+    <Pseudo p0="0" p1="13" w0="-1.6" w1="2.6" />
+    <Pseudo p0="1" p1="14" w0="-1.6" w1="2.6" />
+    <Pseudo p0="2" p1="15" w0="-1.8" w1="2.8" />
+  </ExamplePseudo>
+
+  <Blendable>
+    <Face p0="0"  p1="17" p2="16" p3="24" />
+    <Face p0="0"  p1="16" p2="18" p3="24" />
+
+    <Face p0="1"  p1="19" p2="17" p3="0" p4="25" p5="24"/>
+    <Face p0="0"  p1="18" p2="20" p3="1" p4="24" p5="25"/>
+
+    <Face p0="2"  p1="21" p2="19" p3="1" p4="26" p5="25"/>
+    <Face p0="1"  p1="20" p2="22" p3="2" p4="25" p5="26"/>
+
+    <Face p0="2"  p1="23" p2="21" p3="26" />
+    <Face p0="2"  p1="22" p2="23" p3="26" />
+
+
+    <Face p2="0"  p1="17" p0="16"  p3="27" />
+    <Face p2="0"  p1="16" p0="18"  p3="27" />
+
+    <Face p3="1"  p2="19" p1="17" p0="0"  p4="27" p5="28"/>
+    <Face p3="0"  p2="18" p1="20" p0="1"  p4="28" p5="27"/>
+
+    <Face p3="2"  p2="21" p1="19" p0="1"  p4="28" p5="29"/>
+    <Face p3="1"  p2="20" p1="22" p0="2"  p4="29" p5="28"/>
+
+    <Face p2="2"  p1="23" p0="21" p3="29" />
+    <Face p2="2"  p1="22" p0="23" p3="29" />
+  </Blendable>
+
+</ParaGroup>

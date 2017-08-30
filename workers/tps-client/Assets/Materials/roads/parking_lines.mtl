@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100000901" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%DETAIL_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_plastic" MatTemplate="" Diffuse="0.38132605,0.38132605,0.38132605" Specular="0.005181517,0.005181517,0.005181517" Emissive="0,0,0" Opacity="1" Shininess="120" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/roads/parkinglines_diff.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/plastic/fibreplastics_detail.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DetailDiffuseScale="0.5" DecalFalloff="1" DetailBumpScale="0.050000001" DecalAlphaMult="1" DetailGlossScale="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

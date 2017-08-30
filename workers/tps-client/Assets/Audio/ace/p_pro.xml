@@ -1,0 +1,14 @@
+<ATLConfig atl_name="p_pro" atl_version="1">
+ <AudioTriggers>
+  <ATLTrigger atl_name="bullet_impact" path="bullet_impacts">
+   <SDLMixerEvent event_id="1316" sdl_name="p_pro_impact_bullet_impact_metal_thick.ogg" event_type="start" enable_panning="true" enable_distance_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="50" volume="-12" loop_count="1"/>
+   <WwiseEvent wwise_name="Play_p_pro_impact_bullet_hit_mat_metal"/>
+   <FmodEvent fmod_name="p_pro/p_pro_bullet_impact/p_pro_bullet_impact_metal"/>
+  </ATLTrigger>
+ </AudioTriggers>
+ <EditorData>
+  <Folders>
+   <Folder name="bullet_impacts"/>
+  </Folders>
+ </EditorData>
+</ATLConfig>

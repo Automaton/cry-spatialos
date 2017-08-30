@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="2005f60a-d089-aefc-63d2-b3e9102d55ee">
+ <Files>
+  <File path="rust.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/references/rust.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="a85f0d09-e00c-ac4a-7ca9-af60da9d7ec8">
+ <Files>
+  <File path="water_splash_rapids.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/water/water_splash.dds</Path>
+  <Path>textures/sprites/water/water_splash_ddn.dds</Path>
+  <Path>./nearest_cubemap.dds</Path>
+ </Dependencies>
+</AssetMetadata>

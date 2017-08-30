@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="fedef24a-795a-eb1c-b5f5-3623517c22ba">
+ <Files>
+  <File path="yellow.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/base_colors/yellow_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

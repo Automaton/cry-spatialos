@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="60400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="0,0,0" Specular="1,1,1" Opacity="1" Shininess="128" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/defaults/white.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/metal/metals_ddna.tif"/>
+  <Texture Map="Specular" File="textures/generic/metal/gold_spec.tif"/>
+ </Textures>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

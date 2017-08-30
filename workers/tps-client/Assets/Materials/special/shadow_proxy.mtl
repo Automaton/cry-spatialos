@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="1" StringGenMask="%ALLOW_POM" SurfaceType="mat_nodraw" MatTemplate="" Diffuse="0.21951973,0.21951973,0.21951973" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.25">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/defaults/collision_proxy.tif"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

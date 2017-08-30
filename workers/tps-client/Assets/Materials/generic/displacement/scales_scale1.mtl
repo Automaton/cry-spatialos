@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100080081" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%GLOSS_MAP%SILHOUETTE_PARALLAX_OCCLUSION_MAPPING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.49950528,0.49950528,0.49950528" Specular="0.0069954107,0.0069954107,0.0069954107" Emissive="0,0,0" Shininess="10" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/defaults/defaultnouvs.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/displacement/scales_scale1_ddn.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/displacement/scales_scale1_displ.tif"/>
+ </Textures>
+ <PublicParams SilPomDisplacement="0.15000001" SilPomStepSizeViewDep="1" SSSIndex="0" SelfShadowStrength="5" HeightBias="0.5" SilPomNumSteps="256" IndirectColor="0.25,0.25,0.25"/>
+</Material>

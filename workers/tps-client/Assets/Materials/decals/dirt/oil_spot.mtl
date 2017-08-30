@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000901" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%DETAIL_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.00049250375,0.00049250375,0.00049250375" Specular="0.0069954107,0.0069954107,0.0069954107" Emissive="0,0,0" Shininess="180" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/dirt/dirt_10.tif" IsTileU="0" IsTileV="0"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/plastic/plastic_detail.tif">
+   <TexMod TileU="2" TileV="2"/>
+  </Texture>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DetailDiffuseScale="0.5" DecalFalloff="1" DetailBumpScale="0.1" DecalAlphaMult="1.5" DetailGlossScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

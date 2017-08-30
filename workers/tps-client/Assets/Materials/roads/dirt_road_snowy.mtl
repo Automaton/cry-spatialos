@@ -1,0 +1,11 @@
+<Material MtlFlags="524328" Shader="Illum" GenMask="210C000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_snow" MatTemplate="" Diffuse="0.57758057,0.57758057,0.57758057" Specular="0.034339812,0.034339812,0.034339812" Emissive="0,0,0" Opacity="1" Shininess="120" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/roads/road_muddy_snowy_diff.tif" Filter="6">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.80000001" OffsetU="1" OffsetV="1"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/roads/road_muddy_off_12_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/roads/road_muddy_off_12_displ.tif"/>
+ </Textures>
+ <DetailDecal Opacity="128" SSAOAmount="0" topTileU="1" topTileV="1" topOffsV="0" topOffsU="0" topRotation="0" topDeformation="0" topSortOffset="0" bottomTileU="0.5" bottomTileV="0.5" bottomOffsV="0.5" bottomOffsU="0.5" bottomRotation="0" bottomDeformation="0" bottomSortOffset="0"/>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.025" DecalFalloff="1" SelfShadowStrength="5" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

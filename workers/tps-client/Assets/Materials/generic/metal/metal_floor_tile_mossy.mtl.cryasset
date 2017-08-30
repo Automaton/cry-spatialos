@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="a17b686c-43c9-77bd-097c-acedf3b21c61">
+ <Files>
+  <File path="metal_floor_tile_mossy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_floor_tile_mossy_diff.dds</Path>
+  <Path>textures/generic/metal/metal_floor_tile_mossy_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_floor_tile_mossy_spec.dds</Path>
+  <Path>textures/generic/metal/metal_floor_tile_mossy_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

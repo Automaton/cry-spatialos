@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="7e2f1d3d-5c9f-728b-2a72-edd41f351cb3">
+ <Files>
+  <File path="river_forest_foam.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/water/river_forest_foam.dds</Path>
+  <Path>textures/generic/water/river_foamy_ddn.dds</Path>
+  <Path>textures/generic/water/river_forest_foam.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Material" guid="325902c5-3022-8481-6a3c-9a672d63ca5a">
+ <Files>
+  <File path="concrete_wall_b_moss.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">5</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/concrete_wall_b_dirty_diff.dds</Path>
+  <Path>textures/generic/concrete/concrete_wall_b_dirty_ddna.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_diff.dds</Path>
+  <Path>textures/generic/moss/moss_green_a_ddna.dds</Path>
+  <Path>textures/generic/concrete/concrete_wall_b_mask.dds</Path>
+ </Dependencies>
+</AssetMetadata>

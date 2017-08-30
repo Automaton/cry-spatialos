@@ -1,0 +1,13 @@
+<Material MtlFlags="526336" Shader="Terrain.Layer" GenMask="268400000" StringGenMask="%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SOFT_DEPTH_TEST%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_default" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.30000001" TileV="0.30000001"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_ddna.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.60000002" TileV="0.60000002"/>
+  </Texture>
+  <Texture Map="Specular" File="Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_spec.tif"/>
+  <Texture Map="Heightmap" File="Textures/Projectx/Terrain/Grass/terrain_grass_uncut_001_displ.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="19.799999" SoftDepthTestDistRatio="0.15000001" DetailTextureStrength="2" PomDisplacement="0.025" DetailTextureHighPassRange="15" SelfShadowStrength="3" SoftDepthTestRange="0.050000001" HeightBias="1" BlendFactor="12.3" NormalMapBumpiness="1"/>
+</Material>

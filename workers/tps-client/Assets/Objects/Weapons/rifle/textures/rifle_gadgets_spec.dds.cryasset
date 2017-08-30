@@ -1,0 +1,17 @@
+<AssetMetadata version="0" type="Texture" guid="531876e2-1e04-a41e-112a-ae48653c6ce3">
+ <Files>
+  <File path="rifle_gadgets_spec.dds"/>
+  <File path="rifle_gadgets_spec.dds.1"/>
+  <File path="rifle_gadgets_spec.dds.2"/>
+  <File path="rifle_gadgets_spec.dds.3"/>
+  <File path="rifle_gadgets_spec.dds.4"/>
+  <File path="rifle_gadgets_spec.dds.5"/>
+  <File path="rifle_gadgets_spec.dds.6"/>
+  <File path="rifle_gadgets_spec.dds.7"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

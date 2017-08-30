@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="7189c955-1528-53b3-95c0-d9dd0e9256a8">
+ <Files>
+  <File path="ground_earth_leaves.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/ground_earth_leaves_diff.dds</Path>
+  <Path>textures/terrain/detail/ground_earth_leaves_ddna.dds</Path>
+  <Path>textures/terrain/detail/ground_earth_leaves_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

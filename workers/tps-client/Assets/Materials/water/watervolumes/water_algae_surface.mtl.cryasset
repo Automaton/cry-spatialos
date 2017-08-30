@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="7ac29e20-e0d7-bf80-8388-0cb850a42173">
+ <Files>
+  <File path="water_algae_surface.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/cubemaps/generic_cubemap_day_cm.dds</Path>
+  <Path>textures/decals/water/muddy_seaweed_diff.dds</Path>
+  <Path>textures/decals/water/muddy_seaweed_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

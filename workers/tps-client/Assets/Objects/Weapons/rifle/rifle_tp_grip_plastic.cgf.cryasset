@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Mesh" guid="d832c810-31be-4df2-d7a4-68e122763c0f">
+ <Files>
+  <File path="rifle_tp_grip_plastic.cgf"/>
+  <File path="rifle_tp_grip_plastic_lod1.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">736</Detail>
+  <Detail name="vertexCount">808</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

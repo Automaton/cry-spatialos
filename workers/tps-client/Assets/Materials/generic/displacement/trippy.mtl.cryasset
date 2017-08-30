@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="2a8693c6-55ee-0928-640f-f0c30d260e77">
+ <Files>
+  <File path="trippy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/trippy_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="50fb75e7-f6bc-ccf7-7c0f-566078ce0266">
+ <Files>
+  <File path="ground_stones_rough.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/ground_stones_rough_diff.dds</Path>
+  <Path>textures/terrain/detail/ground_stones_rough_ddna.dds</Path>
+  <Path>textures/terrain/detail/ground_stones_rough_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

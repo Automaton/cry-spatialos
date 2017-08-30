@@ -1,0 +1,9 @@
+<AssetMetadata version="0" type="Material" guid="43f90ea0-565c-06c3-713f-3b33b100d531">
+ <Files>
+  <File path="lightbeam_spin_thick.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">0</Detail>
+ </Details>
+</AssetMetadata>

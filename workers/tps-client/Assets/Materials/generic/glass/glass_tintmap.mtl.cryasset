@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="74014a9a-9400-a41a-f4bb-5a55fd2f0c58">
+ <Files>
+  <File path="glass_tintmap.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>objects/natural/water/ice_shelf/textures/ice_shelf_tint.dds</Path>
+ </Dependencies>
+</AssetMetadata>

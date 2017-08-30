@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="d6a79539-c95d-2a7a-297b-4417c7dd011f">
+ <Files>
+  <File path="manhole_rectangle.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/metal/manhole_rectangle.dds</Path>
+  <Path>textures/decals/metal/manhole_rectangle_ddna.dds</Path>
+  <Path>textures/decals/metal/manhole_rectangle_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

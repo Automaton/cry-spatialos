@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="f63e3a31-ff9b-2084-eeed-c2c7534e1e11">
+ <Files>
+  <File path="rock_sandy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/rock/rock_sandy_diff.dds</Path>
+  <Path>textures/decals/rock/rock_sandy_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

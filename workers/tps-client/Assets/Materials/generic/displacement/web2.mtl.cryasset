@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="f839ae1b-a6ef-ba21-0d81-7ca461289f70">
+ <Files>
+  <File path="web2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/web2_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

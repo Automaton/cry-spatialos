@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="182168c4-322e-a4c8-989f-c7283162c3a3">
+ <Files>
+  <File path="spark_stretched1.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/sparks/spark_a.dds</Path>
+ </Dependencies>
+</AssetMetadata>

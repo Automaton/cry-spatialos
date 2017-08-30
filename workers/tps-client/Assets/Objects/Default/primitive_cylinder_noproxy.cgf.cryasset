@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="a3c2ea73-67d0-d90d-9cc3-8b69ab6dfffd">
+ <Files>
+  <File path="primitive_cylinder_noproxy.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">116</Detail>
+  <Detail name="vertexCount">122</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./editorprimitive.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

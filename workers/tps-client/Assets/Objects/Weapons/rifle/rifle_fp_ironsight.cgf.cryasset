@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="ed6f40a0-6205-8ca5-d15b-80e56db8e035">
+ <Files>
+  <File path="rifle_fp_ironsight.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">1312</Detail>
+  <Detail name="vertexCount">1483</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

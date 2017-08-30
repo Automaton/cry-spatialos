@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="baa81a51-f539-d6bd-39b8-669d919e8101">
+ <Files>
+  <File path="metal_rusty_plane.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_rusty_plane_diff.dds</Path>
+  <Path>textures/generic/metal/metal_rusty_plane_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_rusty_plane_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

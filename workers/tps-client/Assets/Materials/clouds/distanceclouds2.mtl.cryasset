@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="3088e6a2-4665-e89c-e063-47f55c39dd5c">
+ <Files>
+  <File path="distanceclouds2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/clouds/cloud_dense3_distant.dds</Path>
+ </Dependencies>
+</AssetMetadata>

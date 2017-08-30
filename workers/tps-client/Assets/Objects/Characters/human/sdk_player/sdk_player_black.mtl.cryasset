@@ -1,0 +1,27 @@
+<AssetMetadata version="0" type="Material" guid="380af93c-9e0b-9ada-1131-b5189ccfb8fb">
+ <Files>
+  <File path="sdk_player_black.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">4</Detail>
+  <Detail name="textureCount">16</Detail>
+ </Details>
+ <Dependencies>
+  <Path>objects/characters/human/sdk_player/textures/btn_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/btn_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/btn_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/pands_shoes_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/pands_shoes_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/pands_shoes_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/jacket_black_white_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/jacket_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/jacket_spec.dds</Path>
+  <Path>textures/detail_bumpmaps/fabric/fabric_b_detail.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/sdk_hand.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/sdk_hand_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/sdk_hand_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_wrinkle_atlas.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_wrinkle_mask_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/sdk_hand_sss.dds</Path>
+ </Dependencies>
+</AssetMetadata>

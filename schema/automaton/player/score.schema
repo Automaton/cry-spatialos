@@ -1,0 +1,8 @@
+package automaton.player;
+
+component Score {
+    id = 30010;
+
+    uint32 kills = 1;
+    uint32 deaths = 2;
+}

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="1effc7cc-5a1e-2f67-4798-fc1fae6ccbcb">
+ <Files>
+  <File path="wall_cracked.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/wall_cracked_diff.dds</Path>
+  <Path>textures/generic/concrete/wall_cracked_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

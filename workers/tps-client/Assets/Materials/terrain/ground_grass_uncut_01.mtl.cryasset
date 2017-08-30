@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e910c969-ba00-96d3-e89f-824ef4923bf4">
+ <Files>
+  <File path="ground_grass_uncut_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pjDfL_diff.dds</Path>
+  <Path>textures/terrain/pjDfL_ddna.dds</Path>
+  <Path>textures/terrain/pjDfL_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

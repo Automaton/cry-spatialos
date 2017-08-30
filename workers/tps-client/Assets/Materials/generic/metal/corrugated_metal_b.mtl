@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="89000081" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="0.034339812,0.034339812,0.034339812" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/metal/corrugated_metal_b_tile_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/metal/corrugated_metal_b_tile_ddna.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/metal/metal_detail.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="8" TileV="8"/>
+  </Texture>
+  <Texture Map="Heightmap" File="textures/generic/metal/corrugated_metal_a_tile_displ.tif"/>
+ </Textures>
+ <PublicParams PomDisplacement="0.0099999998" DetailDiffuseScale="0.5" SSSIndex="0" DetailBumpScale="0.050000001" SelfShadowStrength="3" HeightBias="0.5" DetailGlossScale="0.15000001" IndirectColor="0.25,0.25,0.25"/>
+</Material>

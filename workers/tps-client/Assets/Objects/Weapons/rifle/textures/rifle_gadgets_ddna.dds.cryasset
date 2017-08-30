@@ -1,0 +1,25 @@
+<AssetMetadata version="0" type="Texture" guid="0b89808b-c940-30da-af3d-520983bf25c8">
+ <Files>
+  <File path="rifle_gadgets_ddna.dds"/>
+  <File path="rifle_gadgets_ddna.dds.a"/>
+  <File path="rifle_gadgets_ddna.dds.1"/>
+  <File path="rifle_gadgets_ddna.dds.1a"/>
+  <File path="rifle_gadgets_ddna.dds.2"/>
+  <File path="rifle_gadgets_ddna.dds.2a"/>
+  <File path="rifle_gadgets_ddna.dds.3"/>
+  <File path="rifle_gadgets_ddna.dds.3a"/>
+  <File path="rifle_gadgets_ddna.dds.4"/>
+  <File path="rifle_gadgets_ddna.dds.4a"/>
+  <File path="rifle_gadgets_ddna.dds.5"/>
+  <File path="rifle_gadgets_ddna.dds.5a"/>
+  <File path="rifle_gadgets_ddna.dds.6"/>
+  <File path="rifle_gadgets_ddna.dds.6a"/>
+  <File path="rifle_gadgets_ddna.dds.7"/>
+  <File path="rifle_gadgets_ddna.dds.7a"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

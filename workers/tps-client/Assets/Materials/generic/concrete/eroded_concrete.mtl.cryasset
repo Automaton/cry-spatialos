@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="7361479f-7980-80bc-6e21-b521bdb84098">
+ <Files>
+  <File path="eroded_concrete.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/eroded_concrete_diff.dds</Path>
+  <Path>textures/generic/concrete/eroded_concrete_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

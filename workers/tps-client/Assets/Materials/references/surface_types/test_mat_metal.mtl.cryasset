@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="97e37d61-e1d3-e664-aa52-88a057e192fd">
+ <Files>
+  <File path="test_mat_metal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/metal_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

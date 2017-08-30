@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="db94bd46-ba40-8d87-08cd-5585f2034700">
+ <Files>
+  <File path="stabmask.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/stabmask_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

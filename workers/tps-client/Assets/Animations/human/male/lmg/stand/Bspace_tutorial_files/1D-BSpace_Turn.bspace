@@ -1,0 +1,22 @@
+<ParaGroup>
+
+  <Dimensions>
+    <Param name="TurnSpeed" min="-4.0" max="+4.0" cells="17"/>
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed"   />
+  </AdditionalExtraction>
+
+  <ExampleList>
+    <Example AName="stand_tac_runTurn_rifle_rgt_slow_3p_01" />
+    <Example AName="stand_tac_run_rifle_fwd_slow_3p_01" />
+    <Example AName="stand_tac_runTurn_rifle_lft_slow_3p_01" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+</ParaGroup>

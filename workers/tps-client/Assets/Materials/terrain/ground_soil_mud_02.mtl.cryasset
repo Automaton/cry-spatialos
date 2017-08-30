@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="d0a33c2b-6c42-52f2-0cf1-e51c1dcbdd54">
+ <Files>
+  <File path="ground_soil_mud_02.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pkbc3_diff.dds</Path>
+  <Path>textures/terrain/pkbc3_ddna.dds</Path>
+  <Path>textures/terrain/pkbc3_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

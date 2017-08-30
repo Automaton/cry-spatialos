@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="c190bc32-d06f-c299-2b34-47b7aca3ed55">
+ <Files>
+  <File path="metal_brushed.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_brushed_diff.dds</Path>
+  <Path>textures/generic/metal/metal_brushed_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_brushed_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d0ec64bf-6622-db3e-79de-2216e35f433b">
+ <Files>
+  <File path="brown_brick_large.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/brick/brown_brick_large_diff.dds</Path>
+  <Path>textures/generic/brick/brown_brick_large_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,8 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="400000080A01" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%GLOSS_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="0.11657578,0.11657578,0.11657578" Specular="0.025371276,0.025371276,0.025371276" Emissive="0,0,0" Shininess="60" Opacity="0.99000001" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/rubbish/general_trash.tif"/>
+  <Texture Map="Specular" File="textures/decals/rubbish/general_trash.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/rubbish/general_trash_ddn.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="0.60000002" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000081" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_plastic" MatTemplate="" Diffuse="1,1,1" Specular="0.029556841,0.029556841,0.029556841" Emissive="0,0,0" Opacity="1" Shininess="170" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/base_colors/grey_128_diff.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/metal/metal_noisy_detail.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="6" TileV="6"/>
+  </Texture>
+ </Textures>
+ <PublicParams DetailDiffuseScale="0.050000001" SSSIndex="0" DetailBumpScale="0.050000001" DetailGlossScale="0.050000001" IndirectColor="0.25,0.25,0.25"/>
+</Material>

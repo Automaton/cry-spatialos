@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="3d57e275-379d-b7f7-3a3d-7641a6e5d725">
+ <Files>
+  <File path="rubber_bounce.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/rubber/rubber_flat_diff.dds</Path>
+  <Path>textures/generic/rubber/rubber_flat_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

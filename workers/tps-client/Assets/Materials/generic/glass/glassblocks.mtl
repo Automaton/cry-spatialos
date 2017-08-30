@@ -1,0 +1,8 @@
+<Material MtlFlags="526336" Shader="Glass" GenMask="100040004010" StringGenMask="%BILINEAR_FP16%DIRT_MAP%SPECULAR_MAP%TINT_MAP" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="0.21586053,0.21586053,0.21586053" Specular="0.25415212,0.25415212,0.25415212" Emissive="0,0,0" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/glass/glassblocks_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/glass/glassblocks_ddn.tif"/>
+  <Texture Map="Specular" File="textures/generic/glass/glassblocks_spec.tif"/>
+ </Textures>
+ <PublicParams BumpMapTile="1" TintColor="0.21586053,0.21586053,0.21586053" CloudinessReducesGloss="1" TintCloudiness="0.5" BackLightScale="0.33000001" BumpScale="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

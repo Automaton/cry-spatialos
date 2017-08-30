@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="f88dace9-63c7-4010-853b-5ce357694b13">
+ <Files>
+  <File path="wood_bleached_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_bleached_a_diff.dds</Path>
+  <Path>textures/generic/wood/wood_bleached_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

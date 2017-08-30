@@ -1,0 +1,78 @@
+<ParaGroup>
+
+  <VEGPARAMS LookAheadTime="1.0" />
+
+  <Dimensions>
+    <Param name="TurnAngle" min="-1.57" max="+1.57" cells="9" locked="1" deltaextraction="1"/>
+  </Dimensions>
+
+  <ExampleList>
+    <Example Position=" 0,-1, 0" AName="kneel_tac_stepRotate_90_rgt_01" />
+    <Example Position=" 0, 0, 0" AName="kneel_tac_stepRotate_90_mid_01" />
+    <Example Position=" 0, 1, 0" AName="kneel_tac_stepRotate_90_lft_01" />
+  </ExampleList>
+
+  <ExamplePseudo>
+    <Pseudo p0="1" p1="0" w0="-1.5" w1="2.5" />
+    <Pseudo p0="1" p1="2" w0="-1.5" w1="2.5" />
+  </ExamplePseudo>
+
+  <Blendable>
+    <Face p0="3"  p1="0" />
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+    <Face p0="2"  p1="4" />
+  </Blendable>
+
+  <JointList>
+ 	<Joint name="Bip01" />
+ 	<Joint name="Bip01 Pelvis" />
+	<Joint name="Bip01 Spine" />
+	<Joint name="Bip01 Spine1" />
+	<Joint name="Bip01 Spine2" />
+	<Joint name="Bip01 Spine3" />
+	<Joint name="Bip01 Neck" />
+	<Joint name="Bip01 Head" />
+
+ 	<Joint name="Bip01 L Thigh" />
+ 	<Joint name="Bip01 L Calf" />
+ 	<Joint name="Bip01 L Foot" />
+ 	<Joint name="Bip01 L Toe0" />
+ 
+ 	<Joint name="Bip01 R Thigh" />
+ 	<Joint name="Bip01 R Calf" />
+ 	<Joint name="Bip01 R Foot" />
+ 	<Joint name="Bip01 R Toe0" />
+
+	<Joint name="Bip01 L Clavicle" />
+	<Joint name="Bip01 L UpperArm" />
+	<Joint name="Bip01 L Forearm"  />
+	<Joint name="Bip01 L ForeTwist" />
+	<Joint name="Bip01 L ForeTwist1" />
+	<Joint name="Bip01 L ForeTwist2" />
+	<Joint name="Bip01 L Hand"     />
+
+	<Joint name="Bip01 R Clavicle" />
+	<Joint name="Bip01 R UpperArm" />
+	<Joint name="Bip01 R Forearm" />
+	<Joint name="Bip01 R ForeTwist" />
+	<Joint name="Bip01 R ForeTwist1" />
+	<Joint name="Bip01 R ForeTwist2" />
+	<Joint name="Bip01 R Hand" />
+	<Joint name="weapon_bone" />
+	<Joint name="Bip01 LHand2Weapon_IKTarget" />
+	<Joint name="Bip01 LHand2Weapon_IKBlend" />
+
+	<Joint name="L_Gluceus" />
+	<Joint name="L_Lat_1" />
+	<Joint name="L_Lat_2" />
+	<Joint name="L_Lat_3" />
+	<Joint name="L_Lat_4" />
+	<Joint name="R_Gluceus" />
+	<Joint name="R_Lat_1" />
+	<Joint name="R_Lat_2" />
+	<Joint name="R_Lat_3" />
+	<Joint name="R_Lat_4" />
+  </JointList>
+
+</ParaGroup>

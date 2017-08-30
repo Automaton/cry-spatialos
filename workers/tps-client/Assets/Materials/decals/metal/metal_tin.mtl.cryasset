@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="2aa22e30-ecea-dad8-2870-799a2a0b096a">
+ <Files>
+  <File path="metal_tin.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/metal/metal_tin.dds</Path>
+  <Path>textures/decals/metal/metal_tin_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

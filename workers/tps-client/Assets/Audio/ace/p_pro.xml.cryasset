@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="818d17e5-2a04-8c52-29a9-a8f1f7b6b0cf">
+ <Files>
+  <File path="p_pro.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">ATLConfig</Detail>
+ </Details>
+</AssetMetadata>

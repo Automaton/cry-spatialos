@@ -1,0 +1,40 @@
+<AssetMetadata version="0" type="Level" guid="c277d94a-fcf4-6e0d-425e-b31930f5d169" source="">
+ <Files>
+  <File path="BasicMap.cry"/>
+ </Files>
+ <Dependencies>
+  <Path>%engine%/engineassets/codecoverage/hit.dds</Path>
+  <Path>%engine%/engineassets/codecoverage/pbar.dds</Path>
+  <Path>%engine%/engineassets/codecoverage/unexpected.dds</Path>
+  <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
+  <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
+  <Path>%engine%/engineassets/icons/livepreview.dds</Path>
+  <Path>%engine%/engineassets/icons/lowmemoryusage.dds</Path>
+  <Path>%engine%/engineassets/materials/fog/fogvolumebox.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/fogvolumeellipsoid.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceaninto.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanintolowspec.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanoutof.mtl</Path>
+  <Path>%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl</Path>
+  <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
+  <Path>%engine%/engineassets/objects/default.cgf</Path>
+  <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
+  <Path>%engine%/engineassets/textures/defaults/16_12.dds</Path>
+  <Path>%engine%/engineassets/textures/defaults/16_34.dds</Path>
+  <Path>%engine%/engineassets/textures/defaults/16_5.dds</Path>
+  <Path>%engine%/engineassets/textures/defaults/16_grey.dds</Path>
+  <Path>engineassets/materials/sky/sky.mtl</Path>
+  <Path>engineassets/materials/water/ocean_default.mtl</Path>
+  <Path>engineassets/textures/grey.dds</Path>
+  <Path>engineassets/textures/skys/night/half_moon.dds</Path>
+  <Path>engineassets/textures/white.dds</Path>
+  <Path>flatgreylight.mtl</Path>
+  <Path>libs/environmentpresets/fps_demo.xml</Path>
+  <Path>materials/terrain.mtl</Path>
+  <Path>objects/default/editorprimitive.mtl</Path>
+  <Path>objects/default/primitive_pyramid.cgf</Path>
+  <Path>objects/tilingmaterials/flatgrey.mtl</Path>
+  <Path>objects/tilingmaterials/flatgrey2.mtl</Path>
+  <Path>textures/defaults/white.dds</Path>
+ </Dependencies>
+</AssetMetadata>

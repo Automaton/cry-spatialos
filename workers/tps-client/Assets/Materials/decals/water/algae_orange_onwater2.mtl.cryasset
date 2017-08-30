@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="fb1d0428-7694-30cd-bfe6-0f618e62d12f">
+ <Files>
+  <File path="algae_orange_onwater2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">2</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/water/alge_1.dds</Path>
+  <Path>textures/decals/water/alge_1_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

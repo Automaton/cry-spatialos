@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="bcffe7ea-5232-2eaf-8617-3dddb345f144">
+ <Files>
+  <File path="wall_worn_paint_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/rubbish/wall_worn_paint_a.dds</Path>
+ </Dependencies>
+</AssetMetadata>

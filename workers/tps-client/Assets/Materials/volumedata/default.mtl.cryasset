@@ -1,0 +1,9 @@
+<AssetMetadata version="0" type="Material" guid="e13ff466-fcec-127e-8c58-f62db1c9c8d1">
+ <Files>
+  <File path="default.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">0</Detail>
+ </Details>
+</AssetMetadata>

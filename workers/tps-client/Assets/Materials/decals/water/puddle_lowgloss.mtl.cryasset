@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="ad9ecaf6-af83-281d-eb1d-d44845b831c7">
+ <Files>
+  <File path="puddle_lowgloss.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/water/puddle_decal.dds</Path>
+  <Path>textures/decals/water/puddle_decal_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

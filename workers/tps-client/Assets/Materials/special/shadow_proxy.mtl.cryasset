@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="e30ac13d-5103-a7b2-d413-fcbef997b349">
+ <Files>
+  <File path="shadow_proxy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/collision_proxy.dds</Path>
+ </Dependencies>
+</AssetMetadata>

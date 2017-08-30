@@ -1,0 +1,19 @@
+<CombinedBlendSpace>
+
+  <VEGPARAMS Idle2Move="1" />
+
+  <Dimensions>
+    <Param name="TurnAngle" ChooseBlendSpace="1" locked="1" />
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed" />
+    <Param name="TravelAngle" />
+  </AdditionalExtraction>
+
+  <BlendSpaces>
+    <BlendSpace AName="animations/human/male/lmg/stand/Bspace_tutorial_files/1D-BSpace_I2M_left.bspace" />
+    <BlendSpace AName="animations/human/male/lmg/stand/Bspace_tutorial_files/1D-BSpace_I2M_right.bspace" />
+  </BlendSpaces>
+
+</CombinedBlendSpace>

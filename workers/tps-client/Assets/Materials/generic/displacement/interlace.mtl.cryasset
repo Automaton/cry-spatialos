@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e15a914c-b380-80f1-5a3a-ba3b31140f14">
+ <Files>
+  <File path="interlace.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/interlace_ddn.dds</Path>
+  <Path>textures/generic/displacement/interlace_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

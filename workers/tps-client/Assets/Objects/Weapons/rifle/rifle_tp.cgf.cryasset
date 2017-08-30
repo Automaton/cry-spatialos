@@ -1,0 +1,19 @@
+<AssetMetadata version="0" type="Mesh" guid="cea2e4d1-58cd-fa9f-28e5-b900e39db17e">
+ <Files>
+  <File path="rifle_tp.cgf"/>
+  <File path="rifle_tp_lod1.cgf"/>
+  <File path="rifle_tp_lod2.cgf"/>
+  <File path="rifle_tp_lod3.cgf"/>
+  <File path="rifle_tp_lod4.cgf"/>
+  <File path="rifle_tp_lod5.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">11312</Detail>
+  <Detail name="vertexCount">13006</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

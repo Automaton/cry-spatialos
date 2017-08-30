@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="e377510f-67bc-284b-27d7-3d494e819df9">
+ <Files>
+  <File path="brick_rough_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/brick/brick_rough01_diff.dds</Path>
+  <Path>textures/generic/brick/brick_rough01_ddna.dds</Path>
+  <Path>textures/detail_bumpmaps/rock/stone_dmap.dds</Path>
+  <Path>textures/generic/brick/brick_rough01_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

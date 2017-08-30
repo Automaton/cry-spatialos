@@ -1,0 +1,8 @@
+<Material MtlFlags="524290" Shader="Illum" GenMask="80000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="10" GlowAmount="2" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/glow/laser_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="10" TileV="10"/>
+  </Texture>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

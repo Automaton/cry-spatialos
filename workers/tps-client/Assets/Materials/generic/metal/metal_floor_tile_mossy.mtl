@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="C9000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/metal/metal_floor_tile_mossy_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/metal/metal_floor_tile_mossy_ddna.tif"/>
+  <Texture Map="Specular" File="textures/generic/metal/metal_floor_tile_mossy_spec.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/metal/metal_floor_tile_mossy_displ.tif"/>
+ </Textures>
+ <PublicParams PomDisplacement="0.015" SSSIndex="0" SelfShadowStrength="3" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

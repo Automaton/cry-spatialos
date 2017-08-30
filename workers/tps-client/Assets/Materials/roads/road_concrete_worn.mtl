@@ -1,0 +1,7 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2104000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.026241222,0.026241222,0.026241222" Emissive="0,0,0" Opacity="1" Shininess="180" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/roads/road_concrete_worn_diff.tif" Filter="5"/>
+  <Texture Map="Bumpmap" File="textures/roads/road_concrete_worn_ddna.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,25 @@
+<ParaGroup>
+
+  <VEGPARAMS Idle2Move="1" />
+
+  <Dimensions>
+    <Param name="TurnAngle" min="-3.15" max="+0.00" cells="9" locked="1" deltaextraction="1"/>
+  </Dimensions>
+
+  <AdditionalExtraction>
+    <Param name="MoveSpeed" />
+    <Param name="TravelAngle" />
+  </AdditionalExtraction>
+
+  <ExampleList>
+    <Example AName="stand_tac_runStart_rifle_rev_fast_rf_3p_01"  PlaybackScale="1.00" />
+    <Example AName="stand_tac_runStart_rifle_rgt_fast_rf_3p_01"  PlaybackScale="1.00" />
+    <Example AName="stand_tac_runStart_rifle_fwd_fast_rf_3p_01"  PlaybackScale="1.00" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+</ParaGroup>

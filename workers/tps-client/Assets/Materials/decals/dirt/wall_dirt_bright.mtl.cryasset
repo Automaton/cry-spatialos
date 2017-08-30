@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="85126251-724a-4b83-f730-14e214a86805">
+ <Files>
+  <File path="wall_dirt_bright.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/wall_dirt_bright.dds</Path>
+ </Dependencies>
+</AssetMetadata>

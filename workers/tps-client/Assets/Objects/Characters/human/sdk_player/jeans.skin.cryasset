@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="SkinnedMesh" guid="9ed16b5c-4b5e-2238-a296-5d23ac757024">
+ <Files>
+  <File path="jeans.skin"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">7</Detail>
+  <Detail name="triangleCount">15042</Detail>
+  <Detail name="vertexCount">7951</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+  <Detail name="bonesCount">135</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Objects/characters/human/sdk_player/sdk_player.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

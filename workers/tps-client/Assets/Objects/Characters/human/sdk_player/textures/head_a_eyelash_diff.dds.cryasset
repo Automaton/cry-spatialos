@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Texture" guid="ad03f04a-7715-a123-7d34-276b360a1ae2">
+ <Files>
+  <File path="head_a_eyelash_diff.dds"/>
+  <File path="head_a_eyelash_diff.dds.1"/>
+  <File path="head_a_eyelash_diff.dds.2"/>
+  <File path="head_a_eyelash_diff.dds.3"/>
+  <File path="head_a_eyelash_diff.dds.4"/>
+  <File path="head_a_eyelash_diff.dds.5"/>
+ </Files>
+ <Details>
+  <Detail name="width">512</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">8</Detail>
+ </Details>
+</AssetMetadata>

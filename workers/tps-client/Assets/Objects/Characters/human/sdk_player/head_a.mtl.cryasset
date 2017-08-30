@@ -1,0 +1,34 @@
+<AssetMetadata version="0" type="Material" guid="89c62e54-138e-5ba3-6096-215e9fff1adc">
+ <Files>
+  <File path="head_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">8</Detail>
+  <Detail name="textureCount">23</Detail>
+ </Details>
+ <Dependencies>
+  <Path>objects/characters/human/sdk_player/textures/head_a_hair_stubble_diff.dds</Path>
+  <Path>./nearest_cubemap.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyelash_diff.dds</Path>
+  <Path>./nearest_cubemap.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_overlay_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_overlay_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_iris_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_iris_ddn.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_iris_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_iris_ddn.dds</Path>
+  <Path>./nearest_cubemap.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_iris_displ.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_eyeball_cornea_ddn.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_teeth_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_teeth_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_teeth_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_teeth_dmap.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_ddna.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_spec.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_wrinkle_atlas.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_wrinkle_mask_diff.dds</Path>
+  <Path>objects/characters/human/sdk_player/textures/head_a_sss.dds</Path>
+ </Dependencies>
+</AssetMetadata>

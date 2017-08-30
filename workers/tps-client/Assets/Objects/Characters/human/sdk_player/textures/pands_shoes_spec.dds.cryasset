@@ -1,0 +1,17 @@
+<AssetMetadata version="0" type="Texture" guid="f1f9eefe-8186-34bb-ba06-bd820d8ede65">
+ <Files>
+  <File path="pands_shoes_spec.dds"/>
+  <File path="pands_shoes_spec.dds.1"/>
+  <File path="pands_shoes_spec.dds.2"/>
+  <File path="pands_shoes_spec.dds.3"/>
+  <File path="pands_shoes_spec.dds.4"/>
+  <File path="pands_shoes_spec.dds.5"/>
+  <File path="pands_shoes_spec.dds.6"/>
+  <File path="pands_shoes_spec.dds.7"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

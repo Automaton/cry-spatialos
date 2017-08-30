@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="8B000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%OFFSET_BUMP_MAPPING%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/concrete/floor_stone_paver_a_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/concrete/floor_stone_paver_a_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/concrete/floor_stone_paver_a_displ.tif"/>
+ </Textures>
+ <PublicParams PomDisplacement="0.0049999999" SSSIndex="0" SelfShadowStrength="3" ObmDisplacement="0.0049999999" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

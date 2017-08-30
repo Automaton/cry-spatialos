@@ -1,0 +1,10 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="210400000" StringGenMask="%NORMAL_MAP%SPECULAR_MAP%TEMP_TERRAIN" SurfaceType="mat_grass" MatTemplate="" Diffuse="0.73791051,0.73791051,0.73791051" Specular="1,1,1" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/pjwky2_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.1" TileV="0.1"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/pjwky2_ddna.tif"/>
+  <Texture Map="Specular" File="textures/terrain/pjwky2_spec.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="2.8" DetailTextureStrength="0.5" BlendFactor="1.75"/>
+</Material>

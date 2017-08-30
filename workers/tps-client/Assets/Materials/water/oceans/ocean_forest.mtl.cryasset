@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="78a4ca78-5aae-4ee1-5df1-cc91af359ba2">
+ <Files>
+  <File path="ocean_forest.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Textures/cubemaps/forest/l_ocean_probe1_cm.dds</Path>
+ </Dependencies>
+</AssetMetadata>

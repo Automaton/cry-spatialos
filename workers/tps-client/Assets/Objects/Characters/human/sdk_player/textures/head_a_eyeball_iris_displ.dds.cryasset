@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Texture" guid="beb187e7-053f-0b62-5377-e8736f12e955">
+ <Files>
+  <File path="head_a_eyeball_iris_displ.dds"/>
+  <File path="head_a_eyeball_iris_displ.dds.1"/>
+  <File path="head_a_eyeball_iris_displ.dds.2"/>
+  <File path="head_a_eyeball_iris_displ.dds.3"/>
+  <File path="head_a_eyeball_iris_displ.dds.4"/>
+  <File path="head_a_eyeball_iris_displ.dds.5"/>
+ </Files>
+ <Details>
+  <Detail name="width">512</Detail>
+  <Detail name="height">512</Detail>
+  <Detail name="mipCount">8</Detail>
+ </Details>
+</AssetMetadata>

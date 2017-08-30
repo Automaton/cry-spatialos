@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="65bbf4b5-a193-4267-f71e-bb44a1c1434a">
+ <Files>
+  <File path="ground_grass_dried_01.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pftjl2_diff.dds</Path>
+  <Path>textures/terrain/pftjl2_ddna.dds</Path>
+  <Path>textures/terrain/pftjl2_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

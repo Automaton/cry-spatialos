@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="880b0117-e615-0da7-5576-fa5210ee3cc1">
+ <Files>
+  <File path="terrain_soil.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/terrain_soil.dds</Path>
+  <Path>textures/decals/dirt/terrain_soil_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

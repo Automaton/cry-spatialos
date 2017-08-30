@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Water" GenMask="C24" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="0.57758057,0.70837593,0.91309881" Specular="0.9911021,0.93011087,0.79129797" Emissive="0,0,0" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Environment" File="Textures/cubemaps/forest/l_ocean_probe1_cm.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="0.30000001" SoftIntersectionFactor="0.1" Tilling="8" FoamCrestAmount="1" SubSurfaceScatteringScale="2" RipplesNormalsScale="0.5" FoamAmount="0.5" DetailNormalsScale="1" DetailTilling="2" GradientScale="0.075000003" FresnelGloss="0.97500002" ReflectionScale="0.75" RefractionBumpScale="0.1" FoamSoftIntersectionFactor="0.75" FoamTilling="10" HeightScale="0.0040000002" ReflectionBumpScale="0.050000001" RainTilling="0.1"/>
+</Material>

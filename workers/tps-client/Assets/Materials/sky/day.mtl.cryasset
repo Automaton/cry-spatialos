@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="ef10ca3e-4c6a-fe98-12fe-fede0c010cc9">
+ <Files>
+  <File path="day.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/skys/day/box_12.dds</Path>
+ </Dependencies>
+</AssetMetadata>

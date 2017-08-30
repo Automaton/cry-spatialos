@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="7f53f2d9-2302-2e35-b2a3-53d664835c28">
+ <Files>
+  <File path="test_mat_water.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/water_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="89000801" StringGenMask="%ALLOW_SILHOUETTE_POM%DECAL%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.034339812,0.034339812,0.034339812" Emissive="0,0,0" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/mud/mud_e_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/mud/mud_e_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/generic/mud/mud_e_displ.tif"/>
+  <Texture Map="Opacity" File="textures/generic/blend_masks/decal_mask_b.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.015" DecalFalloff="1" SelfShadowStrength="3" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

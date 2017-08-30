@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="A1000081" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%NORMAL_MAP%SILHOUETTE_PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/brick/brick_rough01_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/brick/brick_rough01_ddna.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/rock/stone_dmap.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="4" TileV="4"/>
+  </Texture>
+  <Texture Map="Heightmap" File="textures/generic/brick/brick_rough01_displ.tif"/>
+ </Textures>
+ <PublicParams SilPomDisplacement="0.025" SilPomStepSizeViewDep="1" DetailDiffuseScale="0.5" SSSIndex="0" DetailBumpScale="0.5" SelfShadowStrength="3" HeightBias="0.5" DetailGlossScale="0" SilPomNumSteps="32" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="047d1d08-b387-c9cd-abcd-d1e9570e7255">
+ <Files>
+  <File path="metal_tile_rusty_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_tile_rusty_a_diff.dds</Path>
+  <Path>textures/generic/metal/metal_tile_rusty_a_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_tile_rusty_a_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

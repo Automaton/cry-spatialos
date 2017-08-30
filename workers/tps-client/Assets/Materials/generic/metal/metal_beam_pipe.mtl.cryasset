@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="03bb484c-0251-b2a1-b91a-184be77c5b07">
+ <Files>
+  <File path="metal_beam_pipe.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_beam_pipe_diff.dds</Path>
+  <Path>textures/generic/metal/metal_beam_pipe_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_beam_pipe_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

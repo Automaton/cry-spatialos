@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="de568753-5099-d4ca-fd5c-fd2ed15bd05e">
+ <Files>
+  <File path="floor_grate.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/floor_grate_diff.dds</Path>
+  <Path>textures/generic/metal/floor_grate_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

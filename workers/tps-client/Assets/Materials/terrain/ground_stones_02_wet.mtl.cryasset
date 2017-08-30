@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="558cf263-9866-e3d2-4576-04e8b726e9a0">
+ <Files>
+  <File path="ground_stones_02_wet.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/pkbo6_wet_diff.dds</Path>
+  <Path>textures/terrain/pkbo6_wet_ddna.dds</Path>
+  <Path>textures/terrain/pkbo6_wet_spec.dds</Path>
+  <Path>textures/terrain/pkbo6_wet_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

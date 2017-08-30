@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="834c59cd-5c3e-ac4c-1c4f-4f7adc83c648">
+ <Files>
+  <File path="barnacles.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/water/barnacles_01_diff.dds</Path>
+  <Path>textures/decals/water/barnacles_01_ddna.dds</Path>
+  <Path>textures/decals/water/barnacles_01_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

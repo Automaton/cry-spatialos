@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="835992bb-1d56-2813-c939-0bb87f203d0a">
+ <Files>
+  <File path="smooth_concrete_b.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/smooth_concrete_b_diff.dds</Path>
+  <Path>textures/generic/concrete/smooth_concrete_b_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

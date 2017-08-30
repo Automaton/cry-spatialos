@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="268d9482-9446-f12e-b8a0-1fc264eddd7f">
+ <Files>
+  <File path="metal_bronze_oxidized_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_bronze_oxidized_a_diff.dds</Path>
+  <Path>textures/generic/metal/metal_bronze_oxidized_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

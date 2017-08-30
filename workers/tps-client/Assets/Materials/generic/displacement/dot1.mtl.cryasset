@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="54968742-5e10-d828-4efe-5041de17dfbc">
+ <Files>
+  <File path="dot1.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/dot1_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

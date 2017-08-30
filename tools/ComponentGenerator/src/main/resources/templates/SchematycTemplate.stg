@@ -1,0 +1,74 @@
+typeFileHeader(includes, signatures, regFuncs) ::= <<
+#pragma once
+
+#include \<improbable/worker.h>
+#include \<CrySchematyc/CoreAPI.h>
+<includes>
+
+<signatures>
+
+namespace {
+    class SpatialOsTypes {
+    public:
+        static void RegisterSpatialOs(Schematyc::IEnvRegistrar& registrar)
+        {
+            Schematyc::CEnvRegistrationScope baseScope = registrar.RootScope().Register(SCHEMATYC_MAKE_ENV_MODULE("{18331838-0FA2-4906-95A3-439787C01B27}"_cry_guid, "SpatialOS"));
+            <regFuncs>
+        }
+    };
+}
+>>
+
+typeFileSource(regFuncs, functionBodies) ::= <<
+#include "Types.h"
+
+namespace {
+    void SpatialOsTypes::RegisterSpatialOs(Schematyc::IEnvRegistrar& registrar)
+    {
+        Schematyc::CEnvRegistrationScope baseScope = registrar.RootScope().Register(SCHEMATYC_MAKE_ENV_MODULE("{18331838-0FA2-4906-95A3-439787C01B27}"_cry_guid, "SpatialOS"));
+        <regFuncs>
+    }
+}
+
+<functionBodies>
+>>
+
+reflectTypeSignature(type) ::= <<
+static void ReflectType(Schematyc::CTypeDesc\<<type>\>& desc);
+>>
+
+reflectTypeBody(type, guid, name) ::= <<
+static void ReflectType(Schematyc::CTypeDesc\<<type>\>& desc)
+{
+	desc.SetGUID("<guid>"_cry_guid);
+	desc.SetEditorCategory("SpatialOS");
+	desc.SetLabel("<name>");
+}
+>>
+
+reflectField(clazzName, name, defaultVal, num, upperName) ::= <<
+desc.AddMember(&<clazzName>::<name>, <num>, "<upperName>", "<upperName>", "", <defaultVal>);
+>>
+
+getterFunc(className, funcName, guid, output, label, ptrType) ::= <<
+{
+    auto pFunction = Schematyc::EnvFunction::MakeShared\<<ptrType>\>(&<className>::<funcName>, "<guid>"_cry_guid, "<label>", SCHEMATYC_SOURCE_FILE_INFO);
+    pFunction->BindOutput(0, 0, "<output>");
+    scope.Register(pFunction);
+}
+>>
+
+setterFunc(className, funcName, guid, input, defaultVal, label) ::= <<
+{
+    auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&<className>::<funcName>, "<guid>"_cry_guid, "<label>");
+    pFunction->BindInput(1, 1, "<input>", nullptr, <defaultVal>);
+    scope.Register(pFunction);
+}
+>>
+
+scopeReg(typeName, reg) ::= <<
+{
+    Schematyc::CEnvRegistrationScope scope = baseScope.Register(SCHEMATYC_MAKE_ENV_DATA_TYPE(<typeName>));
+    <reg>
+}
+>>

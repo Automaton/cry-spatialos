@@ -1,0 +1,7 @@
+<Material MtlFlags="526336" Shader="Watervolume" GenMask="80000013" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="1,1,1" Specular="0.27583286,0.27583286,0.27583286" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Specular" File="textures/generic/water/water_glossmap.tif" Filter="7"/>
+  <Texture Map="Environment" File="Textures/cubemaps/woodland/l_probe_ab1_river_a_root_cm.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="0.5" GlossMapTilling="1" SoftIntersectionFactor="1" Tilling="0.1" DetailNormalsScale="0.5" GlossMapBias="0" EnvCubeReflMul="16" VertexWaveScale="0.125" DetailTilling="2.5" EnvCubeScale="16" GlossMapScale="1.5" RealtimeReflMul="1" RainTilling="1" WaterFlowSpeed="0.5"/>
+</Material>

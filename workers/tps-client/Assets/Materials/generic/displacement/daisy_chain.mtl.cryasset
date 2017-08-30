@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="05031d4c-df35-5ce6-f4e4-2a68fe93e52b">
+ <Files>
+  <File path="daisy_chain.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/daisy_chain_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

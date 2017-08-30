@@ -1,0 +1,14 @@
+package automaton.player;
+
+type Heartbeat{}
+
+type KilledPlayer {
+  EntityId killed = 1;
+}
+
+component Player {
+  id = 30002;
+
+  event Heartbeat heartbeat;
+  event KilledPlayer killed_player;
+}

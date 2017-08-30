@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="4874fcbb-de3c-bc2e-b910-a2a41c43d3af">
+ <Files>
+  <File path="forest_path_flat.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/forest_path_flat_diff.dds</Path>
+  <Path>textures/roads/forest_path_flat_ddna.dds</Path>
+  <Path>textures/roads/forest_path_flat_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

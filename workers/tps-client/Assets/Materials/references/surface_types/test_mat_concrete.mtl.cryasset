@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="7a500287-62aa-2a79-7a1e-6a9d69ecd2a0">
+ <Files>
+  <File path="test_mat_concrete.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+  <Path>materials/references/surface_types/concrete_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

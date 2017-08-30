@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="e3c72e17-64d2-efbc-3d55-6683ffbdc5ac">
+ <Files>
+  <File path="soil_pebbled.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/soil_pebbled_diff.dds</Path>
+  <Path>textures/terrain/detail/soil_pebbled_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

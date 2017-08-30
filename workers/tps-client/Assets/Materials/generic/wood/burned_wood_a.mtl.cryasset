@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="39f3bffc-f382-ea81-e685-13b65e46f3c4">
+ <Files>
+  <File path="burned_wood_a.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/burned_wood_a_diff.dds</Path>
+  <Path>textures/generic/wood/burned_wood_a_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

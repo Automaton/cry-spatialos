@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="ecd6ebad-fbce-e748-5cd4-09e515ea5af2">
+ <Files>
+  <File path="window_streaks_glass.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/glass/window_streaks_glass_diff.dds</Path>
+  <Path>textures/generic/glass/window_streaks_glass_ddn.dds</Path>
+  <Path>textures/generic/glass/window_streaks_glass_spec.dds</Path>
+ </Dependencies>
+</AssetMetadata>

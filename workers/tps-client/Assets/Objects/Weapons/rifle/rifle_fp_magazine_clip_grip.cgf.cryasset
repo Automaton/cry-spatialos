@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="00e7964d-76f2-880c-5feb-933cea220ff8">
+ <Files>
+  <File path="rifle_fp_magazine_clip_grip.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">286</Detail>
+  <Detail name="vertexCount">238</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

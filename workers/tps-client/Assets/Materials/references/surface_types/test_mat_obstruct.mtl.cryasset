@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="0473838c-29be-11ea-4b0b-0c7eb951f255">
+ <Files>
+  <File path="test_mat_obstruct.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/grey.dds</Path>
+ </Dependencies>
+</AssetMetadata>

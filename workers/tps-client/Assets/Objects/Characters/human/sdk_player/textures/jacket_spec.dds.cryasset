@@ -1,0 +1,17 @@
+<AssetMetadata version="0" type="Texture" guid="d513f9d4-97d3-9e5f-5b69-43134afb3149">
+ <Files>
+  <File path="jacket_spec.dds"/>
+  <File path="jacket_spec.dds.1"/>
+  <File path="jacket_spec.dds.2"/>
+  <File path="jacket_spec.dds.3"/>
+  <File path="jacket_spec.dds.4"/>
+  <File path="jacket_spec.dds.5"/>
+  <File path="jacket_spec.dds.6"/>
+  <File path="jacket_spec.dds.7"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

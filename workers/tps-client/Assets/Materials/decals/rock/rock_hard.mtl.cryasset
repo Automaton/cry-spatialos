@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="0b45ca39-0575-56e4-e3c8-6ab5595684c0">
+ <Files>
+  <File path="rock_hard.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/rock/rock_hard_diff.dds</Path>
+  <Path>textures/decals/rock/rock_hard_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

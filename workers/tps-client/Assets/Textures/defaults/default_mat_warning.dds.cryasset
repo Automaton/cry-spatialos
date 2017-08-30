@@ -1,0 +1,12 @@
+<cryasset>
+ <AssetMetadata version="0" type="Texture" guid="25ef9125-dbe7-5407-1cfe-87d39c66bf4c" source="default_mat_warning.tif">
+  <Files>
+   <File path="default_mat_warning.dds"/>
+  </Files>
+  <Details>
+   <Detail name="width">1</Detail>
+   <Detail name="height">1</Detail>
+   <Detail name="mipCount">1</Detail>
+  </Details>
+ </AssetMetadata>
+</cryasset>

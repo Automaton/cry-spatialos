@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="C1000021" StringGenMask="%ALLOW_SILHOUETTE_POM%BLENDLAYER%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/metal/metal_bronze_plain_a_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/metal/metal_bronze_plain_a_ddna.tif"/>
+  <Texture Map="Specular" File="textures/generic/metal/metal_bronze_plain_a_spec.tif"/>
+  <Texture Map="Custom" File="textures/generic/metal/metal_bronze_oxidized_a_diff.tif"/>
+  <Texture Map="[1] Custom" File="textures/generic/metal/metal_bronze_oxidized_a_ddna.tif"/>
+  <Texture Map="Opacity" File="textures/generic/metal/metal_bronze_plain_a_mask.tif"/>
+ </Textures>
+ <PublicParams BlendFalloff="1.5" BlendLayer2Tiling="1" SSSIndex="0" BlendMaskTiling="1" BlendFactor="8" BlendLayer2Specular="0.029999999" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="e787d218-186e-2ca0-3ab5-a49da417082e">
+ <Files>
+  <File path="rifle_fp_flashlight.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">1004</Detail>
+  <Detail name="vertexCount">1082</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

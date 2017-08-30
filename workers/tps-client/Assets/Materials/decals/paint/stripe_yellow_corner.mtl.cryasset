@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="3ef2c48d-6b87-c850-48af-4f2a74ef3125">
+ <Files>
+  <File path="stripe_yellow_corner.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/paint/stripe_yellow_corner.dds</Path>
+ </Dependencies>
+</AssetMetadata>

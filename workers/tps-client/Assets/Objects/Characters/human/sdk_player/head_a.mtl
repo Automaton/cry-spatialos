@@ -1,0 +1,66 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="mat_head_a_face" MtlFlags="524418" Shader="Humanskin" GenMask="9051000000" StringGenMask="%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN%WRINKLE_BLENDING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0.033104766,0.033104766,0.033104766" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/head_a_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/head_a_spec.tif"/>
+    <Texture Map="Custom" File="objects/characters/human/sdk_player/textures/head_a_wrinkle_atlas.tif"/>
+    <Texture Map="[1] Custom" File="objects/characters/human/sdk_player/textures/head_a_wrinkle_mask_diff.tif"/>
+    <Texture Map="Opacity" File="objects/characters/human/sdk_player/textures/head_a_sss.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1" Melanin="0" SSSIndex="1.4" TessellationFactorMax="32" TranslucencyMultiplier="0.69999999" WrinklesBlend="1" TessellationFactorMin="1.5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="mat_head_a_teeth" MtlFlags="2621568" Shader="Illum" GenMask="C1000081" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_teeth_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/head_a_teeth_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/head_a_teeth_spec.tif"/>
+    <Texture Map="Detail" File="objects/characters/human/sdk_player/textures/head_a_teeth_dmap.tif"/>
+   </Textures>
+   <PublicParams DetailDiffuseScale="0.80000001" SSSIndex="0" DetailBumpScale="0" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="mat_head_a_eyeball_iris" MtlFlags="2621568" Shader="Eye" GenMask="2801010000" StringGenMask="%ENVIRONMENT_MAP%NORMAL_MAP%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.34191445,0.34191445,0.34191445" Specular="0.015996294,0.015996294,0.015996294" Emissive="0,0,0" Opacity="1" Shininess="215" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_eyeball_iris_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/head_a_eyeball_iris_ddn.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+    <Texture Map="Heightmap" File="objects/characters/human/sdk_player/textures/head_a_eyeball_iris_displ.tif"/>
+    <Texture Map="Custom" File="objects/characters/human/sdk_player/textures/head_a_eyeball_cornea_ddn.tif"/>
+   </Textures>
+   <PublicParams CorneaRefraction="0" IrisDepth="0.0123" IrisColor="0.5,0.5,0.5" IrisShadowing="2.266" CorneaSmoothness="1" ScleraSSS="0.2" IrisSSS="0.40000001" IndirectColor="0,0,0"/>
+  </Material>
+  <Material Name="mat_head_a_eyeball_tearduct" MtlFlags="2621600" Shader="Illum" GenMask="81000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.84687322,0.82278574,0.8307699" Specular="0.033104766,0.033104766,0.033104766" Emissive="0,0,0" Opacity="1" Shininess="165" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_eyeball_iris_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/head_a_eyeball_iris_ddn.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="1.4" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="mat_head_a_eyeball_water" MtlFlags="525472" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0.033104766,0.033104766,0.033104766" Emissive="0,0,0" Opacity="1" Shininess="174" vertModifType="0" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="mat_head_a_eyeball_overlay" MtlFlags="524416" Shader="Eye" GenMask="2800040000" StringGenMask="%EYE_AO_OVERLAY%TEMP_EYES%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.038472746,0.011126082,0.0045597549" Specular="0,0,0" Emissive="0,0,0" Opacity="1" Shininess="68" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_eyeball_overlay_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/head_a_eyeball_overlay_spec.tif"/>
+   </Textures>
+   <PublicParams DiffOccStrength="1" SpecOccStrength="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="mat_head_a_eyeball_lashes" MtlFlags="2623650" Shader="Hair" GenMask="20000400008" StringGenMask="%ANISO_SPECULAR%HAIR_PASS%THIN_HAIR" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.19120169,0.19120169,0.19120169" Specular="1,1,1" Emissive="0,0,0" Opacity="0.99000001" Shininess="255" AlphaTest="0.38" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_eyelash_diff.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="-0.102" SoftIntersection="0" ShiftVariation="0" DiffuseWrap="0.51700002" SecondaryHighlightColor="0.69999999,0.69999999,0.69999999" SecondaryHighlightWidth="1.83" ThinHairThreshold="0.066" AlphaBlendMultiplier="1" IndirectColor="0.26225069,0.26225069,0.26225069"/>
+  </Material>
+  <Material Name="mat_head_a_head_hair" MtlFlags="2623616" Shader="Hair" GenMask="20000500008" StringGenMask="%ANISO_SPECULAR%HAIR_AMBIENT%HAIR_PASS%THIN_HAIR" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.024157634,0.020288564,0.017641956" Specular="0,0,0" Emissive="0,0,0" Opacity="0.99000001" CloakAmount="0" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/head_a_hair_stubble_diff.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams SecondaryHighlightShiftAmount="0.1" SoftIntersection="0.17299999" ShiftVariation="0.43700001" DiffuseWrap="0" SecondaryHighlightColor="0,0,0" SecondaryHighlightWidth="2.5650001" ThinHairThreshold="0.057999998" AlphaBlendMultiplier="1.303" IndirectColor="0.7011019,0.7011019,0.7011019"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

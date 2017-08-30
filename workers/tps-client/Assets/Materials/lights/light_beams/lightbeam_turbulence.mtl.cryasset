@@ -1,0 +1,9 @@
+<AssetMetadata version="0" type="Material" guid="59581c7d-6239-0d1f-a886-ed706284cee4">
+ <Files>
+  <File path="lightbeam_turbulence.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">0</Detail>
+ </Details>
+</AssetMetadata>

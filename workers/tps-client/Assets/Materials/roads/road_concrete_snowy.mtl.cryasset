@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="5f6a773c-6a99-9700-19f7-c7252f0287ad">
+ <Files>
+  <File path="road_concrete_snowy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/road_concrete_snowy_diff.dds</Path>
+  <Path>textures/roads/road_concrete_snowy_ddna.dds</Path>
+  <Path>textures/roads/road_concrete_snowy_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

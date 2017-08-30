@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="b306df64-7b20-a3f7-b6db-6deb81fa4745">
+ <Files>
+  <File path="concrete_plates_agedred.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/concrete_plates_agedred_diff.dds</Path>
+  <Path>textures/generic/concrete/concrete_plates_agedred_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

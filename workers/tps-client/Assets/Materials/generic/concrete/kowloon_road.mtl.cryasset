@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="a293062a-b860-82ed-5cbe-239d1bf49ce7">
+ <Files>
+  <File path="kowloon_road.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/kowloon_road_clean_diff.dds</Path>
+  <Path>textures/generic/concrete/kowloon_road_dirty_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

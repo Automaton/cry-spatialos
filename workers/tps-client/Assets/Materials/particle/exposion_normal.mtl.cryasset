@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="79cf5a7b-ab75-a377-1998-efe097cf43b2">
+ <Files>
+  <File path="exposion_normal.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/fire/fireball_anim_a.dds</Path>
+ </Dependencies>
+</AssetMetadata>

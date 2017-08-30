@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="411829b8-a795-5e16-8f22-02976b1380d6">
+ <Files>
+  <File path="tiles_randomplates.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/tiles_randomplates_ddn.dds</Path>
+  <Path>textures/generic/displacement/tiles_randomplates_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

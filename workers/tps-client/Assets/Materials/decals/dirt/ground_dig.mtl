@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="88000981" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%DETAIL_MAPPING%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0.016807377,0.016807377,0.016807377" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/dirt/ground_dig_decal.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/dirt/ground_dig_decal_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/decals/dirt/ground_dig_decal_displ.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/mud/mud_rough_detail.tif">
+   <TexMod TileU="5" TileV="5"/>
+  </Texture>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.0099999998" DetailDiffuseScale="0.5" DecalFalloff="1" DetailBumpScale="0.5" SelfShadowStrength="4" HeightBias="0.5" DecalAlphaMult="1" DetailGlossScale="0.25" IndirectColor="0.25,0.25,0.25"/>
+</Material>

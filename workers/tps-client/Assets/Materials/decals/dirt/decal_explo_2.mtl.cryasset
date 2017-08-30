@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="e447498c-2a39-34c5-cce0-057db6847fa6">
+ <Files>
+  <File path="decal_explo_2.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/explosionhighres.dds</Path>
+  <Path>textures/decals/dirt/field_mud_water_ddna.dds</Path>
+  <Path>textures/decals/dirt/field_mud_water_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

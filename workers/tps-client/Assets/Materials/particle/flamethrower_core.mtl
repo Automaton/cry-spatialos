@@ -1,0 +1,8 @@
+<Material MtlFlags="526336" Shader="Particles" GenMask="0" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/sprites/fire/flamethrower.tif">
+   <TexMod TileU="10" TileV="10" RotateW="90"/>
+  </Texture>
+ </Textures>
+ <PublicParams SoftParticlesScale="1" GlobalIlluminationAmount="1" DepthFixupThreshold="0.050000001"/>
+</Material>

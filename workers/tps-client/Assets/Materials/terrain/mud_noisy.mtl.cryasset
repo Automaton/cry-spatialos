@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="89d112b5-d962-bb82-9d88-f80f0305fc89">
+ <Files>
+  <File path="mud_noisy.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/terrain/detail/mud_noisy_diff.dds</Path>
+  <Path>textures/terrain/detail/mud_noisy_ddna.dds</Path>
+  <Path>textures/terrain/detail/mud_noisy_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

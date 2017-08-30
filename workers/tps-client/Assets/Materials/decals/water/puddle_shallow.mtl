@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80000800" StringGenMask="%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_water" MatTemplate="" Diffuse="0,0,0" Specular="0.04518621,0.04518621,0.04518621" Emissive="0,0,0" Opacity="1" Shininess="240" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/water/puddle_decal.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="0.15000001" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

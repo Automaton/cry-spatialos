@@ -1,0 +1,45 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="hands" MtlFlags="524418" Shader="HumanSkin" GenMask="8114400000" StringGenMask="%NORMAL_MAP%PN_TESSELLATION%SPECULAR_MAP%TEMP_SKIN%WRINKLE_BLENDING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="0.23455061,0.23455061,0.23455061" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/sdk_hand.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/sdk_hand_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/sdk_hand_spec.tif"/>
+    <Texture Map="Custom" File="objects/characters/human/sdk_player/textures/head_a_wrinkle_atlas.tif"/>
+    <Texture Map="[1] Custom" File="objects/characters/human/sdk_player/textures/head_a_wrinkle_mask_diff.tif"/>
+    <Texture Map="Opacity" File="objects/characters/human/sdk_player/textures/sdk_hand_sss.tif"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" TessellationFactor="1" Melanin="0" SSSIndex="1.4" TessellationFactorMax="32" TranslucencyMultiplier="0.69999999" WrinklesBlend="1" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="jacket" MtlFlags="524416" Shader="Illum" GenMask="30400201" StringGenMask="%ALLOW_SILHOUETTE_POM%DETAIL_MAPPING%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" AlphaTest="0.050000001" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/jacket_blue_white_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/jacket_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/jacket_spec.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/fabric/fabric_b_detail.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="33" TileV="33"/>
+    </Texture>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" DetailDiffuseScale="0.1" SSSIndex="0" DetailBumpScale="0.1" DetailGlossScale="0.1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="jeans" MtlFlags="524416" Shader="Illum" GenMask="30400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/pands_shoes_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/pands_shoes_ddna.tif">
+     <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" RotateU="57.5354"/>
+    </Texture>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/pands_shoes_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="buttons" MtlFlags="524416" Shader="Illum" GenMask="30400001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SPECULAR_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Opacity="1" Shininess="172" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/human/sdk_player/textures/btn_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/human/sdk_player/textures/btn_ddna.tif"/>
+    <Texture Map="Specular" File="objects/characters/human/sdk_player/textures/btn_spec.tif"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,16 @@
+<Material MtlFlags="524329" Shader="Terrain.Layer" GenMask="20C000000" StringGenMask="%NORMAL_MAP%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="1,1,1" Specular="0.012983033,0.012983033,0.012983033" Emissive="0,0,0" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/plains_ferns_wet_diff.tif" Filter="7">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.25" TileV="0.25"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/plains_ferns_wet_ddna.tif" Filter="5">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="0.40000001" TileV="0.40000001"/>
+  </Texture>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/plants/plants_leaf_detail.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="20" TileV="20"/>
+  </Texture>
+  <Texture Map="Heightmap" File="textures/terrain/detail/plains_ferns_wet_displ.tif"/>
+ </Textures>
+ <DetailDecal Opacity="128" SSAOAmount="0" topTileU="1" topTileV="1" topOffsV="0" topOffsU="0" topRotation="0" topDeformation="0" topSortOffset="0" bottomTileU="0.5" bottomTileV="0.5" bottomOffsV="0.5" bottomOffsU="0.5" bottomRotation="0" bottomDeformation="0" bottomSortOffset="0"/>
+ <PublicParams BlendFalloff="2" DetailTextureStrength="0.34999999" PomDisplacement="0.0074999998" SelfShadowStrength="4" HeightBias="0.5" BlendFactor="4" IndirectColor="0.25,0.25,0.25"/>
+</Material>

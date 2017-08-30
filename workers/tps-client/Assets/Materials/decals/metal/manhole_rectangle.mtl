@@ -1,0 +1,8 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2088000881" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DECAL%PARALLAX_OCCLUSION_MAPPING%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="0.016807377,0.016807377,0.016807377" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/metal/manhole_rectangle.tif" IsTileU="0" IsTileV="0"/>
+  <Texture Map="Bumpmap" File="textures/decals/metal/manhole_rectangle_ddna.tif"/>
+  <Texture Map="Heightmap" File="textures/decals/metal/manhole_rectangle_displ.tif"/>
+ </Textures>
+ <PublicParams DecalDiffuseOpacity="1" PomDisplacement="0.025" DecalFalloff="1" SelfShadowStrength="3" HeightBias="0.5" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

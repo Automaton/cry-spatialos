@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="5d9f5d1a-7536-0d49-6b86-f4e430e2e6a4">
+ <Files>
+  <File path="scales_neato.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/defaults/defaultnouvs.dds</Path>
+  <Path>textures/generic/displacement/flat_ddn.dds</Path>
+  <Path>textures/generic/displacement/scales_neato_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

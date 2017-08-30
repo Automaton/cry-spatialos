@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="acee8a52-ce05-ab87-87fb-84b403ae03fe">
+ <Files>
+  <File path="floor_stone_tiles_red_b.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/floor_tiles_red_b_diff.dds</Path>
+  <Path>textures/generic/concrete/floor_tiles_red_b_ddna.dds</Path>
+  <Path>textures/generic/concrete/floor_tiles_red_b_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

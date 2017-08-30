@@ -1,0 +1,6 @@
+<Material MtlFlags="2623488" Shader="Glass" GenMask="10040000010" StringGenMask="%BILINEAR_FP16%SPEC_MAP%TINT_MAP" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" CloakAmount="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Specular" File="objects/natural/water/ice_shelf/textures/ice_shelf_tint.tif"/>
+ </Textures>
+ <PublicParams BumpMapTile="1" TintColor="0.21586053,0.21586053,0.21586053" FresnelScale="1" FresnelBias="1" CloudinessReducesGloss="0.5" TintCloudiness="1" BackLightScale="0.5" BumpScale="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

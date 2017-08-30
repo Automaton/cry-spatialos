@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="f35a79ed-d050-939f-fe56-c4f178d2066d">
+ <Files>
+  <File path="FlatGrey.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>Textures/defaults/white.dds</Path>
+ </Dependencies>
+</AssetMetadata>

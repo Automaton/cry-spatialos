@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="81000001" StringGenMask="%ALLOW_SILHOUETTE_POM%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_fabric" MatTemplate="" Diffuse="1,1,1" Specular="0.034339812,0.034339812,0.034339812" Emissive="0,0,0" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/fabric/rope_thick_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/generic/fabric/rope_thick_ddna.tif"/>
+ </Textures>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

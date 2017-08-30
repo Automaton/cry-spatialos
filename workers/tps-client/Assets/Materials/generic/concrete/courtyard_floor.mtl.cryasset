@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="d512e787-5472-1007-582c-36bfae32dfa7">
+ <Files>
+  <File path="courtyard_floor.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/concrete/courtyard_floor_diff.dds</Path>
+  <Path>textures/generic/concrete/courtyard_floor_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

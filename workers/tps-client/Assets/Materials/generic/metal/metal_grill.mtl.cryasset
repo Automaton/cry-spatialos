@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="Material" guid="5351e8ce-748c-c815-0c7a-006b8f3fa7bf">
+ <Files>
+  <File path="metal_grill.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">4</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_grill_diff.dds</Path>
+  <Path>textures/generic/metal/metal_grill_ddna.dds</Path>
+  <Path>textures/generic/metal/metal_grill_spec.dds</Path>
+  <Path>textures/generic/metal/metal_grill_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

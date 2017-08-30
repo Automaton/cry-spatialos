@@ -1,0 +1,18 @@
+<AssetMetadata version="0" type="Mesh" guid="cc5f2fe1-8a01-2e18-67e1-fd8c1bb75248">
+ <Files>
+  <File path="rifle_tp_magazine_clip_auxiliary.cgf"/>
+  <File path="rifle_tp_magazine_clip_auxiliary_lod1.cgf"/>
+  <File path="rifle_tp_magazine_clip_auxiliary_lod2.cgf"/>
+  <File path="rifle_tp_magazine_clip_auxiliary_lod3.cgf"/>
+  <File path="rifle_tp_magazine_clip_auxiliary_lod4.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">4</Detail>
+  <Detail name="triangleCount">1804</Detail>
+  <Detail name="vertexCount">2108</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,8 @@
+<Material MtlFlags="526336" Shader="Watervolume" GenMask="80000089" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="0.014310519,0.019917838,0.013473397" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="128" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/generic_cubemap_day_cm.tif"/>
+  <Texture Map="Custom" File="textures/decals/water/muddy_seaweed_diff.tif"/>
+  <Texture Map="[1] Custom" File="textures/decals/water/muddy_seaweed_ddn.tif"/>
+ </Textures>
+ <PublicParams NormalsScale="0.1" SoftIntersectionFactor="1" DecalTilling="0.02" Tilling="2" DetailNormalsScale="0.1" EnvCubeReflMul="2" VertexWaveScale="0.0099999998" DetailTilling="1" DecalFalloff="0.2" EnvCubeScale="1" RealtimeReflMul="0.5" DecalStrength="3" RainTilling="0"/>
+</Material>

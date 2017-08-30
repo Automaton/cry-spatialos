@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="0125d666-4b12-600d-0a02-c20a89130cfe">
+ <Files>
+  <File path="decal_burned_22.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/dirt/decal_burned_22.dds</Path>
+  <Path>textures/decals/dirt/decal_burned_22_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

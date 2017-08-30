@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="073c3df4-2df2-ef8f-5b1e-b813f6137ed5">
+ <Files>
+  <File path="water_cave_causticsControl.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/cubemaps/forest/l_ab4_cavemain_probe_1_cm.dds</Path>
+ </Dependencies>
+</AssetMetadata>

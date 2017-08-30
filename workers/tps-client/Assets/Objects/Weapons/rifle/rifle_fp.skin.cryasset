@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="SkinnedMesh" guid="ff6f7866-1519-916a-51d9-f9cf8a1f7395">
+ <Files>
+  <File path="rifle_fp.skin"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">8</Detail>
+  <Detail name="triangleCount">16109</Detail>
+  <Detail name="vertexCount">17833</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+  <Detail name="bonesCount">6</Detail>
+ </Details>
+ <Dependencies>
+  <Path>./rifle.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

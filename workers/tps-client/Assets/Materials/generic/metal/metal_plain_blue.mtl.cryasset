@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="16556f61-1e91-0ad8-d795-748ada2fa4da">
+ <Files>
+  <File path="metal_plain_blue.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/metal/metal_plain_blue_diff.dds</Path>
+  <Path>textures/generic/metal/metal_plain_blue_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>

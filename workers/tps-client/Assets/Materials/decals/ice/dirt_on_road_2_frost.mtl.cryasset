@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Material" guid="12e0c0da-880c-6b81-3ffc-225032462364">
+ <Files>
+  <File path="dirt_on_road_2_frost.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">3</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/decals/ice/dirt_on_road_2_frost.dds</Path>
+  <Path>textures/decals/ice/dirt_on_road_2_frost_ddna.dds</Path>
+  <Path>textures/decals/ice/dirt_on_road_2_frost_displ.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,27 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="proxie" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_metal_shell" MatTemplate="" Diffuse="1,0,0.21586053" Specular="0.19806935,0.19806935,0.19806935" Emissive="0,0,0" Shininess="10" Opacity="0.5" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="rifle_main" MtlFlags="524416" Shader="Illum" GenMask="C0000181" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%DETAIL_MAPPING%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal_shell" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/rifle/textures/rifle_new_diff.tif"/>
+    <Texture Map="Specular" File="objects/weapons/rifle/textures/rifle_new_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/weapons/rifle/textures/rifle_new_ddna.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/metal/metal_005_detail.dds">
+     <TexMod TileU="13" TileV="13"/>
+    </Texture>
+   </Textures>
+   <PublicParams DetailDiffuseScale="0.72899997" SSSIndex="0" DetailBumpScale="0.029999999" DetailGlossScale="0.075000003" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rifle_gadgets" MtlFlags="524416" Shader="Illum" GenMask="C0000081" StringGenMask="%ALLOW_SILHOUETTE_POM%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal_shell" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" CloakAmount="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/weapons/rifle/textures/rifle_gadgets_diff.tif"/>
+    <Texture Map="Specular" File="objects/weapons/rifle/textures/rifle_gadgets_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/weapons/rifle/textures/rifle_gadgets_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

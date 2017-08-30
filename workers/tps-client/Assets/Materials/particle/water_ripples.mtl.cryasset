@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="1bb2abcb-a62b-65b6-0ad1-03bf1da7d0e2">
+ <Files>
+  <File path="water_ripples.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/water/ripple_a.dds</Path>
+ </Dependencies>
+</AssetMetadata>

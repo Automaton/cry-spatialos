@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="200000000" StringGenMask="%TEMP_TERRAIN" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0.005181517,0.005181517,0.005181517" Emissive="0,0,0" Shininess="10" Opacity="1" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/pine_distance_terrain_diff.tif">
+   <TexMod TileU="0.02" TileV="0.02"/>
+  </Texture>
+ </Textures>
+ <PublicParams BlendFalloff="1" DetailTextureStrength="0.60000002" BlendFactor="0.88999999" IndirectColor="0.22713655,0.22713655,0.22713655"/>
+</Material>

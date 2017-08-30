@@ -1,0 +1,16 @@
+<AssetMetadata version="0" type="Material" guid="ad5a52aa-05a3-6cb7-567e-200db5a169f4">
+ <Files>
+  <File path="wood_beams_a_red.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">5</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/generic/wood/wood_beams_a_diff.dds</Path>
+  <Path>textures/generic/wood/wood_beams_a_ddna.dds</Path>
+  <Path>textures/generic/wood/wood_painted_red_a_diff.dds</Path>
+  <Path>textures/generic/wood/wood_beams_a_paint_ddna.dds</Path>
+  <Path>textures/generic/wood/wood_beams_a_mask.dds</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,76 @@
+<ParaGroup>
+
+  <VEGPARAMS LookAheadTime="1.0" />
+
+  <Dimensions>
+    <Param name="TurnAngle" min="0" max="+3.24" cells="9" locked="1" deltaextraction="1" />
+  </Dimensions>
+  
+  <AdditionalExtraction>
+    <Param name="MoveSpeed" />
+	<Param name="TravelAngle" />
+  </AdditionalExtraction>
+
+  <ExampleList>
+    <Example AName="stand_tac_runStop_rifle_fwd_fast_lf_3p_01" />
+    <Example AName="stand_tac_runStop_rifle_lft_fast_lf_3p_01" />
+    <Example AName="stand_tac_runStop_rifle_rev_fast_lf_3p_01" />
+  </ExampleList>
+
+  <Blendable>
+    <Face p0="0"  p1="1" />
+    <Face p0="1"  p1="2" />
+  </Blendable>
+
+  <JointList>
+ 	<Joint name="Bip01" />
+ 	<Joint name="Bip01 Pelvis" />
+	<Joint name="Bip01 Spine" />
+	<Joint name="Bip01 Spine1" />
+	<Joint name="Bip01 Spine2" />
+	<Joint name="Bip01 Spine3" />
+	<Joint name="Bip01 Neck" />
+	<Joint name="Bip01 Head" />
+
+ 	<Joint name="Bip01 L Thigh" />
+ 	<Joint name="Bip01 L Calf" />
+ 	<Joint name="Bip01 L Foot" />
+ 	<Joint name="Bip01 L Toe0" />
+ 
+ 	<Joint name="Bip01 R Thigh" />
+ 	<Joint name="Bip01 R Calf" />
+ 	<Joint name="Bip01 R Foot" />
+ 	<Joint name="Bip01 R Toe0" />
+
+	<Joint name="Bip01 L Clavicle" />
+	<Joint name="Bip01 L UpperArm" />
+	<Joint name="Bip01 L Forearm"  />
+	<Joint name="Bip01 L ForeTwist" />
+	<Joint name="Bip01 L ForeTwist1" />
+	<Joint name="Bip01 L ForeTwist2" />
+	<Joint name="Bip01 L Hand"     />
+
+	<Joint name="Bip01 R Clavicle" />
+	<Joint name="Bip01 R UpperArm" />
+	<Joint name="Bip01 R Forearm" />
+	<Joint name="Bip01 R ForeTwist" />
+	<Joint name="Bip01 R ForeTwist1" />
+	<Joint name="Bip01 R ForeTwist2" />
+	<Joint name="Bip01 R Hand" />
+	<Joint name="weapon_bone" />
+	<Joint name="Bip01 LHand2Weapon_IKTarget" />
+	<Joint name="Bip01 LHand2Weapon_IKBlend" />
+
+	<Joint name="L_Gluceus" />
+	<Joint name="L_Lat_1" />
+	<Joint name="L_Lat_2" />
+	<Joint name="L_Lat_3" />
+	<Joint name="L_Lat_4" />
+	<Joint name="R_Gluceus" />
+	<Joint name="R_Lat_1" />
+	<Joint name="R_Lat_2" />
+	<Joint name="R_Lat_3" />
+	<Joint name="R_Lat_4" />
+  </JointList>
+
+</ParaGroup>

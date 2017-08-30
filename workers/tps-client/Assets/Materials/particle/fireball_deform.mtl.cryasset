@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="0c0dd719-c832-d056-e6aa-dedc0877a0e0">
+ <Files>
+  <File path="fireball_deform.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/sprites/fire/fire_tiled_a.dds</Path>
+  <Path>textures/sprites/water/refraction_b_ddn.dds</Path>
+ </Dependencies>
+</AssetMetadata>

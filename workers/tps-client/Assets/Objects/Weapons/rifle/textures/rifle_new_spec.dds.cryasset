@@ -1,0 +1,17 @@
+<AssetMetadata version="0" type="Texture" guid="f7922410-c740-214b-1e18-0212da07ab87">
+ <Files>
+  <File path="rifle_new_spec.dds"/>
+  <File path="rifle_new_spec.dds.1"/>
+  <File path="rifle_new_spec.dds.2"/>
+  <File path="rifle_new_spec.dds.3"/>
+  <File path="rifle_new_spec.dds.4"/>
+  <File path="rifle_new_spec.dds.5"/>
+  <File path="rifle_new_spec.dds.6"/>
+  <File path="rifle_new_spec.dds.7"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

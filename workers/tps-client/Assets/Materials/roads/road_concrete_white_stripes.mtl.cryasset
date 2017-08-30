@@ -1,0 +1,13 @@
+<AssetMetadata version="0" type="Material" guid="89bdd9a6-dec7-dc50-1af1-51411b8b8c72">
+ <Files>
+  <File path="road_concrete_white_stripes.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">2</Detail>
+ </Details>
+ <Dependencies>
+  <Path>textures/roads/road_concrete_white_stripes_diff.dds</Path>
+  <Path>textures/roads/road_concrete_white_stripes_ddna.dds</Path>
+ </Dependencies>
+</AssetMetadata>
