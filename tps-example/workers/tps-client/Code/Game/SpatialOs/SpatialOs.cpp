@@ -123,7 +123,7 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 
 void CSpatialOs::ConnectToSpatialOs()
 {
-	const std::string defaultReceptionistIp{ "10.201.6.106" };
+	const std::string defaultReceptionistIp{ "127.0.0.1" };
 	const int32 defaultReceptionistPort{ 7777 };
 	const std::string defaultWorkerType{ "TPSClient" };
 	const std::string defaultLinkProtocol{ "RakNet" };
