@@ -43,7 +43,6 @@ SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, w
 			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Position::ComponentId), reinterpret_cast<void*>(pOp)));
 		}
 	}));
-	RegisterComponents();
 }
 
 void SpatialOsEntitySpawner::SpawnCryEntity(worker::EntityId spatialOsEntityId)
