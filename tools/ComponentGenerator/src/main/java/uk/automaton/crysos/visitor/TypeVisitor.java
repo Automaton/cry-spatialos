@@ -1,9 +1,9 @@
-package uk.automaton.visitor;
+package uk.automaton.crysos.visitor;
 
-import uk.automaton.json.EnumDefinition;
-import uk.automaton.json.SourceReference;
-import uk.automaton.json.TypeDefinition;
-import uk.automaton.json.type.FieldDefinition;
+import uk.automaton.crysos.json.EnumDefinition;
+import uk.automaton.crysos.json.SourceReference;
+import uk.automaton.crysos.json.TypeDefinition;
+import uk.automaton.crysos.json.type.FieldDefinition;
 
 public interface TypeVisitor {
 

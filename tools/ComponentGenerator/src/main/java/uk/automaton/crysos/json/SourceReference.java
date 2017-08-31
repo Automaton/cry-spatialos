@@ -1,4 +1,4 @@
-package uk.automaton.json;
+package uk.automaton.crysos.json;
 
 import com.google.gson.annotations.SerializedName;
 

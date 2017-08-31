@@ -1,7 +1,7 @@
-package uk.automaton.visitor;
+package uk.automaton.crysos.visitor;
 
-import uk.automaton.json.EnumDefinition;
-import uk.automaton.json.SourceReference;
+import uk.automaton.crysos.json.EnumDefinition;
+import uk.automaton.crysos.json.SourceReference;
 
 public interface EnumVisitor {
 

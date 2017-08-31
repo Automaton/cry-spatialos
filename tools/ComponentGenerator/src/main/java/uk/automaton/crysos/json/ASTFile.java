@@ -1,7 +1,7 @@
-package uk.automaton.json;
+package uk.automaton.crysos.json;
 
 import com.google.gson.annotations.SerializedName;
-import uk.automaton.visitor.ASTVisitor;
+import uk.automaton.crysos.visitor.ASTVisitor;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package uk.automaton.json.type;
+package uk.automaton.crysos.json.type;
 
 import com.google.gson.annotations.SerializedName;
-import uk.automaton.json.SourceReference;
-import uk.automaton.json.TypeReference;
+import uk.automaton.crysos.json.SourceReference;
+import uk.automaton.crysos.json.TypeReference;
 
 import java.util.LinkedList;
 import java.util.List;

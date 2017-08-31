@@ -21,7 +21,7 @@ jar {
     manifest {
         attributes 'Implementation-Title': 'ComponentGenerator',
                 'Implementation-Version': version,
-                'Main-Class': 'uk.automaton.ComponentGenerator'
+                'Main-Class': 'uk.automaton.crysos.ComponentGenerator'
     }
 }
 

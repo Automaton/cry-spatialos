@@ -1,13 +1,13 @@
-package uk.automaton;
+package uk.automaton.crysos;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import uk.automaton.json.ComponentDefinition;
-import uk.automaton.json.TypeDefinition;
-import uk.automaton.json.component.CommandDefinition;
-import uk.automaton.json.type.FieldDefinition;
+import uk.automaton.crysos.json.ComponentDefinition;
+import uk.automaton.crysos.json.TypeDefinition;
+import uk.automaton.crysos.json.component.CommandDefinition;
+import uk.automaton.crysos.json.type.FieldDefinition;
 
 import java.io.*;
 import java.lang.reflect.Type;

@@ -1,18 +1,18 @@
-package uk.automaton;
+package uk.automaton.crysos;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroup;
 import org.stringtemplate.v4.STGroupFile;
-import uk.automaton.json.*;
-import uk.automaton.json.component.CommandDefinition;
-import uk.automaton.json.component.EventDefinition;
-import uk.automaton.json.type.FieldDefinition;
-import uk.automaton.visitor.ASTVisitor;
-import uk.automaton.visitor.ComponentVisitor;
-import uk.automaton.visitor.EnumVisitor;
-import uk.automaton.visitor.TypeVisitor;
+import uk.automaton.crysos.json.*;
+import uk.automaton.crysos.json.component.CommandDefinition;
+import uk.automaton.crysos.json.component.EventDefinition;
+import uk.automaton.crysos.json.type.FieldDefinition;
+import uk.automaton.crysos.visitor.ASTVisitor;
+import uk.automaton.crysos.visitor.ComponentVisitor;
+import uk.automaton.crysos.visitor.EnumVisitor;
+import uk.automaton.crysos.visitor.TypeVisitor;
 
 import java.io.File;
 import java.io.FileWriter;

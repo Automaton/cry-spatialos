@@ -1,9 +1,9 @@
-package uk.automaton.visitor;
+package uk.automaton.crysos.visitor;
 
-import uk.automaton.json.SourceReference;
-import uk.automaton.json.TypeReference;
-import uk.automaton.json.component.CommandDefinition;
-import uk.automaton.json.component.EventDefinition;
+import uk.automaton.crysos.json.SourceReference;
+import uk.automaton.crysos.json.TypeReference;
+import uk.automaton.crysos.json.component.CommandDefinition;
+import uk.automaton.crysos.json.component.EventDefinition;
 
 public interface ComponentVisitor {
 

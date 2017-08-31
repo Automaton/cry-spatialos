@@ -1,8 +1,8 @@
-package uk.automaton.json.component;
+package uk.automaton.crysos.json.component;
 
 import com.google.gson.annotations.SerializedName;
-import uk.automaton.json.SourceReference;
-import uk.automaton.json.TypeReference;
+import uk.automaton.crysos.json.SourceReference;
+import uk.automaton.crysos.json.TypeReference;
 
 public class EventDefinition {
 

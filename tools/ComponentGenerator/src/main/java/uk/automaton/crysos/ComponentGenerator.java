@@ -1,4 +1,4 @@
-package uk.automaton;
+package uk.automaton.crysos;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
@@ -7,9 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STGroupFile;
-import uk.automaton.json.ASTFile;
-import uk.automaton.json.ComponentDefinition;
-import uk.automaton.json.TypeDefinition;
+import uk.automaton.crysos.json.ASTFile;
+import uk.automaton.crysos.json.ComponentDefinition;
+import uk.automaton.crysos.json.TypeDefinition;
 
 import java.io.*;
 import java.lang.reflect.Type;
