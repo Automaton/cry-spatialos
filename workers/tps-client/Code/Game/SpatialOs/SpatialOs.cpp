@@ -54,7 +54,25 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 	const WorkerRequirementSet clientWorkerRequirementSet{ { clientAttributeSet } };
 	const WorkerRequirementSet anyWorkerReadPermission{ { clientAttributeSet, gameWorkerAttributeSet } };
 
-	int id = 0;
+	int id = 1;
+	// Add spawner entity
+	{
+		const Coordinates initialPosition{ 0, 10, 0 };
+		CryComment("Adding spawner entity to snapshot");
+		worker::Entity snapshotEntity;
+		snapshotEntity.Add<Metadata>(Metadata::Data{ "Spawner" });
+		snapshotEntity.Add<Position>(Position::Data{ initialPosition });
+		snapshotEntity.Add<Persistence>(Persistence::Data());
+		snapshotEntity.Add<automaton::Spawner>(automaton::Spawner::Data{});
+
+		worker::Map<std::uint32_t, WorkerRequirementSet> writeAcl;
+		writeAcl.emplace(Metadata::ComponentId, gameWorkerRequirementSet);
+		writeAcl.emplace(Position::ComponentId, gameWorkerRequirementSet);
+		writeAcl.emplace(automaton::Spawner::ComponentId, gameWorkerRequirementSet);
+
+		snapshotEntity.Add<EntityAcl>(EntityAcl::Data(anyWorkerReadPermission, writeAcl));
+		snapshotEntities.emplace(id++, snapshotEntity);
+	}
 	while (!pIterator->IsEnd())
 	{
 		IEntity *pEntity = pIterator->Next();
@@ -88,12 +106,17 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 						pSerialiser->WriteComponent(entity, writeAcl);
 					}
 				}
+				entity.Add<EntityAcl>(EntityAcl::Data(anyWorkerReadPermission, writeAcl));
 				snapshotEntities.emplace(id++, entity);
 			}
 		}
 	}
 
-	worker::SaveSnapshot(path, snapshotEntities);
+	worker::Option<std::string> option = worker::SaveSnapshot(path, snapshotEntities);
+	if (!option.empty())
+	{
+		CryLog("Save snapshot error: %s", option->c_str());
+	}
 }
 
 void CSpatialOs::ConnectToSpatialOs()
@@ -226,8 +249,11 @@ void CSpatialOs::OnSpatialOsConnected()
 void CSpatialOs::OnSpawnerFound(const worker::EntityId& entityId)
 {
 	CryLog("Spawner found, sending command request");
-	automaton::SpawnPlayerRequest request(improbable::Coordinates(0, 0, 0));
-	m_connection->SendCommandRequest<automaton::Spawner::Commands::SpawnPlayer>(entityId, request, 1000);
+	if (!gEnv->IsEditor())
+	{
+		automaton::SpawnPlayerRequest request(improbable::Coordinates(0, 0, 0));
+		m_connection->SendCommandRequest<automaton::Spawner::Commands::SpawnPlayer>(entityId, request, 1000);
+	}
 	m_spawnerId = entityId;
 	if (m_entityQueryCallback)
 	{

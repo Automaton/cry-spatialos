@@ -34,8 +34,6 @@ void CSPlayerScore::ProcessEvent(SEntityEvent& event)
 	if (pPlayer == nullptr || !pPlayer->HasAuthority()) return;
 	gEnv->pAuxGeomRenderer->Draw2dLabel(25, 10, 3.0f, ColorF(1.f, 1.f, 1.f, 1.f), false, "Kills: %d", m_kills);
 	gEnv->pAuxGeomRenderer->Draw2dLabel(25, 30, 3.0f, ColorF(1.f, 0.f, 0.f, 1.f), false, "Deaths: %d", m_deaths);
-
-	gEnv->pAuxGeomRenderer->Draw2dLabel(static_cast<float>(gEnv->pRenderer->GetWidth() / 2), static_cast<float > (gEnv->pRenderer->GetHeight() / 2), 1.0f, ColorF(1.f, 1.f, 1.f, 1.f), true, "+");
 }
 
 CSPlayerScore::CSPlayerScore(): m_kills(0),

@@ -66,6 +66,12 @@ public:
 		m_spatialOs = &spatialOs;
 		m_entityId = entityId;
 		m_callbacks.reset(new ScopedViewCallbacks(view));
+		auto it = view.Entities.find(entityId);
+		if (it != view.Entities.end())
+		{
+			m_hasAuthority = it->second.HasAuthority<C>();
+			m_authorityChangeCallbacks.Update(m_hasAuthority);
+		}
 		Initialise(connection, view, entityId);
 	}
 

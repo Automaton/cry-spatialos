@@ -56,15 +56,16 @@ public:
 	bool HasPositionAuthority() const { return m_positionAuthority; }
 	bool IsReady() const { return (m_readyState == eCRS_All); }
 	int GetReadyState() const { return m_readyState; }
-	std::string GetMetadata() const { return std::string(m_entityInfo.c_str());  }
+	std::string GetMetadata() const { return m_entityInfo.empty() ? GetEntity()->GetClass()->GetName() : std::string(m_entityInfo.c_str());  }
 	Coordinates GetSpatialOsCoords() const;
 	bool IsPersistant() const { return m_persistent; }
 
 	static void ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>& desc);
 
-private:
 	void OnAddMetadata(worker::AddComponentOp<Metadata> const & op);
 	void OnAddPosition(worker::AddComponentOp<Position> const & op);
+
+private:
 	void OnAddPersistence(worker::AddComponentOp<Persistence> const & op);
 	void OnPositionAuthorityChange(worker::AuthorityChangeOp const & op);
 	void OnUpdatePosition(worker::ComponentUpdateOp<Position> const & op);

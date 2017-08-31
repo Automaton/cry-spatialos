@@ -43,6 +43,11 @@ void CSpatialOsComponent::Init(worker::EntityId entityId, worker::View& view, wo
 	m_spatialOs = &spatialOs;
 
 	m_callbacks.reset(new ScopedViewCallbacks(view));
+	auto it = view.Entities.find(entityId);
+	if (it != view.Entities.end())
+	{
+		m_positionAuthority = it->second.HasAuthority<Position>();
+	}
 
 	m_callbacks->Add(m_view->OnAddComponent<Position>(std::bind(&CSpatialOsComponent::OnAddPosition, this, std::placeholders::_1)));
 	m_callbacks->Add(m_view->OnAddComponent<Metadata>(std::bind(&CSpatialOsComponent::OnAddMetadata, this, std::placeholders::_1)));
@@ -134,6 +139,7 @@ void CSpatialOsComponent::OnPositionUpdate(Position::Update const & update)
 		m_positionCallbacks.Update(m_position);
 		if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
 		{
+			CryLog("Sending position update signal");
 			pObject->ProcessSignal(SPositionUpdatedSignal(oldPos, m_position));
 		}
 	}

@@ -96,7 +96,7 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 		}
 	}
 	break;
-	case ESYSTEM_EVENT_EDITOR_SIMULATION_MODE_CHANGED:
+	case ESYSTEM_EVENT_EDITOR_GAME_MODE_CHANGED:
 	{
 		if (!gEnv->IsEditor()) return;
 		if (wparam)
@@ -107,6 +107,11 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 		{
 			m_spatialOs.DisconnectFromSpatialOs();
 		}
+	}
+	break;
+	case ESYSTEM_EVENT_EDITOR_SIMULATION_MODE_CHANGED:
+	{
+
 	}
 	break;
 	case ESYSTEM_EVENT_FULL_SHUTDOWN:

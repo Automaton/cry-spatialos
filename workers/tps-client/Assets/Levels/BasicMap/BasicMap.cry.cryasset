@@ -32,6 +32,7 @@
   <Path>libs/environmentpresets/fps_demo.xml</Path>
   <Path>materials/terrain.mtl</Path>
   <Path>objects/default/editorprimitive.mtl</Path>
+  <Path>objects/default/primitive_cube.cgf</Path>
   <Path>objects/default/primitive_pyramid.cgf</Path>
   <Path>objects/tilingmaterials/flatgrey.mtl</Path>
   <Path>objects/tilingmaterials/flatgrey2.mtl</Path>
