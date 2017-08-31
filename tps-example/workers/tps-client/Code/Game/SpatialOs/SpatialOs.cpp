@@ -5,6 +5,8 @@
 #include <automaton/spawner.h>
 #include "SpatialOs.h"
 #include "SpatialOs/ComponentSerialiser.h"
+#include "Generated/components/automaton/Spawner.h"
+#include "Generated/components/automaton/Tree.h"
 
 CSpatialOs::CSpatialOs()
 	: m_view(new worker::View)
@@ -195,6 +197,16 @@ void CSpatialOs::ConnectToReceptionist(const std::string& hostName, uint16 port,
 
 }
 
+void CSpatialOs::RegisterComponents()
+{
+	m_entitySpawner->Register<CSPlayerScore>();
+	m_entitySpawner->Register<CSPlayer>();
+	m_entitySpawner->Register<CSMovement>();
+	m_entitySpawner->Register<CSBullet>();
+	m_entitySpawner->Register<CSTree>();
+	m_entitySpawner->Register<CSSpawner>();
+}
+
 void CSpatialOs::DisconnectFromSpatialOs()
 {
 	m_connectionLock.Lock();
@@ -218,6 +230,7 @@ void CSpatialOs::OnSpatialOsConnected()
 	if (m_connection)
 	{
 		m_entitySpawner.reset(new SpatialOsEntitySpawner(*(m_connection.get()), *(m_view.get()), *this));
+		RegisterComponents();
 	}
 	const worker::query::EntityQuery& entityQuery = {
 		worker::query::ComponentConstraint{ automaton::Spawner::ComponentId },

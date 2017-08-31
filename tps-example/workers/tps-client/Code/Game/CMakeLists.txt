@@ -37,12 +37,10 @@ add_sources("SpatialOs_uber.cpp"
 		"Components/SpatialOs/Movement.cpp"
 		"Components/SpatialOs/Player.cpp"
 		"Components/SpatialOs/PlayerScore.cpp"
-		"Components/SpatialOs/SpatialOsComponent.cpp"
 		"Components/SpatialOs/Bullet.h"
 		"Components/SpatialOs/Movement.h"
 		"Components/SpatialOs/Player.h"
 		"Components/SpatialOs/PlayerScore.h"
-		"Components/SpatialOs/SpatialOsComponent.h"
 )
 add_sources("Generated_uber.cpp"
     PROJECTS Game
@@ -167,7 +165,10 @@ target_sources(${THIS_PROJECT}
 		"${BASE_PATH}/../sdk/src/SpatialOs/ScopedViewCallbacks.h"
 		"${BASE_PATH}/../sdk/src/SpatialOs/ISpatialOs.h"
 		"${BASE_PATH}/../sdk/src/SpatialOs/SpatialOsComponent.h"
-		"${BASE_PATH}/../sdk/src/SpatialOs/SpatialOsEntitySpawner.h")
+		"${BASE_PATH}/../sdk/src/SpatialOs/SpatialOsEntitySpawner.h"
+		"${BASE_PATH}/../sdk/src/SpatialOs/component/SpatialOsComponent.h"
+		"${BASE_PATH}/../sdk/src/SpatialOs/component/SpatialOsComponent.cpp"
+)
 target_include_directories(${THIS_PROJECT}
 	PRIVATE
 	"${BASE_PATH}/../sdk/src")

@@ -36,6 +36,7 @@ public:
 private:
 	void ConnectToReceptionist(const std::string& hostName, uint16 port, worker::ConnectionParameters& params, uint32 timeoutMillis);
 
+	void RegisterComponents();
 	void OnSpatialOsConnected();
 	void OnSpawnerFound(const worker::EntityId& entityId);
 

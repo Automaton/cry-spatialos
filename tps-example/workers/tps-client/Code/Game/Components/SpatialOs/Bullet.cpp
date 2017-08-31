@@ -4,7 +4,6 @@
 #include "GamePlugin.h"
 #include "Components/Bullet.h"
 #include "Player.h"
-#include "SpatialOsComponent.h"
 
 
 CSBullet::CSBullet() : m_id(INVALID_ENTITYID), m_creator(0), m_transformReady(false), m_bulletReady(false), m_pSpatialOs(nullptr)

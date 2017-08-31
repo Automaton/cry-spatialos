@@ -8,7 +8,7 @@
 #include <automaton/player/bullet.h>
 #include <improbable/standard_library.h>
 #include "GamePlugin.h"
-#include "SpatialOsComponent.h"
+#include "SpatialOs/component/SpatialOsComponent.h"
 
 
 CSPlayer::CSPlayer(): m_lastHeartbeatTime(0.f), m_authCallback(0), m_pPlayer(nullptr)

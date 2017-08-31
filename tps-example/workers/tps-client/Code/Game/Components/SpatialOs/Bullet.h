@@ -2,7 +2,7 @@
 #include <CryEntitySystem/IEntitySystem.h>
 
 #include <automaton/player/bullet.h>
-#include "SpatialOsComponent.h"
+#include "SpatialOs/component/SpatialOsComponent.h"
 #include "SpatialOs/SpatialOsComponent.h"
 
 class CSBullet : public ISpatialOsComponent<automaton::player::Bullet>

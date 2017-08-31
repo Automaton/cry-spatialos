@@ -111,7 +111,6 @@ private:
 	void PreemptEntitySpawn(EntityId entityId, worker::EntityId id);
 	void SpawnCryEntity(worker::EntityId spatialOsEntityId);
 	void OnCreateEntity(const worker::CreateEntityResponseOp& op);
-	void RegisterComponents();
 
 	worker::View& m_view;
 	worker::Connection& m_connection;

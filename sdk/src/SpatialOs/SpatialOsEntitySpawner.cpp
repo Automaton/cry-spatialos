@@ -2,14 +2,10 @@
 
 #include "SpatialOsEntitySpawner.h"
 #include "improbable/collections.h"
-
+#include <improbable/standard_library.h>
 #include <CryEntitySystem/IEntitySystem.h>
-#include "Components/SpatialOs/Movement.h"
-#include "Components/SpatialOs/Bullet.h"
-#include "Components/SpatialOs/PlayerScore.h"
-#include "Generated/components/automaton/Tree.h"
-#include "Generated/components/automaton/Spawner.h"
-#include "Components/SpatialOs/Player.h"
+#include "component/SpatialOsComponent.h"
+
 
 SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, worker::View& view, ISpatialOs& spatialOs)
 	: m_view(view), m_connection(connection), m_spatialOs(spatialOs), m_callbacks(view)
@@ -29,22 +25,22 @@ SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, w
 			ProcessEndCriticalSection();
 		}
 	}));
-	m_callbacks.Add(m_view.OnAddComponent<Metadata>([this] (worker::AddComponentOp<Metadata> op)
+	m_callbacks.Add(m_view.OnAddComponent<improbable::Metadata>([this] (worker::AddComponentOp<improbable::Metadata> op)
 	{
 		auto it = m_bufferedSpawns.find(op.EntityId);
 		if (it != m_bufferedSpawns.end())
 		{
-			worker::AddComponentOp<Metadata> * pOp = new worker::AddComponentOp<Metadata>(op);
-			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(Metadata::ComponentId), reinterpret_cast<void*>(pOp)));
+			worker::AddComponentOp<improbable::Metadata> * pOp = new worker::AddComponentOp<improbable::Metadata>(op);
+			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Metadata::ComponentId), reinterpret_cast<void*>(pOp)));
 		}
 	}));
-	m_callbacks.Add(m_view.OnAddComponent<Position>([this](worker::AddComponentOp<Position> op)
+	m_callbacks.Add(m_view.OnAddComponent<improbable::Position>([this](worker::AddComponentOp<improbable::Position> op)
 	{
 		auto it = m_bufferedSpawns.find(op.EntityId);
 		if (it != m_bufferedSpawns.end())
 		{
-			worker::AddComponentOp<Position> * pOp = new worker::AddComponentOp<Position>(op);
-			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(Position::ComponentId), reinterpret_cast<void*>(pOp)));
+			worker::AddComponentOp<improbable::Position> * pOp = new worker::AddComponentOp<improbable::Position>(op);
+			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Position::ComponentId), reinterpret_cast<void*>(pOp)));
 		}
 	}));
 	RegisterComponents();
@@ -122,16 +118,6 @@ void SpatialOsEntitySpawner::OnCreateEntity(const worker::CreateEntityResponseOp
 			m_cryEntityIdToSpatialOsEntityId.erase(iter);
 		}
 	}
-}
-
-void SpatialOsEntitySpawner::RegisterComponents()
-{
-	Register<CSPlayerScore>();
-	Register<CSPlayer>();
-	Register<CSMovement>();
-	Register<CSBullet>();
-	Register<CSTree>();
-	Register<CSSpawner>();
 }
 
 EntityId SpatialOsEntitySpawner::GetCryEntityId(worker::EntityId spatialEntityId) const
@@ -245,7 +231,7 @@ void SpatialOsEntitySpawner::ProcessEndCriticalSection()
 			// Metadata component exists, try to look up metadata + class
 			void *ptr = it->second;
 			metadataOp = reinterpret_cast<worker::AddComponentOp<improbable::Metadata> *>(ptr);
-			const Metadata::Data& data = metadataOp->Data;
+			const improbable::Metadata::Data& data = metadataOp->Data;
 			IEntityClass *lookupClass = gEnv->pEntitySystem->GetClassRegistry()->FindClass(data.entity_type().c_str());
 			CryLog("Spawning with entity class %s", data.entity_type().c_str());
 			if (lookupClass != nullptr)
