@@ -11,11 +11,26 @@ namespace {
 		{
 			Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CSpatialOsComponent));
 			{
-				auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::FlushPosition, "{1093AEE3-577D-430A-81FC-C3C666159666}"_cry_guid, "FlushTransform");
-				pFunction->SetDescription("Update the SpatialOS position of this entity");
-				componentScope.Register(pFunction);
+				{
+					auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::FlushPosition, "{1093AEE3-577D-430A-81FC-C3C666159666}"_cry_guid, "FlushTransform");
+					pFunction->SetDescription("Update the SpatialOS position of this entity");
+					componentScope.Register(pFunction);
+				}
+				{
+					auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::HasPositionAuthority, "{8303D628-DE1D-4AB3-B5A3-3C5818D7C293}"_cry_guid, "HasPositionAuthority");
+					pFunction->SetDescription("Returns whether this worker has authority over this entitys position");
+					pFunction->BindOutput(0, 0, "Authority");
+					componentScope.Register(pFunction);
+				}
+				{
+					auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::SetWritePosition, "{398D6633-691B-47C2-AC48-39E05C743328}"_cry_guid, "SetWritePosition");
+					pFunction->SetDescription("Enables automatically writing position to the entity");
+					pFunction->BindInput(1, 1, "Enable", nullptr, false);
+					componentScope.Register(pFunction);
+				}
 			}
 			componentScope.Register(SCHEMATYC_MAKE_ENV_SIGNAL(SPositionUpdatedSignal));
+			componentScope.Register(SCHEMATYC_MAKE_ENV_SIGNAL(SOnPositionAuthoritySignal));
 		}
 	}
 
@@ -47,6 +62,10 @@ void CSpatialOsComponent::Init(worker::EntityId entityId, worker::View& view, wo
 	if (it != view.Entities.end())
 	{
 		m_positionAuthority = it->second.HasAuthority<Position>();
+		if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
+		{
+			pObject->ProcessSignal(SOnPositionAuthoritySignal(m_positionAuthority), GetGUID());
+		}
 	}
 
 	m_callbacks->Add(m_view->OnAddComponent<Position>(std::bind(&CSpatialOsComponent::OnAddPosition, this, std::placeholders::_1)));
@@ -126,6 +145,10 @@ void CSpatialOsComponent::OnPositionAuthorityChange(worker::AuthorityChangeOp co
 {
 	if (op.EntityId != m_spatialOsEntityId) return;
 	m_positionAuthority = op.HasAuthority;
+	if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
+	{
+		pObject->ProcessSignal(SOnPositionAuthoritySignal(m_positionAuthority), GetGUID());
+	}
 }
 
 void CSpatialOsComponent::OnUpdatePosition(worker::ComponentUpdateOp<Position> const& op)

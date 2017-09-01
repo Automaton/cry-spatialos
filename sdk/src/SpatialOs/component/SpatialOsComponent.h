@@ -33,12 +33,27 @@ struct SPositionUpdatedSignal
 	CryTransform::CTransform m_newTransform;
 };
 
+struct SOnPositionAuthoritySignal
+{
+	SOnPositionAuthoritySignal() : m_authority(false) {}
+	SOnPositionAuthoritySignal(bool auth)  : m_authority(auth) {}
+
+	bool m_authority;
+};
+
 static void ReflectType(Schematyc::CTypeDesc<SPositionUpdatedSignal>& desc)
 {
 	desc.SetGUID("{E86FC808-6B76-4E91-8A8B-D5AC49F63449}"_cry_guid);
 	desc.SetLabel("OnTransformUpdated");
 	desc.AddMember(&SPositionUpdatedSignal::m_oldTransform, 'otra', "OldTransform", "Old Transform", "The old transform of the entity", CryTransform::CTransform());
 	desc.AddMember(&SPositionUpdatedSignal::m_newTransform, 'ntra', "NewTransform", "New Transform", "The new transform of the entity", CryTransform::CTransform());
+}
+
+static void ReflectType(Schematyc::CTypeDesc<SOnPositionAuthoritySignal>& desc)
+{
+	desc.SetGUID("{C8E21427-0770-4736-B6AA-D86F3A0128FF}"_cry_guid);
+	desc.SetLabel("OnPositionAuthority");
+	desc.AddMember(&SOnPositionAuthoritySignal::m_authority, 'aut', "Authority", "Authority", "Whether the worker has authority over this entitys position", false);
 }
 
 class CSpatialOsComponent : public IEntityComponent
