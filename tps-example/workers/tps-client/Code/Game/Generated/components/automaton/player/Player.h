@@ -63,7 +63,7 @@ class CSPlayer: public ISpatialOsComponent<automaton::player::Player>
                 m_heartbeat_callbacks.Update(heartbeat);
                 if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
                 {
-                	pObject->ProcessSignal(SPlayerHeartbeatEventSignal(heartbeat));
+                	pObject->ProcessSignal(SPlayerHeartbeatEventSignal(heartbeat), GetGUID());
                 }
             }
         }
@@ -75,7 +75,7 @@ class CSPlayer: public ISpatialOsComponent<automaton::player::Player>
                 m_killed_player_callbacks.Update(killed_player);
                 if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
                 {
-                	pObject->ProcessSignal(SPlayerKilledPlayerEventSignal(killed_player));
+                	pObject->ProcessSignal(SPlayerKilledPlayerEventSignal(killed_player), GetGUID());
                 }
             }
         }

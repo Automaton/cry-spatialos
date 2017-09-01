@@ -226,7 +226,7 @@ if (!update.<spatialFieldName>().empty())
 }
 >>
 
-updateEvent(spatialEventName, fieldName, signalName) ::= <<
+updateEvent(spatialEventName, fieldName, signalName, className) ::= <<
 if (!update.<spatialEventName>().empty())
 {
     auto& list = update.<spatialEventName>();
@@ -235,7 +235,7 @@ if (!update.<spatialEventName>().empty())
         <fieldName>.Update(<spatialEventName>);
         if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
         {
-        	pObject->ProcessSignal(S<signalName>EventSignal(<spatialEventName>));
+        	pObject->ProcessSignal(S<signalName>EventSignal(<spatialEventName>), GetGUID());
         }
     }
 }

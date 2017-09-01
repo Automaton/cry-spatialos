@@ -69,7 +69,7 @@ void CSPlayerScore::ApplyComponentUpdate(const automaton::player::Score::Update&
 		m_deathCallbackList.Update(m_deaths);
 		if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
 		{
-			pObject->ProcessSignal(SDeathsUpdatedSignal(oldDeaths, m_deaths));
+			pObject->ProcessSignal(SDeathsUpdatedSignal(oldDeaths, m_deaths), GetGUID());
 		}
 		if ((m_deaths - oldDeaths) > 0)
 		{
@@ -86,7 +86,7 @@ void CSPlayerScore::ApplyComponentUpdate(const automaton::player::Score::Update&
 		m_killCallbackList.Update(m_kills);
 		if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
 		{
-			pObject->ProcessSignal(SKillsUpdatedSignal(oldKills, m_kills));
+			pObject->ProcessSignal(SKillsUpdatedSignal(oldKills, m_kills), GetGUID());
 		}
 	}
 }

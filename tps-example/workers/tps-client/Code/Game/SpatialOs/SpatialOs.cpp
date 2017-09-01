@@ -261,9 +261,9 @@ void CSpatialOs::OnSpatialOsConnected()
 
 void CSpatialOs::OnSpawnerFound(const worker::EntityId& entityId)
 {
-	CryLog("Spawner found, sending command request");
-	if (!gEnv->IsEditor())
+	//if (!gEnv->IsEditor())
 	{
+		CryLog("Spawner found, sending command request");
 		automaton::SpawnPlayerRequest request(improbable::Coordinates(0, 0, 0));
 		m_connection->SendCommandRequest<automaton::Spawner::Commands::SpawnPlayer>(entityId, request, 1000);
 	}

@@ -4,7 +4,7 @@
    <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="5570321c-3f83-274e-2341-e90d90d00115" Name="Entity-3" Pos="26.649307,66.256271,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
-     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="81a4c969-3319-123d-243d-1e21e0b7391a" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="8059b8e0-47f8-3d57-8d46-c7daf520df0d" Name="" UserAdded="true">
       <Transform x="1" y="1" z="1">
        <translation>
         <element element="0"/>
@@ -18,10 +18,10 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="584d5af7-ac42-5cc2-ef54-1800196e4cf4" Name="Entity-1" Pos="28.77882,16.700708,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="584d5af7-ac42-5cc2-ef54-1800196e4cf4" Name="Entity-1" Pos="3.6692219,76.628777,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
-     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="536c1ed3-56dc-ffae-3cb0-841f84d02102" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="3c8ac569-7fa0-d815-e0fb-c813422883b0" Name="" UserAdded="true">
       <Transform x="1" y="1" z="1">
        <translation>
         <element element="0"/>
@@ -35,10 +35,10 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="c0ebbcd3-0a18-c177-3a64-17d154352da6" Name="Entity-2" Pos="13.017809,19.92807,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="Spawns" LayerGUID="5aef4b34-7b7d-4844-15b6-dbe2ab1eb6d5" Id="c0ebbcd3-0a18-c177-3a64-17d154352da6" Name="Entity-2" Pos="13.017809,65.043747,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
-     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="242f5a23-3c53-9508-8e33-cb9ee902521c" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="331919fd-464a-ef0b-f13b-572aacf0a14f" Name="" UserAdded="true">
       <Transform x="1" y="1" z="1">
        <translation>
         <element element="0"/>

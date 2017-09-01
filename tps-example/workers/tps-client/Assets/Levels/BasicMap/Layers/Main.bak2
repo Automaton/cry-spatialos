@@ -1,6 +1,13 @@
 <ObjectLayer>
  <Layer Name="Main" FullName="Main" GUID="4492a625-02e7-18ba-338e-7355ddfd660f" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
+   <Object Type="Entity" Layer="Main" LayerGUID="4492a625-02e7-18ba-338e-7355ddfd660f" Id="b4b825df-064b-afdd-330c-049084fd721e" Name="cube-1" Pos="22.719534,68.831024,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="schematyc::cube" ClassGUID="bc46b094-6ef0-4128-8dc6-ff3937c438a7" HasEntity="1">
+    <Properties />
+    <SchematycProperties CryXmlVersion="2">
+     <components />
+     <variables />
+    </SchematycProperties>
+   </Object>
    <Object Type="Designer" Layer="Main" LayerGUID="4492a625-02e7-18ba-338e-7355ddfd660f" Id="984097e4-b48d-f668-f3df-341abb3a1bb4" Name="Floor" Pos="-28.945,-26.313427,22" FloorNumber="-1" Rotate="1,0,0,0" Scale="150,150,10" ColorRGB="16777215" Material="Objects/TilingMaterials/FlatGrey" RndFlags="1610612745" StaticObjFlags="0" ViewDistRatio="100">
     <Brush DesignerModeFlags="0" SubdivisionLevel="0" SubdivisionSmoothingGroup="0" MirrorPlaneNormal="0,0,0" MirrorPlaneDistance="0">
      <Polygon GUID="93578387-dc50-70f2-42e5-bb761a8dc387" BinaryData="BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAA8D8AAAAAAADwPwAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAQAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA/AACAPwAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgL8AAIC/AACAvwAAgL8AAAAA"/>

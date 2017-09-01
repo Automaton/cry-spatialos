@@ -38,8 +38,8 @@
           "arguments": [
             "process_schema",
             "generate",
-            "--cachePath=generated/schema_codegen_cache_json",
-            "--output=generated/json",
+            "--cachePath=.spatialos/schema_codegen_cache_json",
+            "--output=Code/Generated/json",
             "--language=ast_json"
           ]
         }

@@ -291,11 +291,6 @@ void CPlayerComponent::SetLookOrientation(Quat quat)
 
 void CPlayerComponent::SpawnAtSpawnPoint()
 {
-	// We only handle default spawning below for the Launcher
-	// Editor has special logic in CEditorGame
-	if (gEnv->IsEditor())
-		return;
-
 	// Spawn at first default spawner
 	auto *pEntityIterator = gEnv->pEntitySystem->GetEntityIterator();
 	pEntityIterator->MoveFirst();

@@ -139,8 +139,7 @@ void CSpatialOsComponent::OnPositionUpdate(Position::Update const & update)
 		m_positionCallbacks.Update(m_position);
 		if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
 		{
-			CryLog("Sending position update signal");
-			pObject->ProcessSignal(SPositionUpdatedSignal(oldPos, m_position));
+			pObject->ProcessSignal(SPositionUpdatedSignal(oldPos, m_position), GetGUID());
 		}
 	}
 }
