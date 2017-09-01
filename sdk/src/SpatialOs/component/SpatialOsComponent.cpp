@@ -11,9 +11,8 @@ namespace {
 		{
 			Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(CSpatialOsComponent));
 			{
-				auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::UpdatePosition, "{1093AEE3-577D-430A-81FC-C3C666159666}"_cry_guid, "UpdatePosition");
+				auto pFunction = SCHEMATYC_MAKE_ENV_FUNCTION(&CSpatialOsComponent::FlushPosition, "{1093AEE3-577D-430A-81FC-C3C666159666}"_cry_guid, "FlushTransform");
 				pFunction->SetDescription("Update the SpatialOS position of this entity");
-				pFunction->BindInput(1, 'pos', "Position");
 				componentScope.Register(pFunction);
 			}
 			componentScope.Register(SCHEMATYC_MAKE_ENV_SIGNAL(SPositionUpdatedSignal));
@@ -31,7 +30,8 @@ CSpatialOsComponent::CSpatialOsComponent():
 	m_spatialOs(nullptr),
 	m_persistent(false),
 	m_positionAuthority(false),
-	m_readyState(eCRS_None)
+	m_readyState(eCRS_None),
+	m_writePosition(true)
 {
 }
 
@@ -67,6 +67,11 @@ void CSpatialOsComponent::UpdatePosition(Vec3 position) const
 	m_connection->SendComponentUpdate<Position>(m_spatialOsEntityId, posUpdate);
 }
 
+void CSpatialOsComponent::FlushPosition() const
+{
+	UpdatePosition(GetEntity()->GetWorldPos());
+}
+
 Coordinates CSpatialOsComponent::GetSpatialOsCoords() const
 {
 	Vec3 pos = g_spatialOsToCryRotator.GetInverted() * GetEntity()->GetWorldPos();
@@ -78,10 +83,10 @@ void CSpatialOsComponent::ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>&
 	desc.SetGUID("{DC93D0AF-5AE1-491C-B109-E0409C47040E}"_cry_guid);
 	desc.SetEditorCategory("Base");
 	desc.SetLabel("SpatialOS");
-	desc.AddMember(&CSpatialOsComponent::m_position, 'pos', "Position", "Position", "The SpatialOS position of the entity", Vec3(ZERO));
-	desc.AddMember(&CSpatialOsComponent::m_entityInfo, 'einf', "EntityInfo", "Entity Info", "The metadata associated with this entity", "");
-	desc.AddMember(&CSpatialOsComponent::m_readyState, 'rdy', "ReadyState", "Ready State", "The ready state of this component, metadata and position", 0);
+	desc.AddMember(&CSpatialOsComponent::m_entityInfo, 'einf', "EntityInfo", "EntityInfo", "The metadata associated with this entity", "");
+	desc.AddMember(&CSpatialOsComponent::m_readyState, 'rdy', "ReadyState", "ReadyState", "The ready state of this component, metadata and position", 0);
 	desc.AddMember(&CSpatialOsComponent::m_persistent, 'pers', "Persistent", "Persistent", "Whether this entity should be written to a snapshot", false);
+	desc.AddMember(&CSpatialOsComponent::m_writePosition, 'wpos', "WritePosition", "WritePosition", "Update the entity's transform in CRYENGINE automatically", true);
 }
 
 void CSpatialOsComponent::OnAddMetadata(worker::AddComponentOp<Metadata> const& op)
@@ -134,12 +139,16 @@ void CSpatialOsComponent::OnPositionUpdate(Position::Update const & update)
 	if (!update.coords().empty())
 	{
 		auto pos = update.coords();
-		Vec3 oldPos = m_position;
-		m_position = g_spatialOsToCryRotator * Vec3(static_cast<float>(pos->x()), static_cast<float>(pos->y()), static_cast<float>(pos->z()));
-		m_positionCallbacks.Update(m_position);
+		Vec3 newPos = g_spatialOsToCryRotator * Vec3(static_cast<float>(pos->x()), static_cast<float>(pos->y()), static_cast<float>(pos->z()));
+
+		CryTransform::CTransform oldTransform(GetEntity()->GetWorldTM());
+		CryTransform::CTransform newTransform(oldTransform);
+		newTransform.SetTranslation(newPos);
+		if (m_writePosition) GetEntity()->SetWorldTM(newTransform.ToMatrix34());
+		m_transformCallbacks.Update(newTransform);
 		if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
 		{
-			pObject->ProcessSignal(SPositionUpdatedSignal(oldPos, m_position), GetGUID());
+			pObject->ProcessSignal(SPositionUpdatedSignal(oldTransform, newTransform), GetGUID());
 		}
 	}
 }

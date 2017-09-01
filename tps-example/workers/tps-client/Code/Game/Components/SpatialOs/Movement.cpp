@@ -33,6 +33,14 @@ void CSMovement::ApplyComponentUpdate(const automaton::player::Movement::Update&
 void CSMovement::Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
 {
 	RegisterDefaultCallbacks();
+	if (CSpatialOsComponent *pComp = GetEntity()->GetComponent<CSpatialOsComponent>())
+	{
+		pComp->SetWritePosition(false);
+		pComp->AddTransformCallback([this] (CryTransform::CTransform transform)
+		{
+			m_spatialOsPosition = transform.GetTranslation();
+		});
+	}
 }
 
 void CSMovement::WriteComponent(worker::Entity& entity, worker::Map<std::uint32_t, WorkerRequirementSet>& writeAcl)
@@ -64,12 +72,12 @@ void CSMovement::ProcessEvent(SEntityEvent& event)
 	}
 	CPlayerComponent *pPlayer = pSPlayer->GetPlayerComponent();
 	Vec3 position = pEntity->GetWorldPos();
-	float posDist = position.GetDistance(pSpatialOs->GetPosition());
+	float posDist = position.GetDistance(m_spatialOsPosition);
 	// Can only update position with authority
 	if (!pSpatialOs->HasPositionAuthority() || !HasAuthority())
 	{
 		pPlayer->SetLookOrientation(m_lookOrientation);
-		Vec3 targetPos = pSpatialOs->GetPosition();
+		Vec3 targetPos = m_spatialOsPosition;
 		if (targetPos.IsZeroFast()) return;
 		if (posDist > TeleportThreshold)
 		{

@@ -22,6 +22,7 @@ protected:
 	bool m_moving;
 	bool m_running;
 	Quat m_lookOrientation;
+	Vec3 m_spatialOsPosition;
 
 	CCallbackList<size_t, Quat> m_orientationCallbacks;
 	CCallbackList<size_t, bool> m_movingCallbacks;

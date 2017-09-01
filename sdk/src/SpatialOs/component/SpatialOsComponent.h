@@ -25,20 +25,20 @@ enum EComponentReadyState
 struct SPositionUpdatedSignal
 {
 	SPositionUpdatedSignal() {}
-	SPositionUpdatedSignal(Vec3 oldPosition, Vec3 newPosition)
-		: m_oldPosition(oldPosition)
-		, m_newPosition(newPosition) {}
+	SPositionUpdatedSignal(CryTransform::CTransform oldT, CryTransform::CTransform newT)
+		: m_oldTransform(oldT)
+		, m_newTransform(newT) {}
 
-	Vec3 m_oldPosition;
-	Vec3 m_newPosition;
+	CryTransform::CTransform m_oldTransform;
+	CryTransform::CTransform m_newTransform;
 };
 
 static void ReflectType(Schematyc::CTypeDesc<SPositionUpdatedSignal>& desc)
 {
 	desc.SetGUID("{E86FC808-6B76-4E91-8A8B-D5AC49F63449}"_cry_guid);
-	desc.SetLabel("OnPositionUpdated");
-	desc.AddMember(&SPositionUpdatedSignal::m_oldPosition, 'opos', "OldPosition", "Old Position", "The old position of the entity", Vec3(ZERO));
-	desc.AddMember(&SPositionUpdatedSignal::m_newPosition, 'npos', "NewPosition", "New Position", "The new position of the entity", Vec3(ZERO));
+	desc.SetLabel("OnTransformUpdated");
+	desc.AddMember(&SPositionUpdatedSignal::m_oldTransform, 'otra', "OldTransform", "Old Transform", "The old transform of the entity", CryTransform::CTransform());
+	desc.AddMember(&SPositionUpdatedSignal::m_newTransform, 'ntra', "NewTransform", "New Transform", "The new transform of the entity", CryTransform::CTransform());
 }
 
 class CSpatialOsComponent : public IEntityComponent
@@ -51,7 +51,7 @@ public:
 	void Init(worker::EntityId id, worker::View& view, worker::Connection& connection, ISpatialOs& spatialOs);
 
 	void UpdatePosition(Vec3 position) const;
-	Vec3 GetPosition() const { return m_position; }
+	void FlushPosition() const;
 
 	bool HasPositionAuthority() const { return m_positionAuthority; }
 	bool IsReady() const { return (m_readyState == eCRS_All); }
@@ -59,11 +59,13 @@ public:
 	std::string GetMetadata() const { return m_entityInfo.empty() ? GetEntity()->GetClass()->GetName() : std::string(m_entityInfo.c_str());  }
 	Coordinates GetSpatialOsCoords() const;
 	bool IsPersistant() const { return m_persistent; }
+	bool IsWritingPosition() const { return m_writePosition; }
 
 	static void ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>& desc);
 
 	void OnAddMetadata(worker::AddComponentOp<Metadata> const & op);
 	void OnAddPosition(worker::AddComponentOp<Position> const & op);
+	void SetWritePosition(bool writePos) { m_writePosition = writePos;  }
 
 private:
 	void OnAddPersistence(worker::AddComponentOp<Persistence> const & op);
@@ -80,17 +82,17 @@ private:
 	std::unique_ptr<ScopedViewCallbacks> m_callbacks;
 
 	// Fields from components
-	Vec3 m_position;
 	Schematyc::CSharedString m_entityInfo;
 	bool m_persistent;
 
 	// Metadata from components
 	bool m_positionAuthority;
 	int m_readyState;
+	bool m_writePosition;
 
 	// Callback lists
+	DECLARE_CALLBACK_LIST(m_transformCallbacks, Transform, CryTransform::CTransform)
 	DECLARE_CALLBACK_LIST(m_readyCallbacks, ReadyState, int)
-	DECLARE_CALLBACK_LIST(m_positionCallbacks, Position, Vec3)
 	DECLARE_CALLBACK_LIST(m_metadataCallbacks, Metadata, Schematyc::CSharedString)
 
 //	CCallbackList<size_t, int> m_readyCallbacks;

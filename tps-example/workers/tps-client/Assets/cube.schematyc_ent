@@ -24,58 +24,12 @@
     <userDocumentation author="shivam" description=""/>
     <extensions>
      <Graph>
-      <pos x="0" y="0"/>
+      <pos x="15" y="-82"/>
       <nodes>
        <element key="b5372836-9c9b-4620-b2e7-730bf6ed181f" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
         <value guid="b5372836-9c9b-4620-b2e7-730bf6ed181f" objectGUID="">
          <pos x="0" y="100"/>
          <signalId domain="Env" guid="52ad5add-7781-429b-b4a9-0cb6c905e353"/>
-        </value>
-       </element>
-       <element key="37b6d72c-300f-4689-b80e-3a7c55871d7d" typeGUID="1bcfd811-b8b7-4032-a90c-311dfa4454c6">
-        <value guid="37b6d72c-300f-4689-b80e-3a7c55871d7d" objectGUID="3e840652-bc1b-46cc-9ed5-606e70aa06d2">
-         <pos x="469" y="-176"/>
-         <functionId domain="Env" guid="fa08cea0-a0c5-4340-9f8a-e38d74488baf"/>
-         <inputs>
-          <element>
-           <key type="UInt32" value="29810"/>
-           <value x="1" y="1" z="1">
-                        <translation>
-                          <element element="0"/>
-                          <element element="0"/>
-                          <element element="0"/>
-                        </translation>
-                        <rotation x="0" y="0" z="0"/>
-                        <scale />
-           </value>
-          </element>
-         </inputs>
-        </value>
-       </element>
-       <element key="0cf48049-c47a-46e6-a573-9f5253a1f344" typeGUID="1bcfd811-b8b7-4032-a90c-311dfa4454c6">
-        <value guid="0cf48049-c47a-46e6-a573-9f5253a1f344" objectGUID="">
-         <pos x="451" y="-328"/>
-         <functionId domain="Env" guid="b901a1de-725e-4eb4-b7e8-bfdcb82a4bd5"/>
-         <inputs>
-          <element>
-           <key type="UInt32" value="7368563"/>
-           <value x="0" y="0" z="0"/>
-          </element>
-          <element>
-           <key type="UInt32" value="7499636"/>
-           <value x="0" y="0" z="0"/>
-          </element>
-          <element>
-           <key type="UInt32" value="7562092"/>
-           <value x="1" y="1" z="1"/>
-          </element>
-         </inputs>
-        </value>
-       </element>
-       <element key="d36e0e44-bd95-4a7a-a223-31654b068a71" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
-        <value guid="d36e0e44-bd95-4a7a-a223-31654b068a71" objectGUID="8bf53ca3-fef2-4c34-ac8f-d648c6043442">
-         <pos x="17" y="-286"/>
-         <signalId domain="Env" guid="e86fc808-6b76-4e91-8a8b-d5ac49f63449"/>
         </value>
        </element>
        <element key="e7b0852c-0075-4aab-91de-d12f2963cafa" typeGUID="ad2aee64-0a60-4469-8ec7-38b4b720d30c">
@@ -91,24 +45,7 @@
         </value>
        </element>
       </nodes>
-      <links>
-       <element srcNodeGUID="d36e0e44-bd95-4a7a-a223-31654b068a71" dstNodeGUID="0cf48049-c47a-46e6-a573-9f5253a1f344">
-        <srcOutputId type="Idx" value="0"/>
-        <dstInputId type="Idx" value="0"/>
-       </element>
-       <element srcNodeGUID="d36e0e44-bd95-4a7a-a223-31654b068a71" dstNodeGUID="0cf48049-c47a-46e6-a573-9f5253a1f344">
-        <srcOutputId type="UInt32" value="1852862323"/>
-        <dstInputId type="UInt32" value="7368563"/>
-       </element>
-       <element srcNodeGUID="0cf48049-c47a-46e6-a573-9f5253a1f344" dstNodeGUID="37b6d72c-300f-4689-b80e-3a7c55871d7d">
-        <srcOutputId type="Idx" value="0"/>
-        <dstInputId type="Idx" value="0"/>
-       </element>
-       <element srcNodeGUID="0cf48049-c47a-46e6-a573-9f5253a1f344" dstNodeGUID="37b6d72c-300f-4689-b80e-3a7c55871d7d">
-        <srcOutputId type="UInt32" value="7497075"/>
-        <dstInputId type="UInt32" value="29810"/>
-       </element>
-      </links>
+      <links />
      </Graph>
     </extensions>
     <children />
@@ -126,9 +63,7 @@
     </children>
    </element>
    <element elementType="ComponentInstance" guid="8bf53ca3-fef2-4c34-ac8f-d648c6043442" name="SpatialOS" accessor="Private" typeGUID="dc93d0af-5ae1-491c-b109-e0409c47040e">
-    <properties EntityInfo="" ReadyState="0" Persistent="true">
-     <Position x="0" y="0" z="0"/>
-    </properties>
+    <properties EntityInfo="" ReadyState="0" Persistent="true" WritePosition="true"/>
     <extensions />
     <children />
    </element>

@@ -1,0 +1,13 @@
+<ObjectLayer>
+ <Layer Name="_Snapshot" FullName="_Snapshot" GUID="abd259b5-ed3f-3064-2bff-fe4ab4f91c4e" Hidden="1" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+  <LayerObjects>
+   <Object Type="Entity" Layer="_Snapshot" LayerGUID="abd259b5-ed3f-3064-2bff-fe4ab4f91c4e" Id="b4b825df-064b-afdd-330c-049084fd721e" Name="cube-1" Pos="22.719534,68.831024,32" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="schematyc::cube" ClassGUID="bc46b094-6ef0-4128-8dc6-ff3937c438a7" HasEntity="1">
+    <Properties />
+    <SchematycProperties CryXmlVersion="2">
+     <components />
+     <variables />
+    </SchematycProperties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

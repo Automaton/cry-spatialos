@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="38cc9d23-571c-f568-67bd-828c8fd2d465">
+ <Files>
+  <File path="basicmap.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">EnvironmentPreset</Detail>
+ </Details>
+</AssetMetadata>

@@ -65,7 +65,6 @@ void CSBullet::OnReady()
 	if (!pEntity->GetComponent<CBulletComponent>())
 	{
 		const float bulletScale = 0.05f;
-		pEntity->SetPosRotScale(pSpatialOsComponent->GetPosition(), m_rotation, Vec3(bulletScale));
 		// See Bullet.cpp, bullet is propelled in  the rotation and position the entity was spawned with
 		pEntity->CreateComponentClass<CBulletComponent>();
 	}
