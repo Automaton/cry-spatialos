@@ -26,3 +26,5 @@ This is a simple third-person shooter game template produced using the integrati
 ### Building tps-client
 At the moment it is currently required to use the generated code provided in the git repository as it has been modified to include default constructors. 
 Building the solution will overwrite these files (on first build) so it is necessary to checkout these files (`tps-client/Code/Generated`) once they have been overwritten.
+
+`tps-client` should also be built in the Profile or Release build configuration - linking in the Debug configuration currently fails.
