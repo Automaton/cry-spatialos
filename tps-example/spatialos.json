@@ -1,11 +1,11 @@
 {
   "name": "cry_spatial",
   "project_version": "0.0.1",
-  "sdk_version": "11.1.0",
+  "sdk_version": "12.1.0",
   "dependencies": [
     {
       "name": "standard_library",
-      "version": "11.1.0"
+      "version": "12.1.0"
     }
   ]
 }

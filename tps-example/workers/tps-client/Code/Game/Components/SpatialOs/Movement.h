@@ -13,7 +13,7 @@ public:
 
 	void ApplyComponentUpdate(const automaton::player::Movement::Update& update) override;
 	uint64 GetEventMask() const override;
-	void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId) override;
+	void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId) override;
 
 	void WriteComponent(worker::Entity& entity, worker::Map<std::uint32_t, improbable::WorkerRequirementSet>& writeAcl) override;
 protected:

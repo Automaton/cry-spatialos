@@ -15,7 +15,7 @@ public:
 		desc.SetGUID("{B1A7459F-2B25-407E-8F86-5539E7155902}"_cry_guid);
 	}
 
-	void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId) override;
+	void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId) override;
 	void ProcessEvent(SEntityEvent& event) override;
 	uint64 GetEventMask() const override;
 	void ApplyComponentUpdate(const automaton::player::Bullet::Update& update) override;

@@ -392,12 +392,6 @@ public class CodeGenerator {
                 st.add("type", fieldType);
                 st.add("fieldName", fieldDef.name);
                 functions.append(st.render()).append('\n');
-                st = group.getInstanceOf("schematycFunc");
-                st.add("className", className);
-                st.add("funcName", "Update" + upperName);
-                st.add("guid", formatGuid(guidManager.getOrCreateGuidFunction(componentId, fieldDef.number)));
-                st.add("input", upperName);
-                schematycFuncReg.append(st.render()).append('\n');
                 st = group.getInstanceOf("callbackFieldTemplate");
                 st.add("callbackName", fieldName + "_callbacks");
                 st.add("types", fieldType);
@@ -407,34 +401,47 @@ public class CodeGenerator {
                 st.add("types", fieldType);
                 st.add("fieldName", fieldName + "_callbacks");
                 callbackFunctions.append(st.render()).append('\n');
-                st = group.getInstanceOf("signalStructTemplate");
-                st.add("name", componentUpperName + upperName);
-                st.add("type", fieldType);
-                st.add("field", fieldDef.name);
-                schematycSignals.append(st.render()).append('\n');
-                st = group.getInstanceOf("schematycSignal");
-                st.add("signalName", "S" + componentUpperName + upperName + "UpdatedSignal");
-                schematycSigReg.append(st.render()).append('\n');
-                st = group.getInstanceOf("signalReflectType");
-                st.add("name", componentUpperName + upperName);
-                st.add("field", fieldDef.name);
-                st.add("type", fieldType);
-                st.add("guid", formatGuid(guidManager.getOrCreateGuidSignal(componentId, fieldDef.number)));
-                st.add("id", fieldDef.number);
-                st.add("defaultVal", typeMapper.defaultValue(fieldDef));
-                schematycSignals.append(st.render()).append('\n');
-                st = group.getInstanceOf("reflectField");
-                st.add("clazzName", className);
-                st.add("name", fieldName);
-                st.add("defaultVal", typeMapper.defaultValue(fieldDef));
-                st.add("num", fieldDef.number);
-                st.add("upperName", upperName);
-                reflectFields.append(st.render()).append('\n');
                 st = group.getInstanceOf("updateField");
                 st.add("spatialFieldName", fieldDef.name);
                 st.add("fieldName", fieldName);
-                st.add("signalName", componentUpperName + upperName);
                 updateFields.append(st.render()).append('\n');
+                if (fieldType.equals("double") || fieldType.equals("worker::EntityId") || fieldType.equals("std::string") || fieldType.startsWith("worker::List") || fieldType.startsWith("worker::Map")) {
+                    logger.warn("Cannot generate Schematyc functions for {} type {}, type not supported", fieldName, fieldType);
+                } else {
+                    st = group.getInstanceOf("signalStructTemplate");
+                    st.add("name", componentUpperName + upperName);
+                    st.add("type", fieldType);
+                    st.add("field", fieldDef.name);
+                    schematycSignals.append(st.render()).append('\n');
+                    st = group.getInstanceOf("schematycSignal");
+                    st.add("signalName", "S" + componentUpperName + upperName + "UpdatedSignal");
+                    schematycSigReg.append(st.render()).append('\n');
+                    st = group.getInstanceOf("signalReflectType");
+                    st.add("name", componentUpperName + upperName);
+                    st.add("field", fieldDef.name);
+                    st.add("type", fieldType);
+                    st.add("guid", formatGuid(guidManager.getOrCreateGuidSignal(componentId, fieldDef.number)));
+                    st.add("id", fieldDef.number);
+                    st.add("defaultVal", typeMapper.defaultValue(fieldDef));
+                    schematycSignals.append(st.render()).append('\n');
+                    st = group.getInstanceOf("reflectField");
+                    st.add("clazzName", className);
+                    st.add("name", fieldName);
+                    st.add("defaultVal", typeMapper.defaultValue(fieldDef));
+                    st.add("num", fieldDef.number);
+                    st.add("upperName", upperName);
+                    reflectFields.append(st.render()).append('\n');
+                    st = group.getInstanceOf("updateSchematycObject");
+                    st.add("fieldName", fieldName);
+                    st.add("signalName", componentUpperName + upperName);
+                    st = group.getInstanceOf("schematycFunc");
+                    st.add("className", className);
+                    st.add("funcName", "Update" + upperName);
+                    st.add("guid", formatGuid(guidManager.getOrCreateGuidFunction(componentId, fieldDef.number)));
+                    st.add("input", upperName);
+                    schematycFuncReg.append(st.render()).append('\n');
+                }
+
             }
 
             for (String include : includesSet) {

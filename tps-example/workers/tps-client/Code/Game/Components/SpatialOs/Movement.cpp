@@ -30,7 +30,7 @@ void CSMovement::ApplyComponentUpdate(const automaton::player::Movement::Update&
 	}
 }
 
-void CSMovement::Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
+void CSMovement::Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId)
 {
 	RegisterDefaultCallbacks();
 	if (CSpatialOsComponent *pComp = GetEntity()->GetComponent<CSpatialOsComponent>())

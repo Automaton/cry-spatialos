@@ -32,7 +32,7 @@ public:
 	CPlayerComponent *GetPlayerComponent() const { return m_pPlayer; }
 
 private:
-	void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId) override;
+	void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId) override;
 	void OnAuthority(bool auth);
 
 	const float HeartbeatInterval = 3;

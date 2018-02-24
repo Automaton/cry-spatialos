@@ -1,6 +1,6 @@
 # CrySpatialOS ("crysos")
 
-SpatialOS 11 integration for CRYENGINE 5.4
+SpatialOS 12 integration for CRYENGINE 5.4
 
 ## Directory Structure
 
@@ -24,7 +24,4 @@ This is a simple third-person shooter game template produced using the integrati
 7. Run any number of clients by right-clicking `Game.cryproject` and selecting `Run Game` (or the exe generated from the `Package Build` option)
 
 ### Building tps-client
-At the moment it is currently required to use the generated code provided in the git repository as it has been modified to include default constructors. 
-Building the solution will overwrite these files (on first build) so it is necessary to checkout these files (`tps-client/Code/Generated`) once they have been overwritten.
-
 `tps-client` should also be built in the Profile or Release build configuration - linking in the Debug configuration currently fails.

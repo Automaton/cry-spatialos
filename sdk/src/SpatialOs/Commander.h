@@ -4,7 +4,7 @@
 
 class Commander {
 public:
-	Commander(worker::Connection& connection, worker::View& view)
+	Commander(worker::Connection& connection, CSpatialOsView& view)
 		: m_connection(connection), m_view(view), m_callbacks(view)
 	{
 		m_callbacks.Add(m_view.OnReserveEntityIdResponse(std::bind(&Commander::OnReserveEntityIdResponseDispatcherCallback, this, std::placeholders::_1)));
@@ -32,7 +32,7 @@ public:
 
 private:
 	worker::Connection& m_connection;
-	worker::View& m_view;
+	CSpatialOsView& m_view;
 	ScopedViewCallbacks m_callbacks;
 
 	std::map <std::uint32_t, std::function<void(bool, std::string, worker::EntityId)>> m_requestIdToReserveEntityIdCallback;

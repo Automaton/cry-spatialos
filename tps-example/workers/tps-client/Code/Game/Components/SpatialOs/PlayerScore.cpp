@@ -55,7 +55,7 @@ uint64 CSPlayerScore::GetEventMask() const
 	return BIT64(ENTITY_EVENT_UPDATE);
 }
 
-void CSPlayerScore::Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
+void CSPlayerScore::Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId)
 {
 	RegisterDefaultCallbacks();
 }

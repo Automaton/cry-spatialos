@@ -60,8 +60,8 @@ worker::Entity CreateBulletEntityTemplate(worker::List<std::string> workerAttrs,
 void CSPlayer::FireBullet(const QuatTS& origin, EntityId id)
 {
 	worker::List<std::string> attrs { "workerId:" + m_spatialOs->GetWorkerId() };
-	Vec3 pos = g_spatialOsToCryRotator.GetInverted() * origin.t;
-	improbable::Coordinates coords(pos.x, pos.y, pos.z);
+	Vec3 pos = origin.t;
+	improbable::Coordinates coords(pos.x, pos.z, pos.y);
 	automaton::Quaternion rot(origin.q.w, origin.q.v.x, origin.q.v.y, origin.q.v.z);
 	worker::Entity entity = CreateBulletEntityTemplate(attrs, coords, rot, GetSpatialOsEntityId());
 	SEntitySpawnFuture future(id, entity);
@@ -93,7 +93,7 @@ void CSPlayer::Respawn()
 	}
 }
 
-void CSPlayer::Initialise(worker::Connection& /*connection*/, worker::View& /*view*/, worker::EntityId /*entityId*/)
+void CSPlayer::Initialise(worker::Connection& /*connection*/, CSpatialOsView& /*view*/, worker::EntityId /*entityId*/)
 {
 	RegisterDefaultCallbacks();
 	IEntity *pEntity = GetEntity();

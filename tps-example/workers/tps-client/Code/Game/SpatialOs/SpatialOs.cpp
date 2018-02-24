@@ -9,7 +9,8 @@
 #include "Generated/components/automaton/Tree.h"
 
 CSpatialOs::CSpatialOs()
-	: m_view(new worker::View)
+	: m_components()
+	  , m_view(new CSpatialOsView(m_components.components))
 	  , m_isConnecting(false)
 	  , m_isConnected(false)
 	  , m_connectionLock()
@@ -55,7 +56,7 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 	const WorkerRequirementSet gameWorkerRequirementSet{ { gameWorkerAttributeSet } };
 	const WorkerRequirementSet clientWorkerRequirementSet{ { clientAttributeSet } };
 	const WorkerRequirementSet anyWorkerReadPermission{ { clientAttributeSet, gameWorkerAttributeSet } };
-
+	worker::SnapshotOutputStream snapOut(CGamePlugin::GetSpatialOs().m_components.components, path);
 	int id = 1;
 	// Add spawner entity
 	{
@@ -73,7 +74,11 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 		writeAcl.emplace(automaton::Spawner::ComponentId, gameWorkerRequirementSet);
 
 		snapshotEntity.Add<EntityAcl>(EntityAcl::Data(anyWorkerReadPermission, writeAcl));
-		snapshotEntities.emplace(id++, snapshotEntity);
+		auto option = snapOut.WriteEntity(id++, snapshotEntity);
+		if (!option.empty())
+		{
+			CryLog("Save snapshot error: %s", option->c_str());
+		}
 	}
 	while (!pIterator->IsEnd())
 	{
@@ -81,7 +86,7 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 		if (stricmp(pEntity->GetName(), "Schematyc Preview Entity") == 0) continue;
 		if (CSpatialOsComponent *pComponent = pEntity->GetComponent<CSpatialOsComponent>())
 		{
-			if (pComponent->IsPersistant())
+			if (pComponent->IsPersistent())
 			{
 				CryComment("Persistent entity being added to SpatialOS id: %d, name: %s", pEntity->GetId(), pEntity->GetName());
 				worker::Entity entity;
@@ -109,15 +114,13 @@ void CSpatialOs::CreateSnapshot(const char *pPath)
 					}
 				}
 				entity.Add<EntityAcl>(EntityAcl::Data(anyWorkerReadPermission, writeAcl));
-				snapshotEntities.emplace(id++, entity);
+				auto option = snapOut.WriteEntity(id++, entity);
+				if (!option.empty())
+				{
+					CryLog("Save snapshot error: %s", option->c_str());
+				}
 			}
 		}
-	}
-
-	worker::Option<std::string> option = worker::SaveSnapshot(path, snapshotEntities);
-	if (!option.empty())
-	{
-		CryLog("Save snapshot error: %s", option->c_str());
 	}
 }
 
@@ -175,7 +178,7 @@ void CSpatialOs::ConnectToReceptionist(const std::string& hostName, uint16 port,
 {
 	m_isConnecting = true;
 
-	auto connectionFuture = worker::Connection::ConnectAsync(hostName, port, m_workerId, params);
+	auto connectionFuture = worker::Connection::ConnectAsync(m_components.components, hostName, port, m_workerId, params);
 
 	if (connectionFuture.Wait(timeoutMillis))
 	{
@@ -199,12 +202,7 @@ void CSpatialOs::ConnectToReceptionist(const std::string& hostName, uint16 port,
 
 void CSpatialOs::RegisterComponents()
 {
-	m_entitySpawner->Register<CSPlayerScore>();
-	m_entitySpawner->Register<CSPlayer>();
-	m_entitySpawner->Register<CSMovement>();
-	m_entitySpawner->Register<CSBullet>();
-	m_entitySpawner->Register<CSTree>();
-	m_entitySpawner->Register<CSSpawner>();
+	m_components.ce_components.Register(*m_entitySpawner.get());
 }
 
 void CSpatialOs::DisconnectFromSpatialOs()

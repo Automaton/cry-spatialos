@@ -13,7 +13,7 @@ class Spawner
     private readonly Dispatcher _dispatcher;
     private readonly Connection _connection;
 
-    private readonly Dictionary<RequestId<ReserveEntityIdRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>> _spawnPlayerRequests;
+    private readonly Dictionary<RequestId<ReserveEntityIdsRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>> _spawnPlayerRequests;
     private readonly Dictionary<RequestId<CreateEntityRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>> _pendingCreateEntities;
 
     private bool _isReady;
@@ -24,7 +24,7 @@ class Spawner
         _dispatcher = dispatcher;
         _connection = connection;
 
-        _spawnPlayerRequests = new Dictionary<RequestId<ReserveEntityIdRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>>();
+        _spawnPlayerRequests = new Dictionary<RequestId<ReserveEntityIdsRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>>();
         _pendingCreateEntities = new Dictionary<RequestId<CreateEntityRequest>, CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer>>();
         RegisterCallbacks();
     }
@@ -38,9 +38,10 @@ class Spawner
         _dispatcher.OnCommandRequest<Automaton.Spawner.Commands.SpawnPlayer>(op =>
         {
             Console.WriteLine("Received spawn player request from {0}", op.CallerWorkerId);
-            _spawnPlayerRequests.Add(_connection.SendReserveEntityIdRequest(3000), op);
+            // TODO: Would be nice to reserve a certain number of entity IDs for players and reuse them instead
+            _spawnPlayerRequests.Add(_connection.SendReserveEntityIdsRequest(1, 3000), op);
         });
-        _dispatcher.OnReserveEntityIdResponse(op =>
+        _dispatcher.OnReserveEntityIdsResponse(op =>
         {
             CommandRequestOp<Automaton.Spawner.Commands.SpawnPlayer> request;
             if (!_spawnPlayerRequests.TryGetValue(op.RequestId, out request)) return;
@@ -51,9 +52,10 @@ class Spawner
             }
             else
             {
-                Console.WriteLine("Requesting entity creation: {0}", op.EntityId.Value);
+                
+                Console.WriteLine("Requesting entity creation: {0}", op.FirstEntityId.Value);
                 Entity entity = CreatePlayerTemplate(request, request.Request.Get().Value.position);
-                RequestId<CreateEntityRequest> id = _connection.SendCreateEntityRequest(entity, op.EntityId, 1000);
+                RequestId<CreateEntityRequest> id = _connection.SendCreateEntityRequest(entity, op.FirstEntityId.Value, 1000);
                 _pendingCreateEntities.Add(id, request);
 
             }

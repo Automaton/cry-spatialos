@@ -4,6 +4,9 @@
 #include <improbable/worker.h>
 #include "CryEntitySystem/IEntity.h"
 #include <CryEntitySystem/IEntitySystem.h>
+#include "ComponentSerialiser.h"
+#include "SpatialOsView.h"
+#include "IPostInitializable.h"
 
 class ISpatialOs;
 
@@ -28,16 +31,17 @@ struct SEntitySpawnFuture
 	std::function<void(worker::EntityId)> m_success;
 };
 
+
 class SpatialOsEntitySpawner
 {
 public:
-	SpatialOsEntitySpawner(worker::Connection& connection, worker::View& view, ISpatialOs& spatialOs);
+	SpatialOsEntitySpawner(worker::Connection& connection, CSpatialOsView& view, ISpatialOs& spatialOs);
 
 	worker::EntityId GetSpatialOsEntityId(EntityId cryEntityId) const;
 	EntityId GetCryEntityId(worker::EntityId spatialEntityId) const;
 
 	template <class T>
-	void OnAddComponent(worker::AddComponentOp<typename T::Component> op)
+	T* OnAddComponent(worker::AddComponentOp<typename T::Component> op)
 	{
 		worker::EntityId weid = op.EntityId;
 
@@ -49,7 +53,9 @@ public:
 			t->Init(m_connection, m_view, m_spatialOs, op.EntityId);
 			auto update = T::Component::Update::FromInitialData(op.Data);
 			t->ApplyComponentUpdate(update);
+			return t;
 		}
+		return nullptr;
 	}
 
 	template <class T>
@@ -71,11 +77,13 @@ public:
 	void Register()
 	{
 		
-		m_componentSpawns.emplace(T::Component::ComponentId,  [this] (void * op)
+		m_componentSpawns.emplace(T::Component::ComponentId,  [this] (worker::EntityId id, void * pData)
 		{
-			worker::AddComponentOp<typename T::Component>* pOp = reinterpret_cast<worker::AddComponentOp<typename T::Component> *>(op);
-			OnAddComponent<T>(*pOp);
-			delete pOp;
+			typename T::Component::Data* data = reinterpret_cast<typename T::Component::Data*>(pData);
+			worker::AddComponentOp<typename T::Component> op { id, *data };
+			T* t = OnAddComponent<T>(op);
+			delete data;
+			return static_cast<IPostInitializable*>(t);
 		});
 		m_callbacks.Add(m_view.OnAddComponent<typename T::Component>([this] (const worker::AddComponentOp<typename T::Component>& op)
 		{
@@ -86,15 +94,30 @@ public:
 				return;
 			}
 			std::list<std::pair<worker::ComponentId, void *>>& list = it->second;
-			worker::AddComponentOp<typename T::Component>* comp = new worker::AddComponentOp<typename T::Component>(op);
-			list.push_back(std::make_pair<worker::ComponentId, void*>(static_cast<worker::ComponentId>(T::Component::ComponentId), reinterpret_cast<void *>(comp)));
+			typename T::Component::Data* data = new typename T::Component::Data(op.Data);
+			list.push_back(std::make_pair<worker::ComponentId, void*>(static_cast<worker::ComponentId>(T::Component::ComponentId), reinterpret_cast<void *>(data)));
 		}));
 		//m_callbacks.Add(m_view.OnAddComponent<typename T::Component>(std::bind(&SpatialOsEntitySpawner::OnAddComponent<T>, this, std::placeholders::_1)));
 		m_callbacks.Add(m_view.OnRemoveComponent<typename T::Component>(std::bind(&SpatialOsEntitySpawner::OnRemoveComponent<T>, this, std::placeholders::_1)));
 	}
 
+
+	template <typename First, typename Second, typename ...Args>
+	void RegisterComponents()
+	{
+		Register<First>();
+		RegisterComponents<Second, Args...>();
+	}
+
+	template <typename T>
+	void RegisterComponents()
+	{
+		Register<T>();
+ 	}
+
 	void RequestSpawn(SEntitySpawnFuture const & future);
 	void ProcessEndCriticalSection();
+	void Reset();
 
 
 private:
@@ -107,12 +130,12 @@ private:
 
 	void OnAddEntity(const worker::AddEntityOp& Op);
 	void OnRemoveEntity(const worker::RemoveEntityOp& Op);
-	void OnReserveEntityId(const worker::ReserveEntityIdResponseOp& op);
+	void OnReserveEntityId(const worker::ReserveEntityIdsResponseOp& op);
 	void PreemptEntitySpawn(EntityId entityId, worker::EntityId id);
 	void SpawnCryEntity(worker::EntityId spatialOsEntityId);
 	void OnCreateEntity(const worker::CreateEntityResponseOp& op);
 
-	worker::View& m_view;
+	CSpatialOsView& m_view;
 	worker::Connection& m_connection;
 	ISpatialOs& m_spatialOs;
 	ScopedViewCallbacks m_callbacks;
@@ -121,10 +144,16 @@ private:
 	std::map<EntityId, worker::EntityId> m_cryEntityIdToSpatialOsEntityId;
 	std::map<worker::EntityId, EntityId> m_spatialOsEntityIdToCryEntityId;
 
-	std::map<worker::RequestId<worker::ReserveEntityIdRequest>, SEntitySpawnFuture, cmp_req<worker::ReserveEntityIdRequest>> m_deferredSpatialSpawnsId;
+	std::map<worker::RequestId<worker::ReserveEntityIdsRequest>, SEntitySpawnFuture, cmp_req<worker::ReserveEntityIdsRequest>> m_deferredSpatialSpawnsId;
 	std::map<worker::RequestId<worker::CreateEntityRequest>, SEntitySpawnFuture, cmp_req<worker::CreateEntityRequest>> m_deferredSpatialSpawnsEntity;
 
-	std::map<worker::ComponentId, std::function<void(void *)>> m_componentSpawns;
+	std::map<worker::ComponentId, std::function<IPostInitializable *(worker::EntityId, void *)>> m_componentSpawns;
 	std::map<worker::EntityId, std::list<std::pair<worker::ComponentId, void*>>> m_bufferedSpawns;
 
 };
+
+// this must be outside of the class definition as non-MSVC compilers are incompatible with it
+template<>
+inline void SpatialOsEntitySpawner::RegisterComponents<void>()
+{
+}

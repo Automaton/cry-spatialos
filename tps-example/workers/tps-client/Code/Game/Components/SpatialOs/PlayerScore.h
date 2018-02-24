@@ -47,7 +47,7 @@ public:
 	static void ReflectType(Schematyc::CTypeDesc<CSPlayerScore>& desc);
 
 	uint64 GetEventMask() const override;
-	void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId) override;
+	void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId) override;
 	void ApplyComponentUpdate(const automaton::player::Score::Update& update) override;
 
 	void WriteComponent(worker::Entity& entity, worker::Map<std::uint32_t, WorkerRequirementSet>& writeAcl) override;

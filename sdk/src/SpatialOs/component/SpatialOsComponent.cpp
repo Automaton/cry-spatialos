@@ -2,7 +2,7 @@
 
 #include "SpatialOsComponent.h"
 #include <improbable/standard_library.h>
-#include "SpatialOs/SpatialOs.h"
+#include "SpatialOs/ISpatialOs.h"
 
 namespace {
 	static void RegisterSpatialOsComponent(Schematyc::IEnvRegistrar& registrar)
@@ -46,11 +46,11 @@ CSpatialOsComponent::CSpatialOsComponent():
 	m_persistent(false),
 	m_positionAuthority(false),
 	m_readyState(eCRS_None),
-	m_writePosition(true)
+	m_writePosition(false)
 {
 }
 
-void CSpatialOsComponent::Init(worker::EntityId entityId, worker::View& view, worker::Connection& connection, ISpatialOs& spatialOs)
+void CSpatialOsComponent::Init(worker::EntityId entityId, CSpatialOsView& view, worker::Connection& connection, ISpatialOs& spatialOs)
 {
 	m_spatialOsEntityId = entityId;
 	m_view = &view;
@@ -58,18 +58,18 @@ void CSpatialOsComponent::Init(worker::EntityId entityId, worker::View& view, wo
 	m_spatialOs = &spatialOs;
 
 	m_callbacks.reset(new ScopedViewCallbacks(view));
-	auto it = view.Entities.find(entityId);
-	if (it != view.Entities.end())
+	worker::Authority authority = view.GetAuthority<Position>(entityId);
+	if (authority == worker::Authority::kAuthoritative)
 	{
-		m_positionAuthority = it->second.HasAuthority<Position>();
+		m_positionAuthority = true;
 		if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
 		{
 			pObject->ProcessSignal(SOnPositionAuthoritySignal(m_positionAuthority), GetGUID());
 		}
 	}
 
-	m_callbacks->Add(m_view->OnAddComponent<Position>(std::bind(&CSpatialOsComponent::OnAddPosition, this, std::placeholders::_1)));
-	m_callbacks->Add(m_view->OnAddComponent<Metadata>(std::bind(&CSpatialOsComponent::OnAddMetadata, this, std::placeholders::_1)));
+	m_callbacks->Add(m_view->OnAddComponent<Position>(std::bind(&CSpatialOsComponent::OnAddPositionOp, this, std::placeholders::_1)));
+	m_callbacks->Add(m_view->OnAddComponent<Metadata>(std::bind(&CSpatialOsComponent::OnAddMetadataOp, this, std::placeholders::_1)));
 	m_callbacks->Add(m_view->OnAddComponent<Persistence>(std::bind(&CSpatialOsComponent::OnAddPersistence, this, std::placeholders::_1)));
 	m_callbacks->Add(m_view->OnAuthorityChange<Position>(std::bind(&CSpatialOsComponent::OnPositionAuthorityChange, this, std::placeholders::_1)));
 	m_callbacks->Add(m_view->OnComponentUpdate<Position>(std::bind(&CSpatialOsComponent::OnUpdatePosition, this, std::placeholders::_1)));
@@ -81,8 +81,7 @@ void CSpatialOsComponent::Init(worker::EntityId entityId, worker::View& view, wo
 void CSpatialOsComponent::UpdatePosition(Vec3 position) const
 {
 	Position::Update posUpdate;
-	Vec3 pos = g_spatialOsToCryRotator.GetInverted() * position;
-	posUpdate.set_coords(Coordinates(pos.x, pos.y, pos.z));
+	posUpdate.set_coords(Coordinates(position.x, position.z, position.y));
 	m_connection->SendComponentUpdate<Position>(m_spatialOsEntityId, posUpdate);
 }
 
@@ -93,8 +92,8 @@ void CSpatialOsComponent::FlushPosition() const
 
 Coordinates CSpatialOsComponent::GetSpatialOsCoords() const
 {
-	Vec3 pos = g_spatialOsToCryRotator.GetInverted() * GetEntity()->GetWorldPos();
-	return Coordinates(pos.x, pos.y, pos.z);
+	Vec3 pos = GetEntity()->GetWorldPos();
+	return Coordinates(pos.x, pos.z, pos.y);
 }
 
 void CSpatialOsComponent::ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>& desc)
@@ -108,15 +107,13 @@ void CSpatialOsComponent::ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>&
 	desc.AddMember(&CSpatialOsComponent::m_writePosition, 'wpos', "WritePosition", "WritePosition", "Update the entity's transform in CRYENGINE automatically", true);
 }
 
-void CSpatialOsComponent::OnAddMetadata(worker::AddComponentOp<Metadata> const& op)
+void CSpatialOsComponent::OnAddMetadata(Metadata::Data const& data)
 {
-	if (op.EntityId != m_spatialOsEntityId) return;
-	const Metadata::Data& data = op.Data;
 	std::string name = data.entity_type();
 	m_entityInfo = name.c_str();
 
 	string newName;
-	newName.Format("%s_%d", name, op.EntityId);
+	newName.Format("%s_%d", name.c_str(), m_spatialOsEntityId);
 	CryComment("Renaming entity %d to %s", GetEntityId(), newName.c_str());
 	GetEntity()->SetName(newName);
 
@@ -126,13 +123,25 @@ void CSpatialOsComponent::OnAddMetadata(worker::AddComponentOp<Metadata> const& 
 	m_readyCallbacks.Update(m_readyState);
 }
 
-void CSpatialOsComponent::OnAddPosition(worker::AddComponentOp<Position> const& op)
+
+void CSpatialOsComponent::OnAddPosition(Position::Data const& data)
 {
-	if (op.EntityId != m_spatialOsEntityId) return;
-	Position::Update update = Position::Update::FromInitialData(op.Data);
+	Position::Update update = Position::Update::FromInitialData(data);
 	m_readyState |= eCRS_PositionReady;
 	OnPositionUpdate(update);
 	m_readyCallbacks.Update(m_readyState);
+}
+
+void CSpatialOsComponent::OnAddPositionOp(worker::AddComponentOp<Position> const& op)
+{
+	if (op.EntityId != m_spatialOsEntityId) return;
+	OnAddPosition(op.Data);
+}
+
+void CSpatialOsComponent::OnAddMetadataOp(worker::AddComponentOp<Metadata> const& op)
+{
+	if (op.EntityId != m_spatialOsEntityId) return;
+	OnAddMetadata(op.Data);
 }
 
 void CSpatialOsComponent::OnAddPersistence(worker::AddComponentOp<Persistence> const& op)
@@ -144,7 +153,7 @@ void CSpatialOsComponent::OnAddPersistence(worker::AddComponentOp<Persistence> c
 void CSpatialOsComponent::OnPositionAuthorityChange(worker::AuthorityChangeOp const& op)
 {
 	if (op.EntityId != m_spatialOsEntityId) return;
-	m_positionAuthority = op.HasAuthority;
+	m_positionAuthority = op.Authority == worker::Authority::kAuthoritative;
 	if (Schematyc::IObject * pObject = GetEntity()->GetSchematycObject())
 	{
 		pObject->ProcessSignal(SOnPositionAuthoritySignal(m_positionAuthority), GetGUID());
@@ -162,7 +171,7 @@ void CSpatialOsComponent::OnPositionUpdate(Position::Update const & update)
 	if (!update.coords().empty())
 	{
 		auto pos = update.coords();
-		Vec3 newPos = g_spatialOsToCryRotator * Vec3(static_cast<float>(pos->x()), static_cast<float>(pos->y()), static_cast<float>(pos->z()));
+		Vec3 newPos = Vec3(static_cast<float>(pos->x()), static_cast<float>(pos->z()), static_cast<float>(pos->y()));
 
 		CryTransform::CTransform oldTransform(GetEntity()->GetWorldTM());
 		CryTransform::CTransform newTransform(oldTransform);

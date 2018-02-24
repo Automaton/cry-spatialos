@@ -4,11 +4,14 @@
 #include "ScopedViewCallbacks.h"
 #include "CallbackList.h"
 #include "ComponentSerialiser.h"
+#include <CryEntitySystem/IEntityComponent.h>
+#include "SpatialOsView.h"
+#include "IPostInitializable.h"
 
 class ISpatialOs;
 
 template <typename C>
-class ISpatialOsComponent: public IEntityComponent, CComponentSerialiser
+class ISpatialOsComponent: public IEntityComponent, CComponentSerialiser, IPostInitializable
 {
 
 	friend class SpatialOsEntitySpawner;
@@ -20,7 +23,8 @@ public:
 	{
 	}
 
-	virtual void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId) {};
+	virtual void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId) {};
+	virtual void PostInit() override {}
 
 	virtual worker::ComponentId GetComponentId() { return C::ComponentId; }
 
@@ -59,19 +63,14 @@ public:
 		m_componentReadyCallbacks.Remove(key);
 	}
 
-	void Init(worker::Connection& connection, worker::View& view, ISpatialOs& spatialOs, worker::EntityId entityId)
+	void Init(worker::Connection& connection, CSpatialOsView& view, ISpatialOs& spatialOs, worker::EntityId entityId)
 	{
 		m_connection = &connection;
 		m_view = &view;
 		m_spatialOs = &spatialOs;
 		m_entityId = entityId;
 		m_callbacks.reset(new ScopedViewCallbacks(view));
-		auto it = view.Entities.find(entityId);
-		if (it != view.Entities.end())
-		{
-			m_hasAuthority = it->second.HasAuthority<C>();
-			m_authorityChangeCallbacks.Update(m_hasAuthority);
-		}
+		m_hasAuthority = view.GetAuthority<C>(entityId) == worker::Authority::kAuthoritative;
 		Initialise(connection, view, entityId);
 	}
 
@@ -79,10 +78,12 @@ public:
 	{
 	}
 
-protected:
+public:
 	worker::Connection* m_connection;
-	worker::View* m_view;
+	CSpatialOsView* m_view;
 	ISpatialOs* m_spatialOs;
+
+protected:
 	worker::EntityId m_entityId;
 	std::unique_ptr<ScopedViewCallbacks> m_callbacks;
 
@@ -98,8 +99,8 @@ protected:
 		{
 			return;
 		}
-		m_hasAuthority = op.HasAuthority;
-		m_authorityChangeCallbacks.Update(op.HasAuthority);
+		m_hasAuthority = op.Authority == worker::Authority::kAuthoritative;
+		m_authorityChangeCallbacks.Update(m_hasAuthority);
 	}
 
 	void OnComponentUpdateDispatcherCallback(const worker::ComponentUpdateOp<C>& op)

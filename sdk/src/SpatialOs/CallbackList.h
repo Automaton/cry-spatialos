@@ -14,7 +14,7 @@ template <typename C, typename... Args>
 class CCallbackList
 {
 public:
-	CCallbackList() : m_lastKey(0) {}
+	CCallbackList() : m_lastKey(1) {}
 	C Add(std::function<void(Args...)> callback)
 	{
 		C key;

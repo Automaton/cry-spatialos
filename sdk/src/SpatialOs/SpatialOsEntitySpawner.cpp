@@ -7,14 +7,14 @@
 #include "component/SpatialOsComponent.h"
 
 
-SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, worker::View& view, ISpatialOs& spatialOs)
+SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, CSpatialOsView& view, ISpatialOs& spatialOs)
 	: m_view(view), m_connection(connection), m_spatialOs(spatialOs), m_callbacks(view)
 {
 	m_callbacks.Add(
 		m_view.OnAddEntity(std::bind(&SpatialOsEntitySpawner::OnAddEntity, this, std::placeholders::_1)));
 	m_callbacks.Add(
 		m_view.OnRemoveEntity(std::bind(&SpatialOsEntitySpawner::OnRemoveEntity, this, std::placeholders::_1)));
-	m_callbacks.Add(m_view.OnReserveEntityIdResponse(std::bind(&SpatialOsEntitySpawner::OnReserveEntityId, this, std::placeholders::_1)));
+	m_callbacks.Add(m_view.OnReserveEntityIdsResponse(std::bind(&SpatialOsEntitySpawner::OnReserveEntityId, this, std::placeholders::_1)));
 	m_callbacks.Add(m_view.OnCreateEntityResponse(std::bind(&SpatialOsEntitySpawner::OnCreateEntity, this, std::placeholders::_1)));
 	m_callbacks.Add(m_view.OnCriticalSection([this] (const worker::CriticalSectionOp& op) 
 	{
@@ -30,8 +30,8 @@ SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, w
 		auto it = m_bufferedSpawns.find(op.EntityId);
 		if (it != m_bufferedSpawns.end())
 		{
-			worker::AddComponentOp<improbable::Metadata> * pOp = new worker::AddComponentOp<improbable::Metadata>(op);
-			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Metadata::ComponentId), reinterpret_cast<void*>(pOp)));
+			improbable::Metadata::Data *pData = new improbable::Metadata::Data(op.Data);
+			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Metadata::ComponentId), reinterpret_cast<void*>(pData)));
 		}
 	}));
 	m_callbacks.Add(m_view.OnAddComponent<improbable::Position>([this](worker::AddComponentOp<improbable::Position> op)
@@ -39,8 +39,8 @@ SpatialOsEntitySpawner::SpatialOsEntitySpawner(worker::Connection& connection, w
 		auto it = m_bufferedSpawns.find(op.EntityId);
 		if (it != m_bufferedSpawns.end())
 		{
-			worker::AddComponentOp<improbable::Position> * pOp = new worker::AddComponentOp<improbable::Position>(op);
-			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Position::ComponentId), reinterpret_cast<void*>(pOp)));
+			improbable::Position::Data * pData = new improbable::Position::Data(op.Data);
+			it->second.push_back(std::make_pair<worker::ComponentId, void *>(static_cast<worker::ComponentId>(improbable::Position::ComponentId), reinterpret_cast<void*>(pData)));
 		}
 	}));
 }
@@ -104,7 +104,7 @@ void SpatialOsEntitySpawner::OnCreateEntity(const worker::CreateEntityResponseOp
 	}
 	else
 	{
-		CryWarning(VALIDATOR_MODULE_GAME, VALIDATOR_WARNING, "Failed to create SpatialOS entity for entity ID: %d. Status: %d, Reason: %s", id, op.StatusCode, op.Message);
+		CryWarning(VALIDATOR_MODULE_GAME, VALIDATOR_WARNING, "Failed to create SpatialOS entity for entity ID: %d. Status: %d, Reason: %s", id, op.StatusCode, op.Message.c_str());
 		if (future.m_failure != nullptr)
 		{
 			future.m_failure(eESF_SpatialOsError, op.StatusCode, string(op.Message.c_str()), op.EntityId);
@@ -154,7 +154,7 @@ void SpatialOsEntitySpawner::OnRemoveEntity(const worker::RemoveEntityOp& Op)
 	m_spatialOsEntityIdToCryEntityId.erase(Op.EntityId);
 }
 
-void SpatialOsEntitySpawner::OnReserveEntityId(const worker::ReserveEntityIdResponseOp& op)
+void SpatialOsEntitySpawner::OnReserveEntityId(const worker::ReserveEntityIdsResponseOp& op)
 {
 	auto it = m_deferredSpatialSpawnsId.find(op.RequestId);
 	if (it == m_deferredSpatialSpawnsId.end())
@@ -168,22 +168,22 @@ void SpatialOsEntitySpawner::OnReserveEntityId(const worker::ReserveEntityIdResp
 		CryComment("%d was deleted before the SpatialOS entity ID was reserved, SpatialOS response: %d", id, op.StatusCode);
 		if (future.m_failure != nullptr)
 		{
-			future.m_failure(eESF_AlreadyDestroyed, op.StatusCode, string(op.Message.c_str()), op.EntityId);
+			future.m_failure(eESF_AlreadyDestroyed, op.StatusCode, string(op.Message.c_str()), op.FirstEntityId);
 		}
 		return;
 	}
 	if (op.StatusCode == worker::StatusCode::kSuccess)
 	{
-		PreemptEntitySpawn(id, *op.EntityId);
-		auto request = m_connection.SendCreateEntityRequest(future.entity, op.EntityId, 3000);
+		PreemptEntitySpawn(id, *op.FirstEntityId);
+		auto request = m_connection.SendCreateEntityRequest(future.entity, op.FirstEntityId, 3000);
 		m_deferredSpatialSpawnsEntity.emplace(request, future);	
 	}
 	else
 	{
-		CryWarning(VALIDATOR_MODULE_GAME, VALIDATOR_WARNING, "Failed to reserve SpatialOS entity for entity ID: %d. Status: %d, Reason: %s", id, op.StatusCode, op.Message);
+		CryWarning(VALIDATOR_MODULE_GAME, VALIDATOR_WARNING, "Failed to reserve SpatialOS entity for entity ID: %d. Status: %d, Reason: %s", id, op.StatusCode, op.Message.c_str());
 		if (future.m_failure != nullptr)
 		{
-			future.m_failure(eESF_SpatialOsError, op.StatusCode, string(op.Message.c_str()), op.EntityId);
+			future.m_failure(eESF_SpatialOsError, op.StatusCode, string(op.Message.c_str()), op.FirstEntityId);
 		}
 	}
 }
@@ -196,7 +196,7 @@ void SpatialOsEntitySpawner::PreemptEntitySpawn(EntityId entityId, worker::Entit
 
 void SpatialOsEntitySpawner::RequestSpawn(SEntitySpawnFuture const & future)
 {
-	m_deferredSpatialSpawnsId.emplace(m_connection.SendReserveEntityIdRequest(3000), future);
+	m_deferredSpatialSpawnsId.emplace(m_connection.SendReserveEntityIdsRequest(1, 3000), future);
 }
 
 worker::EntityId SpatialOsEntitySpawner::GetSpatialOsEntityId(EntityId cryEntityId) const
@@ -217,22 +217,21 @@ void SpatialOsEntitySpawner::ProcessEndCriticalSection()
 		std::list<std::pair<worker::ComponentId, void*>>& list = pair.second;
 		// First look for a metadata component
 		IEntityClass *pClass = gEnv->pEntitySystem->GetClassRegistry()->GetDefaultClass();
-		string name;
-		name.Format("SpatialOS-%d", id);
+		string name = "";
+		name.Format("SpatialOS-%lld", id);
 		auto it = std::find_if(list.begin(), list.end(), [](std::pair<worker::ComponentId, void*> p)
 		{
 			return p.first == improbable::Metadata::ComponentId;
 		});
-		worker::AddComponentOp<improbable::Metadata>* metadataOp = nullptr;
-		worker::AddComponentOp<improbable::Position>* positionOp = nullptr;
+		improbable::Metadata::Data* metadataOp = nullptr;
+		improbable::Position::Data* positionOp = nullptr;
 		if (it != list.end())
 		{
 			// Metadata component exists, try to look up metadata + class
 			void *ptr = it->second;
-			metadataOp = reinterpret_cast<worker::AddComponentOp<improbable::Metadata> *>(ptr);
-			const improbable::Metadata::Data& data = metadataOp->Data;
+			metadataOp = reinterpret_cast<improbable::Metadata::Data*>(ptr);
+			const improbable::Metadata::Data data = *metadataOp;
 			IEntityClass *lookupClass = gEnv->pEntitySystem->GetClassRegistry()->FindClass(data.entity_type().c_str());
-			CryLog("Spawning with entity class %s", data.entity_type().c_str());
 			if (lookupClass != nullptr)
 			{
 				pClass = lookupClass;
@@ -241,7 +240,6 @@ void SpatialOsEntitySpawner::ProcessEndCriticalSection()
 			{
 				CryLog("Failed to find entity class: %s", data.entity_type().c_str());
 			}
-			name.Format("%s-%d", data.entity_type().c_str(), id);
 			list.erase(it);
 		}
 		it = std::find_if(list.begin(), list.end(), [](std::pair<worker::ComponentId, void*> p)
@@ -252,7 +250,7 @@ void SpatialOsEntitySpawner::ProcessEndCriticalSection()
 		{
 			// Position component exists, save this for the SpatialOsComponent
 			void *ptr = it->second;
-		    positionOp = reinterpret_cast<worker::AddComponentOp<improbable::Position> *>(ptr);
+		    positionOp = reinterpret_cast<improbable::Position::Data *>(ptr);
 			list.erase(it);
 		}
 		SEntitySpawnParams params;
@@ -281,16 +279,40 @@ void SpatialOsEntitySpawner::ProcessEndCriticalSection()
 		if (metadataOp) delete metadataOp;
 		if (positionOp) delete positionOp;
 		// Now process all other components
+		std::vector<IPostInitializable *> postInits;
 		for (auto& listPair : list)
 		{
 			worker::ComponentId compId = listPair.first;
 			auto compIt = m_componentSpawns.find(compId);
 			if (compIt != m_componentSpawns.end())
 			{
-				compIt->second(listPair.second);
+				IPostInitializable *postInit = compIt->second(id, listPair.second);
+				if (postInit != nullptr)
+				{
+					postInits.push_back(postInit);
+				}
 			}
+		}
+		for (IPostInitializable* postInit : postInits)
+		{
+			postInit->PostInit();
 		}
 		list.clear();
 	}
 	m_bufferedSpawns.clear();
+}
+
+void SpatialOsEntitySpawner::Reset()
+{
+	if (gEnv->pEntitySystem)
+	{
+		for (const auto& pair : m_cryEntityIdToSpatialOsEntityId)
+		{
+			gEnv->pEntitySystem->RemoveEntity(pair.first);
+		}
+	}
+
+	m_bufferedSpawns.clear();
+	m_cryEntityIdToSpatialOsEntityId.clear();
+	m_spatialOsEntityIdToCryEntityId.clear();
 }

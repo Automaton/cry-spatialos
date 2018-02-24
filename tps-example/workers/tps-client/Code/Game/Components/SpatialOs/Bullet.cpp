@@ -15,7 +15,7 @@ uint64 CSBullet::GetEventMask() const
 	return BIT64(ENTITY_EVENT_INIT) | BIT64(ENTITY_EVENT_DONE) | BIT64(ENTITY_EVENT_UPDATE) | BIT64(ENTITY_EVENT_COLLISION);
 }
 
-void CSBullet::Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
+void CSBullet::Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId)
 {
 	RegisterDefaultCallbacks();
 	InitPosition();

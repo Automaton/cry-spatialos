@@ -8,6 +8,7 @@
 #include "SpatialOs/CallbackList.h"
 #include "SpatialOs/ScopedViewCallbacks.h"
 
+class CSpatialOsView;
 class ISpatialOs;
 using namespace improbable;
 
@@ -63,7 +64,7 @@ public:
 	CSpatialOsComponent();
 	virtual ~CSpatialOsComponent() {}
 
-	void Init(worker::EntityId id, worker::View& view, worker::Connection& connection, ISpatialOs& spatialOs);
+	void Init(worker::EntityId id, CSpatialOsView& view, worker::Connection& connection, ISpatialOs& spatialOs);
 
 	void UpdatePosition(Vec3 position) const;
 	void FlushPosition() const;
@@ -73,13 +74,16 @@ public:
 	int GetReadyState() const { return m_readyState; }
 	std::string GetMetadata() const { return m_entityInfo.empty() ? GetEntity()->GetClass()->GetName() : std::string(m_entityInfo.c_str());  }
 	Coordinates GetSpatialOsCoords() const;
-	bool IsPersistant() const { return m_persistent; }
+	bool IsPersistent() const { return m_persistent; }
 	bool IsWritingPosition() const { return m_writePosition; }
+	worker::EntityId GetSpatialOsEntityId() const { return m_spatialOsEntityId; }
 
 	static void ReflectType(Schematyc::CTypeDesc<CSpatialOsComponent>& desc);
 
-	void OnAddMetadata(worker::AddComponentOp<Metadata> const & op);
-	void OnAddPosition(worker::AddComponentOp<Position> const & op);
+	void OnAddMetadata(Metadata::Data const & op);
+	void OnAddPosition(Position::Data const & op);
+	void OnAddPositionOp(worker::AddComponentOp<Position> const & op);
+	void OnAddMetadataOp(worker::AddComponentOp<Metadata> const & op);
 	void SetWritePosition(bool writePos) { m_writePosition = writePos;  }
 
 private:
@@ -91,7 +95,7 @@ private:
 
 	// SpatialOS fields
 	worker::EntityId m_spatialOsEntityId;
-	worker::View *m_view;
+	CSpatialOsView *m_view;
 	worker::Connection *m_connection;
 	ISpatialOs *m_spatialOs;
 	std::unique_ptr<ScopedViewCallbacks> m_callbacks;

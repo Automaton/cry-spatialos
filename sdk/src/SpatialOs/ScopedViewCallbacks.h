@@ -8,7 +8,7 @@
 class ScopedViewCallbacks
 {
 public:
-	ScopedViewCallbacks(worker::View& View) : m_view(View)
+	ScopedViewCallbacks(worker::Dispatcher& View) : m_view(View)
 	{
 	}
 
@@ -37,7 +37,7 @@ public:
 	}
 
 private:
-	worker::View& m_view;
+	worker::Dispatcher& m_view;
 	std::vector<uint64_t> m_handles;
 };
 

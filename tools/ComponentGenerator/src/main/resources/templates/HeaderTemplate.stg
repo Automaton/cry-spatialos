@@ -7,7 +7,9 @@ baseTemplate(name, spatialOsComponentName, spatialOsHeaderName, schematycSignals
 
 #include "SpatialOs/CallbackList.h"
 #include "SpatialOs/SpatialOsComponent.h"
-#include "SpatialOs/SpatialOs.h"
+#include "SpatialOs/ISpatialOs.h"
+#include "SpatialOs/SpatialOsView.h"
+
 #include "Generated/Types.h"
 <additionalIncludes>
 
@@ -18,7 +20,7 @@ class <name>: public ISpatialOsComponent\<<spatialOsComponentName>\>
       <name>() <constructorFields> {}
       virtual ~<name>() {}
 
-      void Initialise(worker::Connection& connection, worker::View& view, worker::EntityId entityId)
+      void Initialise(worker::Connection& connection, CSpatialOsView& view, worker::EntityId entityId)
       {
         RegisterDefaultCallbacks();
         <initialiseBody>
@@ -39,6 +41,11 @@ class <name>: public ISpatialOsComponent\<<spatialOsComponentName>\>
             m_isComponentReady = true;
             m_componentReadyCallbacks.Update();
         }
+      }
+
+      void UpdateComponent(Component::Update& update)
+      {
+          m_connection->SendComponentUpdate\<Component>(GetSpatialOsEntityId(), update);
       }
 
       void WriteComponent(worker::Entity& entity, worker::Map\<std::uint32_t, improbable::WorkerRequirementSet>& writeAcl) override
@@ -214,16 +221,19 @@ reflectField(clazzName, name, defaultVal, num, upperName) ::= <<
 desc.AddMember(&<clazzName>::<name>, <num>, "<upperName>", "<upperName>", "", <defaultVal>);
 >>
 
-updateField(spatialFieldName, fieldName, signalName) ::= <<
+updateField(spatialFieldName, fieldName) ::= <<
 if (!update.<spatialFieldName>().empty())
 {
     <fieldName> = *update.<spatialFieldName>();
     <fieldName>_callbacks.Update(<fieldName>);
+}
+>>
+
+updateSchematycObject(signalName, fieldName) ::= <<
 	if (Schematyc::IObject *pObject = GetEntity()->GetSchematycObject())
 	{
 		pObject->ProcessSignal(S<signalName>UpdatedSignal(<fieldName>));
 	}
-}
 >>
 
 updateEvent(spatialEventName, fieldName, signalName, className) ::= <<
@@ -262,7 +272,7 @@ namespace {
         <schematycFuncReg>
         <schematycSignalReg>
     }
-    CRY_STATIC_AUTO_REGISTER_FUNCTION(&Register<className>);
+    //CRY_STATIC_AUTO_REGISTER_FUNCTION(&Register<className>);
 }
 >>
 

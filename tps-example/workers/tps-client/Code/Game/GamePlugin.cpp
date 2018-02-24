@@ -10,6 +10,8 @@
 #include <CryCore/Platform/platform_impl.inl>
 #include "Generated/Types.h"
 
+CSpatialOs* CGamePlugin::s_spatialOs = nullptr;
+
 CGamePlugin::~CGamePlugin()
 {
 	gEnv->pSystem->GetISystemEventDispatcher()->RemoveListener(this);
@@ -19,12 +21,17 @@ CGamePlugin::~CGamePlugin()
 		gEnv->pSchematyc->GetEnvRegistry().DeregisterPackage(GetSchematycPackageGUID());
 		gEnv->pSchematyc->GetEnvRegistry().DeregisterPackage("{051ADC65-49F8-4F97-942F-CA7E71287CFC}"_cry_guid);
 	}
+	if (s_spatialOs)
+	{
+		delete s_spatialOs;
+	}
 }
 
 bool CGamePlugin::Initialize(SSystemGlobalEnvironment& env, const SSystemInitParams& initParams)
 {
 	// Register for engine system events, in our case we need ESYSTEM_EVENT_GAME_POST_INIT to load the map
 	gEnv->pSystem->GetISystemEventDispatcher()->RegisterListener(this, "CGamePlugin");
+	s_spatialOs = new CSpatialOs();
 	SetUpdateFlags(EUpdateType_Update);
 	return true;
 }
@@ -33,7 +40,7 @@ void CGamePlugin::OnPluginUpdate(EPluginUpdateType updateType)
 {
 	if (updateType == EUpdateType_Update)
 	{
-		m_spatialOs.ProcessEvents();
+		s_spatialOs->ProcessEvents();
 	}
 }
 
@@ -92,7 +99,7 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 		if (!gEnv->IsEditor())
 		{
 			CSpatialOs::RemoveSpatialOsEntities();
-			m_spatialOs.ConnectToSpatialOs();
+			s_spatialOs->ConnectToSpatialOs();
 		}
 	}
 	break;
@@ -101,11 +108,11 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 		if (!gEnv->IsEditor()) return;
 		if (wparam)
 		{
-			m_spatialOs.ConnectToSpatialOs();
+			s_spatialOs->ConnectToSpatialOs();
 		}
 		else
 		{
-			m_spatialOs.DisconnectFromSpatialOs();
+			s_spatialOs->DisconnectFromSpatialOs();
 		}
 	}
 	break;
@@ -117,7 +124,7 @@ void CGamePlugin::OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lp
 	case ESYSTEM_EVENT_FULL_SHUTDOWN:
 	case ESYSTEM_EVENT_FAST_SHUTDOWN:
 		if (!gEnv->IsEditor())
-			m_spatialOs.DisconnectFromSpatialOs();
+			s_spatialOs->DisconnectFromSpatialOs();
 		break;
 	}
 }

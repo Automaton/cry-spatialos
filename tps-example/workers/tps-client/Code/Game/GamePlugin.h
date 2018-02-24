@@ -33,8 +33,10 @@ public:
 	virtual void OnSystemEvent(ESystemEvent event, UINT_PTR wparam, UINT_PTR lparam) override;
 	// ~ISystemEventListener
 
+	static CSpatialOs& GetSpatialOs() { return *s_spatialOs; }
+
 protected:
 	// Map containing player components, key is the channel id received in OnClientConnectionReceived
 	std::unordered_map<int, EntityId> m_players;
-	CSpatialOs m_spatialOs;
+	static CSpatialOs* s_spatialOs;
 };
